@@ -1,9 +1,53 @@
-.navbar {
-  background-color: #d86767;
-  text-decoration: none;
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3% 4%; /* Отступы сверху и снизу 3%, слева и справа 4% */
+  background-color: transparent;
+  transition: background-color 1s;
 }
 
-.container-fluid{
-  background-color: #ebf0ed;
-  text-decoration-color: #eee8e8;
+.logo_navbar {
+  width: 20%;
+  height: 20%;
 }
+
+.nav-underline {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: auto; /* Смещение к правому краю */
+}
+.nav-link {
+  color: rgb(47, 46, 46);
+  text-align: center; /* Равнение по центру */
+  padding: 0.5rem;
+  
+}
+
+// .scroll-link {
+//   cursor: pointer;
+//   color: #212529;
+//   text-decoration: none;
+// }
+// .scroll-link:hover {
+//   font-weight: bold; /* Сделать текст жирным при наведении */
+//   color: rgb(55, 55, 28); /* Изменить цвет текста на желтый при наведении */
+// }
+
+// .scroll-link:visited {
+//   color: yellow; /* Цвет текста для посещенных ссылок */
+// }
+
+.nav-underline.fixed {
+  background-color: rgb(17, 17, 15); /* Цвет фона при фиксации */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Чтобы меню оставалось поверх других элементов */
+}
+
