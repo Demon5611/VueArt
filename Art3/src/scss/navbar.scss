@@ -1,21 +1,38 @@
 .navbar-container {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 3% 4%; /* Отступы сверху и снизу 3%, слева и справа 4% */
   background-color: transparent;
-  transition: background-color 1s;
+  transition: background-color 1s ease; /* Плавный переход цвета фона */
 }
 
-.logo_navbar {
-  width: 20%;
-  height: 20%;
-}
 
 .nav-underline {
   list-style: none;
   display: flex;
   align-items: center;
+  background-color: transparent;
+  transition: background-color 1s; /* Плавный переход цвета фона */
+  padding: 1.5% 4%;
+}
+
+.navbar-fixed {
+  background-color: rgb(242, 235, 136);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.logo_navbar {
+  width: 20%;
+  height: 20%;
 }
 
 .nav-item {
@@ -28,26 +45,4 @@
   
 }
 
-// .scroll-link {
-//   cursor: pointer;
-//   color: #212529;
-//   text-decoration: none;
-// }
-// .scroll-link:hover {
-//   font-weight: bold; /* Сделать текст жирным при наведении */
-//   color: rgb(55, 55, 28); /* Изменить цвет текста на желтый при наведении */
-// }
-
-// .scroll-link:visited {
-//   color: yellow; /* Цвет текста для посещенных ссылок */
-// }
-
-.nav-underline.fixed {
-  background-color: rgb(17, 17, 15); /* Цвет фона при фиксации */
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000; /* Чтобы меню оставалось поверх других элементов */
-}
 
