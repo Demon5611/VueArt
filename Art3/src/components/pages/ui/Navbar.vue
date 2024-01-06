@@ -1,19 +1,18 @@
 <template>
-  <nav class="navbar">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">ArtMechanika</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link " href="#">Features</a>
-          <a class="nav-link" href="#">Pricing</a>
-        </div>
-      </div>
-    </div>
-  </nav>
+  <div class="navbar-container">
+  <img src="../../../assets//img/logoNataAvodes.png" class="logo_navbar" alt="logo" />
+  <ul class="nav nav-underline">
+   <li class="nav-item">
+    <a class="nav-link" href="#">Главная</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Галерея</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Контакты</a>
+  </li>
+  </ul>
+</div>
 </template>
 
 <script>
