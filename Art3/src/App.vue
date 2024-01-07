@@ -2,18 +2,23 @@
   <div class="app">
   <Navbar/>
   <div>hello</div>
-</div>
+  <Footer />
+  </div>
 </template>
 
 <script setup>
 import Navbar from './components/pages/ui/Navbar.vue'
+import Footer from './components/pages/ui/Footer.vue'
+
+
 
 </script>
-<style>
+<style lang="scss">
 .app {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  height: 2500px;
 
   line-height: 1.5;
   font-weight: 400;
