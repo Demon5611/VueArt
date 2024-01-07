@@ -1,14 +1,16 @@
 <template>
   <div class="app">
   <Navbar/>
+  <Mainpage/>
   <div>hello</div>
-  <Footer />
+  <Footer/>
   </div>
 </template>
 
 <script setup>
 import Navbar from './components/pages/ui/Navbar.vue'
 import Footer from './components/pages/ui/Footer.vue'
+import Mainpage from './components/pages/Mainpage.vue'
 
 
 

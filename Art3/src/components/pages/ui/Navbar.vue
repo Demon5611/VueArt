@@ -1,6 +1,6 @@
 <template>
   <div :class="{ 'navbar-container': true, 'navbar-fixed': isNavbarFixed }">
-  <img src="../../../assets//img/logoNataAvodes.png" class="logo_navbar" alt="logo" />
+  <img src="../../../../public/logoNataAvodes.png" class="logo_navbar" alt="logo" />
   <ul class="nav nav-underline">
    <li class="nav-item">
     <a class="nav-link" href="#">Главная</a>
@@ -15,7 +15,7 @@
 </div>
 </template>
 
-<script>
+<script lang="js">
 export default {
   data() {
     return {
