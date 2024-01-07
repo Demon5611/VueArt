@@ -2,7 +2,7 @@
   <div class="app">
   <Navbar/>
   <Mainpage/>
-  <div>hello</div>
+  <Galarypage/>
   <Footer/>
   </div>
 </template>
@@ -11,6 +11,7 @@
 import Navbar from './components/pages/ui/Navbar.vue'
 import Footer from './components/pages/ui/Footer.vue'
 import Mainpage from './components/pages/Mainpage.vue'
+import Galarypage from './components/pages/Galarypage.vue';
 
 
 
@@ -25,7 +26,7 @@ import Mainpage from './components/pages/Mainpage.vue'
   line-height: 1.5;
   font-weight: 400;
 
-  background-color: rgb(242, 242, 242);
+  // background-color: rgb(242, 242, 242);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -34,7 +35,5 @@ import Mainpage from './components/pages/Mainpage.vue'
 
   font-family: 'Montserrat', sans-serif;
   text-align: center;
-
-  /* display: contents; //убирает заливку бэк  */
 }
 </style>
