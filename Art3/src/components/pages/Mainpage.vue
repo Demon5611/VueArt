@@ -1,6 +1,6 @@
 <template>
     <div id="main" class="containerMainPage">
-      <img :style="{ width: '100%', marginBottom: '4ch', marginTop: '2ch' }" :src="headerImg" />
+      <img class='headerImg' :src="headerImg" />
       <div class="containerText">
         <h3 class="firstText">Добрый день )</h3>
         <div class="textAround1">
@@ -30,9 +30,9 @@
               иллюстрация, фото-зависит от проекта в целом и его концепции. Пример такой работы -
               серия картин «Обратный процесс эволюции», 2021 год.
           <br />
-          <a :href="NataAvodesBio" style="{ fontSize: '1ch' }" class="cv" download="NataAvodesBio.pdf">
+          <!-- <a :href="NataAvodesBio.pdf" download class="cv">          
             Скачать био. NataAvodes
-          </a>
+          </a> -->
         </div>
       </div>
     </div>
@@ -43,6 +43,12 @@
   import headerImg from '../../../public/headerImg.jpg'
   import monky1 from '../../../public/monky1.jpeg'
   import monky2 from '../../../public/monky2.jpg'
+  // import NataAvodesBio from '../../../public/NataAvodesBio.pdf'
+
+//   const downloadPdf = () => {
+//   window.open(NataAvodesBio, '_blank');
+// };
+
 
   </script>
   

@@ -1,4 +1,4 @@
-12099
+12098
 60/home/ds/Рабочий стол/Project/Art4/Art3/README.md1704616731943608880 0
 71/home/ds/Рабочий стол/Project/Art4/Art3/src/scss/footer.scss1704621241152175376 0
 73/home/ds/Рабочий стол/Project/Art4/Art3/src/scss/mainpage.scss1704626744913494704 0
@@ -6,7 +6,7 @@
 85/home/ds/Рабочий стол/Project/Art4/Art3/src/components/pages/ui/Footer.vue1704623338820598300 0
 71/home/ds/Рабочий стол/Project/Art4/Art3/src/components/pages1704621421998819351 1
 54/home/ds/Рабочий стол/Project/Art4/Art3/src1704623210434229076 1
-63/home/ds/Рабочий стол/Project/Art4/Art3/package.json1704616457153104516 0
+63/home/ds/Рабочий стол/Project/Art4/Art3/package.json1704637373355897293 0
 70/home/ds/Рабочий стол/Project/Art4/Art3/public/interior.jpg1704616457157104940 0
 73/home/ds/Рабочий стол/Project/Art4/Art3/public/avatarImege.jpg1704616457153104516 0
 71/home/ds/Рабочий стол/Project/Art4/Art3/public/iphonForm.png1704616457157104940 0
@@ -15,10 +15,8 @@
 72/home/ds/Рабочий стол/Project/Art4/Art3/public/iphonform2.png1704616457153104516 0
 68/home/ds/Рабочий стол/Project/Art4/Art3/public/monky2.jpg1704616457157104940 0
 71/home/ds/Рабочий стол/Project/Art4/Art3/public/headerImg.jpg1704616457153104516 0
-78/home/ds/Рабочий стол/Project/Art4/Art3/public/pdf/NataAvodesCV.pdf1704616457161105364 0
-79/home/ds/Рабочий стол/Project/Art4/Art3/public/pdf/NataAvodesBio.pdf1704616457161105364 0
 69/home/ds/Рабочий стол/Project/Art4/Art3/public/monky1.jpeg1704616457157104940 0
-57/home/ds/Рабочий стол/Project/Art4/Art3/public1704624795452587873 1
+57/home/ds/Рабочий стол/Project/Art4/Art3/public1704633493083322943 1
 61/home/ds/Рабочий стол/Project/Art4/Art3/.gitignore1704616457105099428 0
 99/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/functional-red-black-tree/README.md1704616497764039136 0
 97/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/functional-red-black-tree/LICENSE1704616497780039851 0
@@ -207,7 +205,6 @@
 121/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/eslint-plugin-vue/lib/utils/inline-non-void-elements.json1704616498492071138 0
 114/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/eslint-plugin-vue/lib/utils/property-references.js1704616498424068173 0
 100/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/eslint-plugin-vue/lib/utils/index.js1704616498248060499 0
-61/home/ds/Рабочий стол/Project/Art4/Art3/public/pdf1704616457161105364 1
 101/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/eslint-plugin-vue/lib/utils/regexp.js1704616498424068173 0
 104/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/eslint-plugin-vue/lib/utils/indent-ts.js1704616498228059627 0
 109/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/eslint-plugin-vue/lib/utils/keycode-to-key.js1704616498256060847 0
@@ -3201,7 +3198,7 @@
 113/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/css-tree/cjs/syntax/node/index-parse-selector.cjs1704616498268061371 0
 89/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/terser/dist/bundle.min.js1704616498216059103 0
 87/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/lodash/_listCacheSet.js1704616498424068173 0
-83/home/ds/Рабочий стол/Project/Art4/Art3/dist/logoNataAvodes.9ccd2f89.png1704626420648166838 0
+83/home/ds/Рабочий стол/Project/Art4/Art3/dist/logoNataAvodes.9ccd2f89.png1704637470654560707 0
 111/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/vue-eslint-parser/node_modules/espree/README.md1704616497992049326 0
 118/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/caniuse-lite/data/features/css-indeterminate-pseudo.js1704616498416067824 0
 109/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/fast-json-stable-stringify/benchmark/index.js1704616497792040387 0
@@ -4479,7 +4476,7 @@
 92/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/@parcel/cache/src/FSCache.js1704616497832042175 0
 109/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/@parcel/transformer-raw/src/RawTransformer.js1704616497804040924 0
 87/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/lodash/_createHybrid.js1704616498356065208 0
-74/home/ds/Рабочий стол/Project/Art4/Art3/dist/index.b10d73a7.css1704626734249826166 0
+74/home/ds/Рабочий стол/Project/Art4/Art3/dist/index.b10d73a7.css1704637470602559231 0
 109/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/@parcel/transformer-raw/lib/RawTransformer.js1704616497772039493 0
 96/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/css-tree/cjs/syntax/node/Url.cjs1704616498364065557 0
 136/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/@parcel/optimizer-svgo/node_modules/css-tree/lib/syntax/node/Function.js1704616498288062243 0
@@ -4967,7 +4964,7 @@
 91/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/estree-walker/src/walker.js1704616497952047539 0
 104/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/@swc/helpers/_/_async_generator_delegate1704616498408067475 1
 91/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/@swc/helpers/_/_export_star1704616498516072185 1
-75/home/ds/Рабочий стол/Project/Art4/Art3/dist/monky2.ef8e2d29.jpg1704626420656166652 0
+75/home/ds/Рабочий стол/Project/Art4/Art3/dist/monky2.ef8e2d29.jpg1704637470658560821 0
 90/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/@babel/parser/lib/index.js1704616498108054394 0
 95/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/caniuse-lite/data/regions/MP.js1704616498632077243 0
 82/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/micromatch/LICENSE1704616497704036454 0
@@ -5140,7 +5137,7 @@
 93/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/source-map/lib/source-node.js1704616498004049859 0
 120/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/@parcel/optimizer-htmlnano/node_modules/svgo/lib/path.js1704616498200058406 0
 106/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/lightningcss/node/browserslistToTargets.js1704616497996049505 0
-78/home/ds/Рабочий стол/Project/Art4/Art3/dist/index.b10d73a7.css.map1704626734249826166 0
+78/home/ds/Рабочий стол/Project/Art4/Art3/dist/index.b10d73a7.css.map1704637470610559458 0
 83/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/lodash/fp/filter.js1704616498560074103 0
 110/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/@parcel/transformer-postcss/lib/loadPlugins.js1704616497892044857 0
 96/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/eslint/lib/rules/valid-typeof.js1704616498624076894 0
@@ -5404,6 +5401,7 @@
 99/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/css-tree/lib/syntax/function/var.js1704616498524072533 0
 99/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/ajv-keywords/keywords/prohibited.js1704616498088053522 0
 109/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/caniuse-lite/data/features/intrinsic-width.js1704616498588075324 0
+74/home/ds/Рабочий стол/Project/Art4/Art3/public/NataAvodesCV.pdf1704616457161105364 0
 106/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/ajv-keywords/keywords/dot/_formatLimit.jst1704616497968048254 0
 146/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/@parcel/optimizer-htmlnano/node_modules/css-select/lib/pseudo-selectors/index.d.ts1704616498140055789 0
 83/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/randombytes/test.js1704616497868043784 0
@@ -5571,7 +5569,7 @@
 125/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/@parcel/package-manager/test/validateModuleSpecifiers.test.js1704616498224059452 0
 105/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/caniuse-lite/data/features/css-nesting.js1704616498432068522 0
 105/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/source-map-js/lib/source-map-generator.js1704616497980048790 0
-66/home/ds/Рабочий стол/Project/Art4/Art3/dist/index.html1704626420660166559 0
+66/home/ds/Рабочий стол/Project/Art4/Art3/dist/index.html1704637470666561048 0
 96/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/eslint/lib/rules/dot-location.js1704616498292062417 0
 85/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/lodash/flatMapDeep.js1704616498568074452 0
 112/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/table/dist/src/calculateMaximumColumnWidths.d.ts1704616498272061545 0
@@ -5650,7 +5648,7 @@
 86/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/entities/lib/decode.js1704616498004049859 0
 117/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/@parcel/optimizer-htmlnano/node_modules/svgo/bin/svgo1704616497780039851 0
 120/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/@parcel/optimizer-htmlnano/node_modules/css-tree/LICENSE1704616497760038957 0
-84/home/ds/Рабочий стол/Project/Art4/Art3/src/components/pages/Mainpage.vue1704626224744757192 0
+84/home/ds/Рабочий стол/Project/Art4/Art3/src/components/pages/Mainpage.vue1704637470158546621 0
 78/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/glob/common.js1704616497752038599 0
 74/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/sass/types1704616498488070964 1
 91/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/neo-async/forEachOfLimit.js1704616498204058580 0
@@ -5684,7 +5682,7 @@
 81/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/commander/esm.mjs1704616497948047360 0
 89/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/concat-map/example/map.js1704616497832042175 0
 95/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/@parcel/source-map/package.json1704616498100054045 0
-78/home/ds/Рабочий стол/Project/Art4/Art3/dist/headerImg.3a5a4a5a.jpg1704626420636167118 0
+78/home/ds/Рабочий стол/Project/Art4/Art3/dist/headerImg.3a5a4a5a.jpg1704637470610559458 0
 106/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/@parcel/transformer-react-refresh-wrap/lib1704616497880044320 1
 125/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/@parcel/optimizer-svgo/node_modules/csso/lib/clean/Comment.js1704616498088053522 0
 88/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/@parcel/reporter-cli/src1704616498092053696 1
@@ -5851,7 +5849,7 @@
 101/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/@parcel/runtime-react-refresh/LICENSE1704616497704036454 0
 93/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/@parcel/fs/lib/browser.js.map1704616498092053696 0
 109/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/caniuse-lite/data/features/abortcontroller.js1704616497832042175 0
-55/home/ds/Рабочий стол/Project/Art4/Art3/dist1704626734249826166 1
+55/home/ds/Рабочий стол/Project/Art4/Art3/dist1704637470666561048 1
 86/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/ajv/lib/dotjs/index.js1704616498228059627 0
 115/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/webpack/lib/dependencies/ImportContextDependency.js1704616498560074103 0
 111/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/@parcel/transformer-posthtml/src/loadPlugins.js1704616497804040924 0
@@ -6011,7 +6009,7 @@
 91/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/@parcel/transformer-vue/lib1704616497764039136 1
 86/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/escalade/dist/index.js1704616497764039136 0
 78/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/@parcel/plugin1704616497800040745 1
-73/home/ds/Рабочий стол/Project/Art4/Art3/dist/index.4d6bcbeb.js1704626420680166093 0
+73/home/ds/Рабочий стол/Project/Art4/Art3/dist/index.4d6bcbeb.js1704637470642560367 0
 112/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/table/node_modules/ajv/dist/runtime/parseJson.js1704616498288062243 0
 84/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/lodash/fp/useWith.js1704616498712080731 0
 89/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/schema-utils/package.json1704616497992049326 0
@@ -7329,7 +7327,7 @@
 86/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/estree-walker/dist/esm1704616497952047539 1
 110/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/table/node_modules/ajv/dist/compile/resolve.js1704616498312063289 0
 85/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/estree-walker/LICENSE1704616497704036454 0
-77/home/ds/Рабочий стол/Project/Art4/Art3/dist/index.4d6bcbeb.js.map1704626420680166093 0
+77/home/ds/Рабочий стол/Project/Art4/Art3/dist/index.4d6bcbeb.js.map1704637470646560480 0
 87/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/estree-walker/README.md1704616497996049505 0
 94/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/@swc/helpers/cjs/_ts_param.cjs1704616498252060673 0
 140/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/@parcel/optimizer-htmlnano/node_modules/css-tree/lib/lexer/prepare-tokens.js1704616498380066254 0
@@ -7723,6 +7721,7 @@
 115/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/vue-eslint-parser/node_modules/semver/bin/semver.js1704616497804040924 0
 140/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/@parcel/optimizer-svgo/node_modules/csso/lib/restructure/3-disjoinRuleset.js1704616497844042711 0
 147/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/@parcel/optimizer-svgo/node_modules/csso/lib/restructure/prepare/processSelector.js1704616498236059975 0
+75/home/ds/Рабочий стол/Project/Art4/Art3/public/NataAvodesBio.pdf1704616457161105364 0
 114/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/webpack/schemas/plugins/schemes/HttpUriPlugin.json1704616498704080382 0
 94/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/@vue/compiler-sfc/package.json1704616498308063115 0
 86/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/ajv/lib/dot/_limit.jst1704616498284062068 0
@@ -8501,7 +8500,7 @@
 105/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/bootstrap/dist/js/bootstrap.bundle.js.map1704616498548073580 0
 104/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/lmdb/dependencies/lmdb-data-v1/libraries1704616497760038957 1
 100/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/webpack/node_modules/acorn/README.md1704616498040051429 0
-50/home/ds/Рабочий стол/Project/Art4/Art31704616523292859209 1
+50/home/ds/Рабочий стол/Project/Art4/Art31704637387424268611 1
 98/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/watchpack/lib/getWatcherManager.js1704616497816041460 0
 80/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/lodash/padEnd.js1704616498664078638 0
 81/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/watchpack/LICENSE1704616497708036633 0
@@ -9158,7 +9157,7 @@
 106/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/enhanced-resolve/lib/ImportsFieldPlugin.js1704616498068052650 0
 107/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/bootstrap/dist/css/bootstrap-reboot.min.css1704616498064052475 0
 95/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/caniuse-lite/data/regions/ET.js1704616498524072533 0
-76/home/ds/Рабочий стол/Project/Art4/Art3/dist/monky1.55aa52df.jpeg1704626420636167118 0
+76/home/ds/Рабочий стол/Project/Art4/Art3/dist/monky1.55aa52df.jpeg1704637470622559799 0
 95/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/caniuse-lite/data/regions/KM.js1704616498604076022 0
 95/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/caniuse-lite/data/regions/BE.js1704616498248060499 0
 94/home/ds/Рабочий стол/Project/Art4/Art3/node_modules/@types/node/ts4.8/console.d.ts1704616498404067301 0
