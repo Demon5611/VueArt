@@ -40,17 +40,18 @@
             </p>
           </div>
         </div>
-  
+
+        
         <div class="image-container">
-      <div v-for="(image, index) in imagesData" :key="image.id || index" @click="openModal(image.src, image.title, image.description)">
-        <div class="card" style="width: 18rem;">
-          <img :src="image.src" />
-          <div class="card-body">
-            <p class="card-text">{{ image.title }}</p>
-            <p class="card-text">{{ image.description }}</p>
+        <template v-for="(image, index) in imagesData" :key="image.id || index" @click="openModal(image.src, image.title, image.description)">
+          <div class="card" style="width: 18rem;">
+            <img :src="image.src" />
+            <div class="card-body">
+              <p class="card-text">{{ image.title }}</p>
+              <p class="card-text">{{ image.description }}</p>
+            </div>
           </div>
-        </div>
-      </div>
+        </template>
       </div>
     </div>
       <!-- <a href="/path/to/NataAvodesCV.pdf" style="float: right; font-size: 1ch;" class="cv" download="NataAvodesCV.pdf">
@@ -68,26 +69,29 @@
   </template>
   
   <script setup>
-    import { ref } from 'vue';
+import { ref } from 'vue';
 //   import NataAvodesCV from '../../assets/srcfiles/NataAvodesCV.pdf';
+import interior from '../../../public/interior.jpg';
+import monky1 from '../../../public/monky1.jpeg';
+
+
   
   const imagesData = ref([
-    {
-      id: 1,
-      src: '../../../public/interior.jpg',
-      title: 'Картинка 1',
-      description:
-        'Описание изображения 1. !!!Этот вопрос не раз ставил меня в тупик, потому что я родитель, и в то же время, обладаю  любопытством ребенка, выросшего в семье ученых. Скажем по-другому. Для меня это второй вопрос после "Есть ли Господь?" Я думаю, что ответ уже ясен из заглавной буквы слова',
-    },
+  {
+    id: 1,
+    src: monky1, 
+    title: 'Картинка 1',
+    description: 'Описание изображения 1. !!!Этот вопрос не раз ставил меня в тупик, потому что я родитель ...',
+  },
     {
       id: 2,
-      src: '../../../public/interior.jpg',
+      src: interior,
       title: 'Картинка 2',
       description: 'Описание изображения 2',
     },
     {
       id: 3,
-      src: '../../../public/interior.jpg',
+      src: interior,
       title: 'Картинка 3',
       description: 'Описание изображения 3',
     },
