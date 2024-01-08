@@ -24,7 +24,7 @@
           <div class="textRight2">
             <h3 class="h2_2">КОРОЛЕВ</h3>
             <p style="text-indent: 2ch;">Размышление на тему живопись и любимый город</p>
-            <!-- <br /> -->
+  
             <p class="material">Материал: масло, пастель; графика. Размеры работ 30/40см</p>
           </div>
   
@@ -42,66 +42,74 @@
         </div>
   
         <div class="image-container">
-          <div v-for="(image, index) in imagesData" :key="image.id || index" @click="openModal(image.src)">
-            <Card>
-              <Card.Img :src="image.src" />
-            </Card>
+      <div v-for="(image, index) in imagesData" :key="image.id || index" @click="openModal(image.src, image.title, image.description)">
+        <div class="card" style="width: 18rem;">
+          <img :src="image.src" />
+          <div class="card-body">
+            <p class="card-text">{{ image.title }}</p>
+            <p class="card-text">{{ image.description }}</p>
           </div>
-          <!-- <a href="/path/to/NataAvodesCV.pdf" style="float: right; font-size: 1ch;" class="cv" download="NataAvodesCV.pdf">
-            Скачать CV NataAvodes
-          </a> -->
         </div>
       </div>
+      </div>
+    </div>
+      <!-- <a href="/path/to/NataAvodesCV.pdf" style="float: right; font-size: 1ch;" class="cv" download="NataAvodesCV.pdf">
+        Скачать CV NataAvodes
+      </a> -->
   
       <Modal :show="showModal" @hide="closeModal" size="lg" centered>
         <Modal.Body>
           <img :src="selectedImage || ''" alt="Selected" style="width: 100%" />
+          <h5>{{ selectedTitle }}</h5>
+        <p>{{ selectedDescription }}</p>
         </Modal.Body>
       </Modal>
     </div>
   </template>
   
   <script setup>
-  import { ref } from 'vue';
-  import { BCard, BModal } from 'bootstrap-vue';
+    import { ref } from 'vue';
 //   import NataAvodesCV from '../../assets/srcfiles/NataAvodesCV.pdf';
   
   const imagesData = ref([
     {
       id: 1,
-      src: '/interior.jpg',
+      src: '../../../public/interior.jpg',
       title: 'Картинка 1',
       description:
-        'Описание изображения 1. Этот вопрос не раз ставил меня в тупик, потому что я родитель, и в то же время, обладаю  любопытством ребенка, выросшего в семье ученых. Скажем по-другому. Для меня это второй вопрос после "Есть ли Господь?" Я думаю, что ответ уже ясен из заглавной буквы слова',
+        'Описание изображения 1. !!!Этот вопрос не раз ставил меня в тупик, потому что я родитель, и в то же время, обладаю  любопытством ребенка, выросшего в семье ученых. Скажем по-другому. Для меня это второй вопрос после "Есть ли Господь?" Я думаю, что ответ уже ясен из заглавной буквы слова',
     },
     {
       id: 2,
-      src: '/interior.jpg',
+      src: '../../../public/interior.jpg',
       title: 'Картинка 2',
       description: 'Описание изображения 2',
     },
     {
       id: 3,
-      src: '/interior.jpg',
+      src: '../../../public/interior.jpg',
       title: 'Картинка 3',
       description: 'Описание изображения 3',
     },
   ]);
   
   const showModal = ref(false);
-  const selectedImage = ref(null);
-  
-  const openModal = (imageSrc) => {
-    selectedImage.value = imageSrc;
-    showModal.value = true;
-  };
-  
-  const closeModal = () => {
-    selectedImage.value = null;
-    showModal.value = false;
-  };
+const selectedImage = ref('');
+const selectedTitle = ref('');
+const selectedDescription = ref('');
+
+const openModal = (src, title, description) => {
+  selectedImage.value = src;
+  selectedTitle.value = title;
+  selectedDescription.value = description;
+  showModal.value = true;
+};
+
+const closeModal = () => {
+  showModal.value = false;
+};
   </script>
   
-  <style scoped>
+  <style>
   </style>
   

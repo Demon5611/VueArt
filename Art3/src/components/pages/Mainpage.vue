@@ -45,6 +45,9 @@
   import monky2 from '../../../public/monky2.jpg'
   // import NataAvodesBio from '../../../public/NataAvodesBio.pdf'
 
+
+
+
 //   const downloadPdf = () => {
 //   window.open(NataAvodesBio, '_blank');
 // };
@@ -52,7 +55,7 @@
 
   </script>
   
-  <style scoped>
+  <style>
   /* Ваши стили */
   </style>
   
