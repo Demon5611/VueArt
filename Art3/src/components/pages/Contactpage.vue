@@ -4,7 +4,7 @@
         <div class="iphone-image">
           <img :src="iphoneForm" alt="imgPhone" class="imgPhone" style="height: 90ch" />
   
-          <img  alt="avatarImage" :src="avatarImage"  name="NATA AVODES"  title="художник   дизайнер   педагог"/>
+          <img  alt="avatarImage" :src="avatarImage" class="avatarImage" name="NATA AVODES"  title="художник   дизайнер   педагог"/>
 
           <div id="containerBtn"
             class="d-flex flex-column justify-content-center flex-wrap align-items-center"

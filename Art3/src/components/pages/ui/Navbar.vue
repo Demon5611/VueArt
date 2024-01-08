@@ -3,13 +3,13 @@
   <img src="../../../../public/logoNataAvodes.png" class="logo_navbar" alt="logo" />
   <ul class="nav nav-underline">
    <li class="nav-item">
-    <a class="nav-link" href="#">Главная</a>
+    <a class="nav-link" href="#main">Главная</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Галерея</a>
+    <a class="nav-link" href="#gallery">Галерея</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Контакты</a>
+    <a class="nav-link" href="#contacts">Контакты</a>
   </li>
   </ul>
 </div>
