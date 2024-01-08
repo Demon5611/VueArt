@@ -1,0 +1,56 @@
+#contacts {
+    padding-top: 10ch;
+  }
+  .cardContacts {
+    width: 340px;
+    border-radius: 3ch;
+    margin-top: 0.5ch;
+    text-decoration-color: rgb(47, 46, 46);
+  }
+  .Btn {
+    width: 20ch;
+    height: 3.5ch;
+    margin-top: 0.2ch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Добавлено позиционирование */
+  }
+  .pictButn {
+    height: 1ch;
+    vertical-align: super; /* расположение по середине кнопки */
+  }
+  .span {
+    font-size: 1.4ch;
+    margin-left: 1ch;
+    vertical-align: super;
+  }
+  
+  .span:hover {
+    font-weight: bolder;
+    size: 20ch;
+  }
+  
+  .avatarImage {
+    margin-top: 5%;
+    margin-bottom: 5ch;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  
+  .avatarContainer {
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
+    margin-top: 60px;
+  }
+  
+  .name {
+    font-weight: bold;
+  }
+  
+  .title {
+    color: gray;
+    margin-bottom: -15%;
+  }
