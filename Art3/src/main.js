@@ -1,6 +1,9 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp, defineAsyncComponent } from 'vue';
+import App from './App.vue';
 import './scss/main.scss';
 
 
-createApp(App).mount('#app')
+const app = createApp(App);
+
+
+createApp(App).mount('#app');

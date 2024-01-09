@@ -30,7 +30,7 @@
               иллюстрация, фото-зависит от проекта в целом и его концепции. Пример такой работы -
               серия картин «Обратный процесс эволюции», 2021 год.
           <br />
-          <!-- <a :href="NataAvodesBio.pdf" download class="cv">          
+          <!-- <a :src="NataAvodesBio" download class="cv">
             Скачать био. NataAvodes
           </a> -->
         </div>
@@ -40,9 +40,9 @@
   
   
   <script setup>
-  import headerImg from '../../../public/headerImg.jpg'
-  import monky1 from '../../../public/monky1.jpeg'
-  import monky2 from '../../../public/monky2.jpg'
+  import headerImg from '../../../public/headerImg.jpg';
+import monky1 from '../../../public/monky1.jpeg';
+import monky2 from '../../../public/monky2.jpg';
   // import NataAvodesBio from '../../../public/NataAvodesBio.pdf'
 
 
