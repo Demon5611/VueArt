@@ -15,32 +15,33 @@
   </div>
 </template>
 
+
 <script setup>
-import { onMounted, onUnmounted } from 'vue';
+import { onMounted, onUnmounted, ref } from 'vue';
+
+// зпеременные data и methods не видны внутри функций, таких как onMounted и onUnmounted. переменные,но  определенные в блоке <script setup>, автоматически импортируются внутрь хуков жизненного цикла, и не нужно использовать data и methods.  
+// мы использовали ref для переменной isNavbarFixed, и теперь она доступна без использования data. Также, метод handleScroll теперь является стрелочной функцией для корректного привязывания контекста выполнения.
 
 
-const data = {
-  isNavbarFixed: false,
-};
 
-const methods = {
-  handleScroll() {
-    const scrollY = window.scrollY;
+const isNavbarFixed = ref(false); 
 
-    if (scrollY > 100) {
-      data.isNavbarFixed = true;
-    } else {
-      data.isNavbarFixed = false;
-    }
-  },
+const handleScroll = () => {
+  const scrollY = window.scrollY;
+
+  if (scrollY > 100) {
+    isNavbarFixed.value = true;
+  } else {
+    isNavbarFixed.value = false;
+  }
 };
 
 onMounted(() => {
-  window.addEventListener("scroll", methods.handleScroll);
+  window.addEventListener("scroll", handleScroll);
 });
 
 onUnmounted(() => {
-  window.removeEventListener("scroll", methods.handleScroll);
+  window.removeEventListener("scroll", handleScroll);
 });
 </script>
 
