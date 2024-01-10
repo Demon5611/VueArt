@@ -5,5 +5,4 @@ import './scss/main.scss';
 
 const app = createApp(App);
 
-
 createApp(App).mount('#app');
