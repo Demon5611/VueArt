@@ -1,40 +1,40 @@
-#contacts {
-  padding-top: 10ch;
-}
-
-.imgPhone {
-  height: 90ch;
-}
-
-.cardContacts {
-  width: 340px;
-  border-radius: 3ch;
-  margin-top: 0.5ch;
-  text-decoration-color: rgb(47, 46, 46);
-}
-
 .iphone-image {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  height: 100vh; 
+  position: relative; 
 }
 
-.contentContainer {
+
+.ava-btn {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 2ch; /* Отступ между компонентами внутри contentContainer */
+  position: absolute; /* Абсолютное позиционирование */
+  top: 0; /* Положение относительно верхней границы родительского элемента */
+  left: 0; /* Положение относительно левой границы родительского элемента */
+  width: 100%; /* Занимаем 100% ширины родительского элемента */
+  height: 100%; /* Занимаем 100% высоты родительского элемента */
+  z-index: 2; /* Определяем слой наложения, чтобы .ava-btn был поверх .iphone-image */
 }
 
 .avatarImage {
   width: 160px;
   height: 160px;
   border-radius: 50%;
+  margin-bottom: 5ch;
 }
 
 .name {
   color: gray;
   text-align: center;
+  margin-bottom: 5ch;
+}
+.h5, .describe{
+  margin-top: -1ch;
 }
 
 .containerBtn {
@@ -42,14 +42,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 50vh;
-  gap: 1ch;
+  // height: 50vh;
+
 }
 
 .Btn {
-  width: 20ch;
-  height: 3.5ch;
-  margin-top: 0.2ch;
+  width: 35ch;
+  height: 5.5ch;
+  margin-top: 0.4ch;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -59,7 +59,7 @@
   background: radial-gradient(circle, #f3e51f, #ffc107);
 }
 
-.pictButn {
+.pictButn, .pict {
   height: 1ch;
   vertical-align: super;
 }

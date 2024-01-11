@@ -2,12 +2,13 @@
     <div id="contacts">
       <div class="avatarContainer">
         <div class="iphone-image">
-          <img :src="iphoneForm" alt="imgPhone" class="imgPhone" />  
-          <img :src="avatarImage" class="avatarImage" alt="avatarImage" />
-          
-          <div class="name">
-          <h5>NATA AVODES</h5>
-          <h5>художник   дизайнер   педагог</h5>
+    
+            <img :src="iphoneForm" alt="imgPhone" class="imgPhone" />  
+            <div class="ava-btn">
+            <img :src="avatarImage" class="avatarImage" alt="avatarImage" />          
+            <div class="name">
+            <h5>NATA AVODES</h5>
+            <h5 class="describe">художник   дизайнер   педагог</h5>
           </div>
           
           <div id="containerBtn">
@@ -26,10 +27,12 @@
               href="mailto:nataliya.mur@mail.ru"          
               target="_blank"
             >
-              <FaEnvelope class="pictButn" />
+            <img  class="pict" src="" style= "color:white"/>
               <span class="span">E-mail</span>
             </Button>
           </div>
+        </div>
+          
         </div>
       </div>
     </div>
