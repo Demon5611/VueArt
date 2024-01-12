@@ -14,7 +14,7 @@
     <div class="containerTextGalaryRightALL">
       <div class="textRight1">
         <h3 class="h1_1" style="margin-top: 1ch;">ПРОЦЕСС ЭВОЛЮЦИИ</h3>
-        <p style="text-indent: 2ch;">
+        <p>
           Это яркий вызов современной реальности Нет ничего хуже интеллектуальных шор навязанных
           нам….Кем навязанных? Социальными предрассудками, бизнесом и личными интересами
           отдельных групп людей. Каждая картина заставляет задуматься о том, что делают люди
@@ -25,13 +25,13 @@
 
       <div class="textRight2">
         <h3 class="h2_2">КОРОЛЕВ</h3>
-        <p style="text-indent: 2ch;">Размышление на тему живопись и любимый город</p>
+        <p>Размышление на тему живопись и любимый город</p>
         <p class="material">Материал: масло, пастель; графика. Размеры работ 30/40см</p>
       </div>
 
       <div class="textRight3">
         <h3 class="h3_3">МИГРАЦИОННЫЙ ЗАХВАТ</h3>
-        <p style="text-indent: 2ch;">
+        <p >
           Эта проблема больше чем вам всем кажется… Слишком много людей мигрируют по странам и
           континентам – вы все еще сомневаетесь? Посмотрите статистику. Смешение культур, расс,
           ценностей… Давайте порассуждаем вместе..
@@ -46,7 +46,7 @@
       <!-- <div v-for="(image) in imagesData" :key="image.id" @click="openModal(image.src)"> -->
       <div v-for="(image) in imagesData" :key="image.id">
 
-        <div class="card" style="width: 18rem;">
+        <div class="card">
           <img :src="image.src" />
           <div class="card-body">
             <p class="card-text">{{ image.title }}</p>

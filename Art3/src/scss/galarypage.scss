@@ -4,7 +4,7 @@
     height: 100%;
   }
   .containerTextGalaryTop {
-    font-size: larger;
+    // font-size: larger;
     text-align: justify;
     text-indent: 2ch; /* отступ*/
     margin-top: 10ch;
@@ -17,13 +17,26 @@
   
   .containerTextGalaryRightALL {
     flex: 1; /* Чтобы текст сжимался и увеличивался вместе с карточками */
-    max-width: 50%; /* Максимальная ширина текста */
+    max-width: 60%; /* Максимальная ширина текста */
     padding: 1rem; /* Внутренний отступ текста */
     float: right;
     text-align: justify;
     word-wrap: break-word;
+    margin-right: 10ch;
   }
-  
+  .textRight1 {
+    margin-bottom: 30ch;
+    text-indent: 2ch;
+  }
+  .textRight2 {
+    margin-bottom: 20ch;
+    text-indent: 2ch;
+  }
+  .textRight3 {
+    margin-bottom: 20ch;
+    text-indent: 2ch;
+  }
+
   .h2_2 {
     margin-top: 10ch;
   }
@@ -45,7 +58,11 @@
     align-items: flex-start;
     gap: 1rem; /* Расстояние между карточками */
     margin-top: 2ch;
+    margin-left: 10ch;
   }
-  .textRight3 {
-    margin-bottom: 20ch;
-  }
+
+  
+.card{
+  width: 30rem;
+}
+

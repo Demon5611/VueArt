@@ -57,15 +57,17 @@
   border-color: grey;
   border-radius: 2ch;
   background: radial-gradient(circle, #f3e51f, #ffc107);
+  text-decoration: none;
+  color:black;
 }
 
-.pictButn, .pict {
-  height: 1ch;
+.btn, .pict {
+  height: 2ch;
   vertical-align: super;
 }
 
 .span {
-  font-size: 1.4ch;
+  font-size: 2ch;
   margin-left: 1ch;
   vertical-align: super;
 }

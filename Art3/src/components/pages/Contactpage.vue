@@ -12,24 +12,24 @@
           </div>
           
           <div id="containerBtn">
-            <Button class="Btn" href="https://t.me/nataavodes" >
-            <img  class="pict" src="../icons/telegram.svg" style= "color:white"/>
+            <a class="Btn" href="https://t.me/nataavodes" >
+            <img  class="pict" src="../icons/telegram.svg"/>
               <span class="span">Telegram</span>
-            </Button>
+            </a>
   
-            <Button class="Btn" href="https://vk.com/artmehanikastudio" >
-              <FaVk class="pictButn" />
+            <a class="Btn" href="https://vk.com/artmehanikastudio" >
+              <img  class="pict" src="../icons/vk.svg">
               <span class="span">VK</span>
-            </Button>
+            </a>
   
-            <Button
+            <a
               class="Btn"
               href="mailto:nataliya.mur@mail.ru"          
               target="_blank"
             >
-            <img  class="pict" src="" style= "color:white"/>
+            <img  class="pict" src="../icons//mail.svg"/>
               <span class="span">E-mail</span>
-            </Button>
+            </a>
           </div>
         </div>
           
