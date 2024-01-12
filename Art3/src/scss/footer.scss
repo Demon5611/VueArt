@@ -1,9 +1,14 @@
 .footer {
-    background-color: rgba(0, 0, 0, 0.2);
-    margin-top: 20ch;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 1rem; /* Добавлено для примера, можно настроить по вашему вкусу */
-  }
+  background-color: transparent;
+  margin-top: 20ch;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  transition: background-color 0.3s ease; /* Плавный переход цвета фона */
+}
+
+.footer-visible {
+  background-color: rgba(0, 0, 0, 0.2);
+}

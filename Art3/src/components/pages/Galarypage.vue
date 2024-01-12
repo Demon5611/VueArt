@@ -48,10 +48,7 @@
 
         <div class="card">
           <img :src="image.src" />
-          <div class="card-body">
-            <p class="card-text">{{ image.title }}</p>
-            <p class="card-text">{{ image.description }}</p>
-          </div>
+
         </div>
       </div>
     </div>
