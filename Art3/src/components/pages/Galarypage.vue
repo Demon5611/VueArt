@@ -43,33 +43,22 @@
     </div>
 
     <div class="image-container">
-      <!-- <div v-for="(image) in imagesData" :key="image.id" @click="openModal(image.src)"> -->
-      <div v-for="(image) in imagesData" :key="image.id">
-
+      <div v-for="(image) in imagesData" :key="image.id" @click="openImage(image.src)">
         <div class="card">
           <img :src="image.src" />
-
         </div>
       </div>
     </div>
 
-    <!-- <a href="/path/to/NataAvodesCV.pdf" style="float: right; font-size: 1ch;" class="cv" download="NataAvodesCV.pdf">
-      Скачать CV NataAvodes
-    </a> -->
-    <!-- <Modal :show="showModal" @hide="closeModal" size="xl" class='modal-fullscreen-xl-down'>
-      <Modal.Body>
-        <img :src="selectedImage || ''" alt="Selected" style="width: 100%" />
-      </Modal.Body>
-    </Modal> -->
-  
-</div>
+  </div>
 </template>
 
 <script setup>
-// import { Modal } from 'bootstrap';
+
 import { ref } from 'vue';
 import interior from '../../../public/interior.jpg';
 import monky1 from '../../../public/monky1.jpeg';
+
 
 
 const imagesData = ref([
@@ -92,17 +81,11 @@ const imagesData = ref([
     description: 'Описание изображения 3',
   },
 ]);
-// const showModal = ref(false);
-// const selectedImage = ref('');
 
-// const openModal = (src) => {
-//   selectedImage.value = src;
-//   showModal.value = true;
-// };
-
-// const closeModal = () => {
-//   showModal.value = false;
-// };
+const openImage = (imageUrl) => {
+  // Открывайте изображение в новом окне или модальном окне, как вам угодно.
+  window.open(imageUrl, '_blank');
+};
 </script>
 
 <style>
