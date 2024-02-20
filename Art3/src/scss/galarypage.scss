@@ -1,4 +1,4 @@
-#gallery {
+  #gallery {
     background-color: rgb(207, 201, 201);
     margin-bottom: 4ch;
     height: 80%;
@@ -18,7 +18,7 @@
   .containerTextGalaryRightALL {
     flex: 1; /* Чтобы текст сжимался и увеличивался вместе с карточками */
     max-width: 60%; /* Максимальная ширина текста */
-    padding: 1rem; /* Внутренний отступ текста */
+    padding-left: 10ch;
     float: right;
     text-align: justify;
     word-wrap: break-word;

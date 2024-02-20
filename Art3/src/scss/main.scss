@@ -5,3 +5,22 @@
 @import 'contactpage.scss';
 @import 'scrollToTopButton.scss';
 
+@media (min-width: 768px) and (max-width: 1285px) {
+    .main-container {
+      height: 70pc;
+    }
+    .img2 {
+        height: 15ch;
+      }
+      .img3 {
+        margin-top: 5ch;
+        height: 25ch;
+        float: right;
+        padding: 2ch;
+      }
+      .h3_MainText3 {
+        margin-top: 5ch;
+        
+    }
+
+}
