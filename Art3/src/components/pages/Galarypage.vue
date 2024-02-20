@@ -48,6 +48,7 @@
           <img :src="image.src" />
         </div>
       </div>
+      <a @click="handleDownload" class="cv">Скачать NataAvodesCV</a>
     </div>
 
   </div>
@@ -58,6 +59,17 @@
 import { ref } from 'vue';
 import interior from '../../../public/interior.jpg';
 import monky1 from '../../../public/monky1.jpeg';
+import NataAvodesCV from '../../../public/NataAvodesCV.pdf';
+  
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = NataAvodesCV;
+    link.target = '_blank';
+    link.download = 'NataAvodesCV.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+   };
 
 
 

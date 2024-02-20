@@ -1,4 +1,4 @@
-14850
+14851
 63/home/ds/Рабочий стол/Projects/VueArt/Art3/README.md1707249491591365801 0
 79/home/ds/Рабочий стол/Projects/VueArt/Art3/public/logoNataAvodes.png1707249491599365669 0
 77/home/ds/Рабочий стол/Projects/VueArt/Art3/public/NataAvodesCV.pdf1707249491595365735 0
@@ -12,7 +12,7 @@
 83/home/ds/Рабочий стол/Projects/VueArt/Art3/src/components/icons/mail.svg1707249491907360603 0
 87/home/ds/Рабочий стол/Projects/VueArt/Art3/src/components/icons/arrow_up.svg1707249491907360603 0
 90/home/ds/Рабочий стол/Projects/VueArt/Art3/src/components/pages/Contactpage.vue1707249491907360603 0
-89/home/ds/Рабочий стол/Projects/VueArt/Art3/src/components/pages/Galarypage.vue1707337836745744421 0
+89/home/ds/Рабочий стол/Projects/VueArt/Art3/src/components/pages/Galarypage.vue1708456038909636049 0
 87/home/ds/Рабочий стол/Projects/VueArt/Art3/src/components/pages/Mainpage.vue1708453187424816806 0
 88/home/ds/Рабочий стол/Projects/VueArt/Art3/src/components/pages/ui/Footer.vue1708264146414841693 0
 88/home/ds/Рабочий стол/Projects/VueArt/Art3/src/components/pages/ui/Navbar.vue1708270979630436339 0
@@ -20,19 +20,19 @@
 74/home/ds/Рабочий стол/Projects/VueArt/Art3/src/components/pages1707251500799161377 1
 68/home/ds/Рабочий стол/Projects/VueArt/Art3/src/index.html1707249491907360603 0
 79/home/ds/Рабочий стол/Projects/VueArt/Art3/src/scss/contactpage.scss1707249491907360603 0
-72/home/ds/Рабочий стол/Projects/VueArt/Art3/src/scss/main.scss1708270982650377990 0
+72/home/ds/Рабочий стол/Projects/VueArt/Art3/src/scss/main.scss1708459546769950170 0
 85/home/ds/Рабочий стол/Projects/VueArt/Art3/src/scss/scrollToTopButton.scss1707249491907360603 0
 74/home/ds/Рабочий стол/Projects/VueArt/Art3/src/scss/footer.scss1707249491907360603 0
-76/home/ds/Рабочий стол/Projects/VueArt/Art3/src/scss/mainpage.scss1708270986102311438 0
+76/home/ds/Рабочий стол/Projects/VueArt/Art3/src/scss/mainpage.scss1708456613403567810 0
 57/home/ds/Рабочий стол/Projects/VueArt/Art3/src1707249491907360603 1
-81/home/ds/Рабочий стол/Projects/VueArt/Art3/dist/headerImg.3a5a4a5a.jpg1708453187804867114 0
-81/home/ds/Рабочий стол/Projects/VueArt/Art3/dist/iphonForm.fb1a499b.png1708453187792865525 0
-76/home/ds/Рабочий стол/Projects/VueArt/Art3/dist/index.4d6bcbeb.js1708453187844872410 0
-80/home/ds/Рабочий стол/Projects/VueArt/Art3/dist/arrow_up.11a4b1e8.svg1708453187848872939 0
-78/home/ds/Рабочий стол/Projects/VueArt/Art3/dist/monky2.ef8e2d29.jpg1708453187832870821 0
-74/home/ds/Рабочий стол/Projects/VueArt/Art3/dist/vk.a88debb6.svg1708453187828870292 0
-80/home/ds/Рабочий стол/Projects/VueArt/Art3/dist/index.4d6bcbeb.js.map1708453187848872939 0
-69/home/ds/Рабочий стол/Projects/VueArt/Art3/dist/index.html1708453187828870292 0
+81/home/ds/Рабочий стол/Projects/VueArt/Art3/dist/headerImg.3a5a4a5a.jpg1708459546925949618 0
+81/home/ds/Рабочий стол/Projects/VueArt/Art3/dist/iphonForm.fb1a499b.png1708459546905949689 0
+76/home/ds/Рабочий стол/Projects/VueArt/Art3/dist/index.4d6bcbeb.js1708459546933949590 0
+80/home/ds/Рабочий стол/Projects/VueArt/Art3/dist/arrow_up.11a4b1e8.svg1708459546909949675 0
+78/home/ds/Рабочий стол/Projects/VueArt/Art3/dist/monky2.ef8e2d29.jpg1708459546917949646 0
+74/home/ds/Рабочий стол/Projects/VueArt/Art3/dist/vk.a88debb6.svg1708459546909949675 0
+80/home/ds/Рабочий стол/Projects/VueArt/Art3/dist/index.4d6bcbeb.js.map1708459546933949590 0
+69/home/ds/Рабочий стол/Projects/VueArt/Art3/dist/index.html1708459546909949675 0
 64/home/ds/Рабочий стол/Projects/VueArt/Art3/.gitignore1707249490763379422 0
 66/home/ds/Рабочий стол/Projects/VueArt/Art3/package.json1707336911777397554 0
 100/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/is-fullwidth-code-point/readme.md1707337665031550811 0
@@ -55,6 +55,7 @@
 123/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/@parcel/runtime-react-refresh/src/ReactRefreshRuntime.js1707337665027550842 0
 100/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/@parcel/runtime-react-refresh/src1707337665003551030 1
 104/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/@parcel/runtime-react-refresh/LICENSE1707337664907551778 0
+84/home/ds/Рабочий стол/Projects/VueArt/Art3/dist/NataAvodesCV.4de08918.pdf1708459546909949675 0
 140/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/@parcel/transformer-react-refresh-wrap/lib/ReactRefreshWrapTransformer.js1707337665135549996 0
 109/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/@parcel/transformer-react-refresh-wrap/lib1707337665111550184 1
 128/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/@parcel/transformer-react-refresh-wrap/src/helpers/helpers.js1707337665079550435 0
@@ -286,7 +287,7 @@
 94/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/@parcel/bundler-default/lib1707337664975551248 1
 94/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/@parcel/bundler-default/src1707337665087550372 1
 103/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/@parcel/bundler-default/package.json1707337665171549715 0
-80/home/ds/Рабочий стол/Projects/VueArt/Art3/dist/telegram.4b179a0b.svg1708453187848872939 0
+80/home/ds/Рабочий стол/Projects/VueArt/Art3/dist/telegram.4b179a0b.svg1708459546889949746 0
 111/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/@parcel/transformer-postcss/lib/constants.js1707337664983551186 0
 113/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/@parcel/transformer-postcss/lib/loadPlugins.js1707337665115550153 0
 120/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/@parcel/transformer-postcss/src/PostCSSTransformer.js1707337665175549683 0
@@ -525,7 +526,7 @@
 149/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/@parcel/optimizer-svgo/node_modules/css-tree/lib/syntax/pseudo/nth-last-of-type.js1707337665603546332 0
 142/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/@parcel/optimizer-svgo/node_modules/css-tree/lib/syntax/pseudo/nth-child.js1707337665603546332 0
 138/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/@parcel/optimizer-svgo/node_modules/css-tree/lib/syntax/atrule/index.js1707337665559546677 0
-83/home/ds/Рабочий стол/Projects/VueArt/Art3/dist/avatarImage.f3b20048.jpg1708453187792865525 0
+83/home/ds/Рабочий стол/Projects/VueArt/Art3/dist/avatarImage.f3b20048.jpg1708459546909949675 0
 129/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/@parcel/optimizer-svgo/node_modules/css-tree/lib/syntax/atrule1707337665639546051 1
 132/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/@parcel/optimizer-svgo/node_modules/css-tree/lib/syntax/create.js1707337665391547992 0
 139/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/@parcel/optimizer-svgo/node_modules/css-tree/lib/syntax/config/parser.js1707337665619546207 0
@@ -728,7 +729,7 @@
 93/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/@parcel/node-resolver-core1707337665103550247 1
 109/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/@parcel/transformer-image/lib/loadSharp.js1707337665043550717 0
 109/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/@parcel/transformer-image/src/loadSharp.js1707337665067550529 0
-77/home/ds/Рабочий стол/Projects/VueArt/Art3/dist/index.b10d73a7.css1708453187796866055 0
+77/home/ds/Рабочий стол/Projects/VueArt/Art3/dist/index.b10d73a7.css1708459546909949675 0
 96/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/@parcel/transformer-image/src1707337665115550153 1
 114/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/@parcel/resolver-default/lib/DefaultResolver.js1707337664983551186 0
 95/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/@parcel/resolver-default/lib1707337664975551248 1
@@ -4481,7 +4482,7 @@
 107/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/@swc/helpers/_/_class_private_method_get1707337665727545362 1
 109/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/@vue/compiler-dom/dist/compiler-dom.cjs.js1707337665027550842 0
 89/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/@vue/compiler-dom/dist1707337665379548086 1
-86/home/ds/Рабочий стол/Projects/VueArt/Art3/dist/logoNataAvodes.9ccd2f89.png1708453187792865525 0
+86/home/ds/Рабочий стол/Projects/VueArt/Art3/dist/logoNataAvodes.9ccd2f89.png1708459546925949618 0
 98/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/caniuse-lite/data/regions/BG.js1707337665475547335 0
 115/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/bootstrap-vue/src/components/aspect/package.json1707337666123542257 0
 101/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/htmlparser2/lib/Tokenizer.d.ts.map1707337665191549558 0
@@ -5968,7 +5969,7 @@
 107/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/@vue/runtime-core/dist/runtime-core.d.ts1707337665387548024 0
 118/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/cosmiconfig/node_modules/js-yaml/lib/type/binary.js1707337665039550748 0
 104/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/source-map/dist/source-map.min.js.map1707337665431547679 0
-85/home/ds/Рабочий стол/Projects/VueArt/Art3/dist/NataAvodesBio.800c1295.pdf1708453187788864996 0
+85/home/ds/Рабочий стол/Projects/VueArt/Art3/dist/NataAvodesBio.800c1295.pdf1708459546909949675 0
 124/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/lmdb/dependencies/lmdb-data-v1/libraries/liblmdb/Doxyfile1707337665207549433 0
 86/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/webpack/lib/runtime1707337665963543514 1
 103/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/csso/node_modules/mdn-data/README.md1707337665423547742 0
@@ -7936,7 +7937,7 @@
 98/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/enquirer/lib/prompts/confirm.js1707337665203549464 0
 129/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/dom-serializer/node_modules/entities/lib/decode_codepoint.d.ts1707337665263548994 0
 119/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/@popperjs/core/lib/dom-utils/getDocumentElement.d.ts1707337665587546458 0
-79/home/ds/Рабочий стол/Projects/VueArt/Art3/dist/monky1.55aa52df.jpeg1708453187808867644 0
+79/home/ds/Рабочий стол/Projects/VueArt/Art3/dist/monky1.55aa52df.jpeg1708459546913949661 0
 98/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/semver/ranges/to-comparators.js1707337665387548024 0
 105/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/@popperjs/core/dist/esm/popper-lite.js1707337665447547554 0
 147/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/bootstrap-vue/node_modules/vue/packages/compiler-sfc/test/rewriteDefault.spec.ts1707337665867544266 0
@@ -8494,7 +8495,7 @@
 132/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/table/node_modules/ajv/dist/refs/json-schema-2020-12/index.js.map1707337665695545612 0
 90/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/source-map/package.json1707337664975551248 0
 85/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/msgpackr/unpack.js1707337665399547930 0
-76/home/ds/Рабочий стол/Projects/VueArt/Art3/dist/mail.8f8ff09f.svg1708453187808867644 0
+76/home/ds/Рабочий стол/Projects/VueArt/Art3/dist/mail.8f8ff09f.svg1708459546909949675 0
 82/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/concat-map/test1707337665099550278 1
 84/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/@babel/code-frame1707337665027550842 1
 121/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/bootstrap-vue/esm/utils/get-instance-from-directive.js1707337666027543012 0
@@ -11282,7 +11283,7 @@
 115/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/css-select/lib/pseudo-selectors/filters.d.ts.map1707337665399547930 0
 87/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/stable/stable.min.js1707337665031550811 0
 94/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/css-select/lib/types.js.map1707337665475547335 0
-78/home/ds/Рабочий стол/Projects/VueArt/Art3/src/scss/galarypage.scss1708452237789835890 0
+78/home/ds/Рабочий стол/Projects/VueArt/Art3/src/scss/galarypage.scss1708456964651580486 0
 93/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/css-select/lib/sort.js.map1707337665455547491 0
 120/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/bootstrap-vue/src/components/card/card-header.spec.js1707337665979543389 0
 99/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/require-from-string/package.json1707337664915551716 0
@@ -11599,7 +11600,7 @@
 95/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/shebang-command/package.json1707337665003551030 0
 84/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/has-flag/index.js1707337664991551123 0
 95/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/mdn-data/css/properties.json1707337665371548149 0
-81/home/ds/Рабочий стол/Projects/VueArt/Art3/dist/index.b10d73a7.css.map1708453187820869232 0
+81/home/ds/Рабочий стол/Projects/VueArt/Art3/dist/index.b10d73a7.css.map1708459546913949661 0
 89/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/mdn-data/css/readme.md1707337665419547773 0
 96/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/traverse/examples/negative.js1707337665251549088 0
 115/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/@jridgewell/trace-mapping/dist/trace-mapping.mjs1707337665231549245 0
@@ -12117,7 +12118,7 @@
 108/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/eslint/lib/cli-engine/formatters/table.js1707337665891544078 0
 112/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/@swc/helpers/_/_get_prototype_of/package.json1707337665783544923 0
 108/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/htmlparser2/node_modules/entities/LICENSE1707337664975551248 0
-80/home/ds/Рабочий стол/Projects/VueArt/Art3/dist/interior.c6cf1ca2.jpg1708453187828870292 0
+80/home/ds/Рабочий стол/Projects/VueArt/Art3/dist/interior.c6cf1ca2.jpg1708459546893949731 0
 87/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/consola/package.json1707337665335548431 0
 90/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/consola/dist/consola.js1707337665203549464 0
 133/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/@parcel/optimizer-htmlnano/node_modules/css-tree/lib/syntax/config1707337665655545925 1
@@ -13764,7 +13765,7 @@
 95/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/webpack/lib/ProvidePlugin.js1707337665931543765 0
 98/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/caniuse-lite/data/regions/SD.js1707337665943543671 0
 116/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/bootstrap-vue/node_modules/bootstrap/package.json1707337665543546802 0
-58/home/ds/Рабочий стол/Projects/VueArt/Art3/dist1708453187852873469 1
+58/home/ds/Рабочий стол/Projects/VueArt/Art3/dist1708459546933949590 1
 101/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/cosmiconfig/dist/ExplorerBase.d.ts1707337665307548650 0
 127/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/webpack/lib/javascript/ArrayPushCallbackChunkFormatPlugin.js1707337665367548180 0
 86/home/ds/Рабочий стол/Projects/VueArt/Art3/node_modules/@swc/types/index.ts1707337665239549182 0

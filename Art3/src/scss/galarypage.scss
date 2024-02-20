@@ -1,10 +1,9 @@
   #gallery {
     background-color: rgb(207, 201, 201);
     margin-bottom: 4ch;
-    height: 80%;
+    height: 60%;
   }
   .containerTextGalaryTop {
-    // font-size: larger;
     text-align: justify;
     text-indent: 2ch; /* отступ*/
     margin-top: 10ch;
@@ -25,11 +24,12 @@
     margin-right: 10ch;
   }
   .textRight1 {
-    margin-bottom: 30ch;
+    margin-bottom: 10ch;
     text-indent: 2ch;
   }
   .textRight2 {
     margin-bottom: 20ch;
+    margin-top: 20ch;
     text-indent: 2ch;
   }
   .textRight3 {
@@ -38,11 +38,11 @@
   }
 
   .h2_2 {
-    margin-top: 10ch;
+    margin-top: 5ch;
   }
   
   .h3_3 {
-    margin-top: 20ch;
+    margin-top: 10ch;
     text-indent: 2ch;
   }
   .material {
@@ -64,5 +64,6 @@
   
 .card{
   width: 30rem;
+  cursor: pointer;
 }
 
