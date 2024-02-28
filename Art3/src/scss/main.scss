@@ -7,32 +7,121 @@
 
 
 
+@media (min-width: 1300px) and (max-width: 1900px){
+  #main{
+  font-size: xx-large;
+  height: fit-content;
+  }
+
+  #gallery{
+  height: fit-content;
+  font-size: xx-large;    
+  }
+
+  .containerTextGalaryRightALL {
+  
+  }
+
+  .textRight1,
+  .textRight2,
+  .textRight3 {
+    // margin-bottom: 5%; 
+    margin-left: 20%;
+  }
+
+  .textRight2 {
+    margin-top: 5%; 
+  
+  }
+
+  .textRight3{
+    margin-top: 5%;
+  } 
+  .main_h_1,
+  .main_h_2,
+  .main_h_3,
+  .h3_textTop,
+  .h1_1,
+  .h2_2,
+  .h3_3 {
+    font-size: 2.2ch;
+  }
+
+  .h2_2 {
+    // margin-top: 3%;
+  }
+
+  .h3_3 {
+    margin-top: 0%;
+    text-indent: 2ch;
+  }
+
+  .material {
+    font-size: smaller;
+    font-style: italic;
+    text-indent: 0ch;
+  }
+
+  .image-container {
+    width: 15%; 
+    margin-left: 5%; 
+  }
+  
+  .card {
+
+    width: 60%;
+    margin-left: 5%;
+  }
+}
+
 
   
-  @media (min-width: 1290px) and (max-width: 2500px) {
+  @media (min-width: 768px) and (max-width: 1280px) {
+    #main{
+      font-size: x-large;
+      height: fit-content;
+    }
+
+    #gallery{
+    height: fit-content;
+    font-size: x-large;    
+    }
+
     .containerTextGalaryRightALL {
-      max-width: 65%; /* Максимальная ширина текста */
-      margin-right: 5ch; /* Пример использования фиксированных единиц в медиа-запросе */
-      padding-bottom: 0ch;
+    
     }
   
     .textRight1,
     .textRight2,
     .textRight3 {
-      margin-bottom: 5%; /* Пример использования процентов */
-      text-indent: 2ch;
+      // margin-bottom: 5%; 
+      margin-left: 20%;
     }
   
     .textRight2 {
-      margin-top: 10%; /* Пример использования процентов */
+      margin-top: 5%; 
+    
     }
   
+    .textRight3{
+      margin-top: 5%;
+    } 
+    .main_h_1,
+    .main_h_2,
+    .main_h_3,
+    .h3_textTop,
+    .h1_1,
+    .h2_2,
+    .h3_3 {
+      font-size: 2.2ch;
+    }
+
     .h2_2 {
-      margin-top: 3%;
+      // margin-top: 3%;
     }
   
     .h3_3 {
-      margin-top: 5%;
+      margin-top: 0%;
       text-indent: 2ch;
     }
   
@@ -43,31 +132,34 @@
     }
   
     .image-container {
-      margin-left: 5%; /* Пример использования процентов */
+      width: 15%; 
+      margin-left: 5%; 
     }
-  
+    
     .card {
-      width: 30rem;
+
+      width: 60%;
+      margin-left: 5%;
     }
   }
 
 
-@media (min-width: 768px) and (max-width: 1285px) {
-    .main-container {
-      height: 70pc;
-    }
-    .img2 {
-        height: 15ch;
-      }
-      .img3 {
-        margin-top: 5ch;
-        height: 25ch;
-        float: right;
-        padding: 2ch;
-      }
-      .h3_MainText3 {
-        margin-top: 5ch;
+// @media (min-width: 768px) and (max-width: 1285px) {
+//     .main-container {
+//       height: 70pc;
+//     }
+//     .img2 {
+//         height: 15ch;
+//       }
+//       .img3 {
+//         margin-top: 5ch;
+//         height: 25ch;
+//         float: right;
+//         padding: 2ch;
+//       }
+//       .h3_MainText3 {
+//         margin-top: 5ch;
         
-    }
+//     }
 
-}
+// }

@@ -24,7 +24,6 @@ export default {
     const handleScroll = () => {
       isVisible.value = window.pageYOffset > 100;
     };
-    // проверяет, прокрутилась ли страница на более чем 100 пикселей от верхнего края.
 
     onMounted(() => {
       window.addEventListener('scroll', handleScroll);
