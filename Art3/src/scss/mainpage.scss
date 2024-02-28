@@ -1,71 +1,70 @@
+.headerImg {
+  width: 100%;
+  margin-bottom: 4vw; /* Используем vw вместо ch для более гибкой адаптации */
+  margin-top: 2vw;
+}
 
-  .headerImg{
-    width: 100%;
-    margin-bottom: 4ch;
-    margin-top: 2ch;
-  }
-  .firstText {
-    margin-left: 2ch;
-  }
-  .container {
-    display: contents;
-  }
-  
-  .containerText {
-    line-height: 1.2;
-    text-align: justify;
-    text-indent: 4ch;
-    margin: 3ch 10ch auto 10ch;
-  }
-  .text-end {
-    text-indent: 4ch;
-    margin-top: 3ch;
-  }
-  
-  .textMainImg3 {
-    margin-top: 2ch;
-    text-indent: 4ch;
-    text-align: justify;
-  }
-  .h3_MainText3 {
-    margin-top: 12ch;
-    
-  }
-  
-  /* logo */
-  .me-auto {
-    margin-left: 4ch;
-  }
-  .ms-4 {
-    margin-right: 4ch;
-  }
-  .img2 {
-    height: 20ch;
-    float: left;
-    padding-left: 1ch;
-    padding-right: 2ch;
-    margin-top: 1ch;
-    transition: transform 0.3s ease;
-  }
-  .img2:hover {
-    transform: scale(1.5);
-  }
-  
-  .img3 {
-    margin-top: 5ch;
-    height: 30ch;
-    float: right;
-    padding: 2ch;
-    padding-right: 0%;
-    padding-top: 0ch;
-    transition: transform 0.2s ease;
-  }
-  
-  .img3:hover {
-    transform: scale(1.5);
-  }
+.firstText {
+  margin-left: 2vw;
+}
 
+.container {
+  display: contents;
+}
 
+.containerText {
+  line-height: 1.2;
+  text-align: justify;
+  text-indent: 4vw; /* Используем vw вместо ch для более гибкой адаптации */
+  margin: 3vw 10vw auto 10vw;
+}
 
-    
-  
+.text-end {
+  text-indent: 4vw; /* Используем vw вместо ch для более гибкой адаптации */
+  margin-top: 3vw;
+}
+
+.textMainImg3 {
+  margin-top: 2vw;
+  text-indent: 4vw; /* Используем vw вместо ch для более гибкой адаптации */
+  text-align: justify;
+}
+
+.h3_MainText3 {
+  margin-top: 12vw; /* Используем vw вместо ch для более гибкой адаптации */
+}
+
+.me-auto {
+  margin-left: 4vw;
+}
+
+.ms-4 {
+  margin-right: 4vw;
+}
+
+.img2 {
+  height: 20vw; /* Используем vw вместо ch для более гибкой адаптации */
+  float: left;
+  padding-left: 1vw;
+  padding-right: 2vw;
+  margin-top: 1vw;
+  transition: transform 0.3s ease;
+}
+
+.img2:hover {
+  transform: scale(1.5);
+}
+
+.img3 {
+  margin-top: 5vw;
+  height: 30vw; /* Используем vw вместо ch для более гибкой адаптации */
+  float: right;
+  padding: 2vw;
+  padding-right: 0;
+  padding-top: 0vw;
+  transition: transform 0.2s ease;
+}
+
+.img3:hover {
+  transform: scale(1.5);
+}

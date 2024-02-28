@@ -57,9 +57,9 @@
 <script setup>
 
 import { ref } from 'vue';
+import NataAvodesCV from '../../../public/NataAvodesCV.pdf';
 import interior from '../../../public/interior.jpg';
 import monky1 from '../../../public/monky1.jpeg';
-import NataAvodesCV from '../../../public/NataAvodesCV.pdf';
   
   const handleDownload = () => {
     const link = document.createElement('a');

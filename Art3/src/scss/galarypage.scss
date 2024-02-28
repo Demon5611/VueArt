@@ -52,7 +52,7 @@
   }
   
   .image-container {
-    width: 50px;  
+
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -65,8 +65,12 @@
 
 
 .card{
-  // flex: 1;
-  width: 35rem;
+
+  max-width: 100%; /* Карточка может быть не шире родительского контейнера */
   cursor: pointer;
 
+}
+.card img {
+  width: 100%; /* Изображение внутри карточки займет всю доступную ширину */
+  height: auto; /* Высота будет автоматически рассчитана для поддержки соотношения сторон */
 }
