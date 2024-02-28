@@ -10,6 +10,7 @@
 
 .container {
   display: contents;
+
 }
 
 .containerText {
@@ -57,11 +58,12 @@
 
 .img3 {
   margin-top: 5vw;
-  height: 30vw; /* Используем vw вместо ch для более гибкой адаптации */
+  height: 25vw; /* Используем vw вместо ch для более гибкой адаптации */
   float: right;
   padding: 2vw;
   padding-right: 0;
   padding-top: 0vw;
+  padding-bottom: 2vw;
   transition: transform 0.2s ease;
 }
 
