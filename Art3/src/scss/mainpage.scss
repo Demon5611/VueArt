@@ -18,6 +18,11 @@
   text-align: justify;
   text-indent: 4vw; /* Используем vw вместо ch для более гибкой адаптации */
   margin: 3vw 10vw auto 10vw;
+  position: relative;
+}
+.containerText .cv{
+  top: 110%; 
+  right: 22%; 
 }
 
 .text-end {

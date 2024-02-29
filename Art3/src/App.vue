@@ -26,7 +26,7 @@ import ScrollToTopButton from './components/pages/ui/ScrollToTopButton.vue';
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  height: 2500px;
+  height: auto;
   line-height: 1.5;
   font-weight: 400;
   text-rendering: optimizeLegibility;
@@ -38,7 +38,9 @@ import ScrollToTopButton from './components/pages/ui/ScrollToTopButton.vue';
   text-align: center;
 }
 .cv {
-  font-size: 1.5ch;
+  font-size: 1.8ch;
+  font-style: italic;
   cursor: pointer;
+  position: absolute;
   }
 </style>

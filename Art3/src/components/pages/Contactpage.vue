@@ -11,7 +11,7 @@
             <h5 class="describe">художник   дизайнер   педагог</h5>
           </div>
           
-          <div id="containerBtn">
+          <div class="containerBtn">
             <a class="Btn" href="https://t.me/nataavodes" >
             <img  class="pict" src="../icons/telegram.svg"/>
               <span class="span">Telegram</span>
@@ -24,7 +24,7 @@
   
             <a
               class="Btn"
-              href="mailto:nataliya.mur@mail.ru"          
+              href="mailto:nataavodes@gmail.com"          
               target="_blank"
             >
             <img  class="pict" src="../icons//mail.svg"/>

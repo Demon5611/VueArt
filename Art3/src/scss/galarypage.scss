@@ -1,76 +1,65 @@
-  #gallery {
-    background-color: rgb(207, 201, 201);
-    margin-bottom: 4ch;
-    height: auto;
-  }
-  .containerTextGalaryTop {
-    text-align: justify;
-    text-indent: 2ch; /* отступ*/
-    margin-top: 10ch;
-    padding-top: 9ch;
-    padding-bottom: 9ch;
-    margin-right: 10ch;
-    margin-left: 10ch;
-    line-height: 1.2;
-  }
-  
-  .containerTextGalaryRightALL {
-    flex: 1; /* Чтобы текст сжимался и увеличивался вместе с карточками */
-    max-width: 60%; 
-    padding-left: 10ch;
-    float: right;
-    text-align: justify;
-    word-wrap: break-word;
-    margin-right: 10ch;
-  }
-  .textRight1 {
-    margin-bottom: 5ch;
-    text-indent: 2ch;
-  }
-  .textRight2 {
-    margin-bottom: 0ch;
-    margin-top: 20ch;
-    text-indent: 2ch;
-  }
-  .textRight3 {
-    margin-bottom: 2ch;
-    text-indent: 2ch;
-  }
-
-  .h2_2 {
-    margin-top: 5ch;
-  }
-  
-  .h3_3 {
-    margin-top: 20ch;
-    text-indent: 2ch;
-  }
-  .material {
-    font-size: smaller;
-    font-style: italic;
-    text-indent: 0ch;
-  }
-  
-  .image-container {
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 1rem; /* Расстояние между карточками */
-    margin-top: 2ch;
-    margin-left: 10ch;
-    margin-bottom: auto;
-  }
-
-
-.card{
-
-  max-width: 100%; /* Карточка может быть не шире родительского контейнера */
-  cursor: pointer;
-
+#gallery {
+  background-color: rgb(207, 201, 201);
+  margin-bottom: 4ch;
+  height: auto;
+  // display: flex;
+  flex-direction: column;
+  align-items: center; /* Центрировать элементы по горизонтали */
+  justify-content: center;
+  text-align: justify;
+  word-wrap: break-word;
 }
+
+.containerTextGalaryTop {
+  text-align: justify;
+  text-indent: 2ch;
+  margin-top: 10ch;
+  padding-top: 9ch;
+  padding-bottom: 9ch;
+  margin-left: auto; 
+  margin-right: auto;
+  line-height: 1.2;
+  width: 60%; /* Ширина текста 60% экрана */
+}
+
+.textRight1,
+.textRight2,
+.textRight3 {
+  display: flex;
+  margin-top: 2ch;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-indent: 2ch;
+  align-self: flex-end; /* Выравнивание текста справа */
+}
+.textAfterCard1,
+.textAfterCard2,
+.textAfterCard3 {
+  margin-left: 5%;
+}
+
+.card {
+  cursor: pointer;
+  flex: 0 0 40%; /* 30% width, don't grow, don't shrink */
+  margin-left: 5%; /* Отступ от левого края */
+}
+
 .card img {
-  width: 100%; /* Изображение внутри карточки займет всю доступную ширину */
-  height: auto; /* Высота будет автоматически рассчитана для поддержки соотношения сторон */
+  width: 100%; /* Make sure the image takes up 100% of the card width */
+}
+
+.material {
+  font-size: smaller;
+  font-style: italic;
+  text-indent: 0ch;
+}
+
+.textRight3 {
+padding-bottom: 2%;
+position: relative;
+};
+
+.textAfterCard3 .cv{
+  top: 80%; 
+  right: 1%; 
 }
