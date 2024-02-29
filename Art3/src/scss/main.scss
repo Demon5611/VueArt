@@ -7,9 +7,9 @@
 
 
 
-@media (min-width: 1282px) and (max-width: 1900px){
+@media (min-width: 1301px) and (max-width: 1900px){
   #gallery{
-  height: fit-content;
+  height: 55%;
 
   }
 
@@ -59,9 +59,79 @@
   }
 }
 
+@media (min-width: 1000px) and (max-width: 1300px){
+  #gallery{
+    height: 55%;
+  
+    }
+  
+    .containerTextGalaryRightALL {
+      padding-left: 1em;
+      margin-right: 5%;
+    }
+  
+    .textRight1,
+    .textRight2,
+    .textRight3 {
+      margin-left: 2%;
+    }
+  
+    .textRight2 {
+      margin-top: 1%; 
+    
+    }
+  
+    .textRight3{
+      margin-top: 2%;
+    } 
+    .main_h_1,
+    .main_h_2,
+    .main_h_3,
+    .h3_textTop,
+    .h1_1,
+    .h2_2,
+    .h3_3 {
+      font-size: 1.5em;
+    }
+  
+  
+    .h3_3 {
+      margin-top: 2em;
+      text-indent: 2ch;
+    }
+  
+    .material {
+      font-size: 80%;
+      font-style: italic;
+      text-indent: 0ch;
+    }
+  
+    .cv{
+      margin-top: -2ch;
+    }
+    .image-container {
+
+
+      gap: 3rem; /* Расстояние между карточками */
+      margin-top: 9ch;
+
+    }
+  
+  
+  .card{
+  
+    max-width: 100%; /* Карточка может быть не шире родительского контейнера */
+    cursor: pointer;
+  
+  }
+  .card img {
+    width: 100%; /* Изображение внутри карточки займет всю доступную ширину */
+    height: auto; /* Высота будет автоматически рассчитана для поддержки соотношения сторон */
+  }
+}
 
   
-  @media (min-width: 768px) and (max-width:   1280px) {
+  @media (min-width: 768px) and (max-width:   999px) {
       #gallery{
       height: 55%;      
       }
@@ -112,22 +182,41 @@
 
   
 
-// @media (min-width: 768px) and (max-width: 1285px) {
-//     .main-container {
-//       height: 70pc;
-//     }
-//     .img2 {
-//         height: 15ch;
-//       }
-//       .img3 {
-//         margin-top: 5ch;
-//         height: 25ch;
-//         float: right;
-//         padding: 2ch;
-//       }
-//       .h3_MainText3 {
-//         margin-top: 5ch;
-        
-//     }
+// @media (min-width: 320px) and (max-width: 767px) {
 
+//   .navbar-container {  
+//     font-size: 1rem;  
+//   }
+//   .logo_navbar {
+//     width: 80%;
+  
+
+//   }
 // }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .navbar-container {
+    flex-direction: column; /* Переключаем на вертикальное расположение */
+    align-items: flex-start; /* Выравниваем контейнер по левому краю */
+    font-size: 1rem;  
+  }
+
+  .logo_navbar {
+    width: 100%; /* Растягиваем логотип на 100% ширины */
+    height: auto; /* Автоматическая высота, чтобы сохранить пропорции */
+    margin-bottom: 1rem; /* Добавляем отступ между логотипом и меню */
+  }
+
+  .nav-underline {
+    width: 100%; /* Растягиваем меню на 100% ширины */
+  }
+
+  .nav-item {
+    margin-right: 0; /* Сбрасываем смещение к правому краю для элементов меню */
+    margin-top: 0.5rem; /* Добавляем отступ сверху для элементов меню */
+  }
+
+  .nav-link {
+    text-align: right; /* Выравниваем текст в элементах меню по  краю */
+  }
+}
