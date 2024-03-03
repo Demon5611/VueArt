@@ -38,10 +38,10 @@
   
   
   <script setup>
-  import headerImg from '../../../public/headerImg.jpg';
-import monky1 from '../../../public/monky1.jpeg';
-import monky2 from '../../../public/monky2.jpg';
-import NataAvodesBio from '../../../public/NataAvodesBio.pdf';
+  import headerImg from '../../assets/headerImg.jpg';
+  import monky1 from '../../assets/monky1.jpeg';
+import monky2 from '../../assets/monky2.jpg';
+import NataAvodesBio from '../../assets/NataAvodesBio.pdf';
   
   const handleDownload = () => {
     const link = document.createElement('a');

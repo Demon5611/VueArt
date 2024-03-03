@@ -1,6 +1,10 @@
+#main {
+  margin-bottom: 10%;
+}
+
 .headerImg {
   width: 100%;
-  margin-bottom: 4vw; /* Используем vw вместо ch для более гибкой адаптации */
+  margin-bottom: 4vw;  
   margin-top: 2vw;
 }
 
@@ -16,7 +20,7 @@
 .containerText {
   line-height: 1.2;
   text-align: justify;
-  text-indent: 4vw; /* Используем vw вместо ch для более гибкой адаптации */
+  text-indent: 4vw;  
   margin: 3vw 10vw auto 10vw;
   position: relative;
 }
@@ -26,18 +30,18 @@
 }
 
 .text-end {
-  text-indent: 4vw; /* Используем vw вместо ch для более гибкой адаптации */
+  text-indent: 4vw;  
   margin-top: 3vw;
 }
 
 .textMainImg3 {
   margin-top: 2vw;
-  text-indent: 4vw; /* Используем vw вместо ch для более гибкой адаптации */
+  text-indent: 4vw;  
   text-align: justify;
 }
 
 .h3_MainText3 {
-  margin-top: 12vw; /* Используем vw вместо ch для более гибкой адаптации */
+  margin-top: 12vw;  
 }
 
 .me-auto {
@@ -49,7 +53,7 @@
 }
 
 .img2 {
-  height: 20vw; /* Используем vw вместо ch для более гибкой адаптации */
+  height: 20vw;  
   float: left;
   padding-left: 1vw;
   padding-right: 2vw;
@@ -63,7 +67,7 @@
 
 .img3 {
   margin-top: 5vw;
-  height: 25vw; /* Используем vw вместо ch для более гибкой адаптации */
+  height: 25vw;  
   float: right;
   padding: 2vw;
   padding-right: 0;

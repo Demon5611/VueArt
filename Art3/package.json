@@ -14,21 +14,25 @@
     "bootstrap": "^5.3.2",
     "bootstrap-vue": "^2.23.1",
     "callback-loader": "^0.2.4",
+    "json5": "1.0.2",
     "loader-utils": "^3.2.1",
     "popper.js": "^1.16.1",
-    "vite-svg-loader": "^5.1.0",
-    "vue": "^3.4.15",
-    "vue-icons": "^2.0.0",
-    "json5": "1.0.2"
+    "vue": "^3.4.21",
+    "vue-icons": "^2.0.0"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.11.0",
     "@parcel/transformer-vue": "^2.11.0",
+    "@vitejs/plugin-vue": "^5.0.4",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^7.20.0",
     "parcel": "^2.11.0",
     "process": "^0.11.10",
+    "pug-loader": "^1.0.2",
+    "sass-loader": "^14.1.1",
+    "style-loader": "^3.3.4",
     "style-resources-loader": "^1.5.0"
+
   },
   "browserslist": "> 1%, last 2 versions, not dead"
 }

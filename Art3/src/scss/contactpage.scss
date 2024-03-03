@@ -13,11 +13,15 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 0;
-  left: 0;
+  // top: 0;
+  // left: 0;
   width: 100%;
   height: 100%;
   z-index: 2;
+  margin-top: 6%;
+  padding-bottom: 6%;
+  
+
 }
 
 .avatarImage {
@@ -25,7 +29,7 @@
   max-width: 160px; 
   height: auto; 
   border-radius: 50%;
-  margin-bottom: 2%;  
+  margin-bottom: 1%;  
 }
 
 .name {
@@ -43,26 +47,31 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  // margin-bottom: 2%;
 }
 
 .Btn {
-  width: 30ch;  
-  height: 5.5ch;
+  width: 16rem;  
+  height: 5ch;
   margin-top: 1%;  
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   border-color: grey;
-  border-radius: 2ch;
-  background: radial-gradient(circle, #f3e51f, #ffc107);
+  border-radius: 0.7rem;
+  background-color: rgba(0, 0, 0, 0.2);
   text-decoration: none;
   color: black;
+  transition: background-color 0.3s ease; 
+}
+.Btn:hover {
+  background-color: #f2eb88; 
 }
 
 .btn,
 .pict {
-  height: 1ch;  
+  height: 40%;  
   vertical-align: super;
 }
 
@@ -80,5 +89,5 @@
 .avatarContainer {
   font-family: Helvetica, sans-serif;
   font-size: 1rem;  
-  margin-top: 2vh;  
+  // margin-top: 2vh;  
 }

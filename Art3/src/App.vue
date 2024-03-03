@@ -1,5 +1,6 @@
 <template>
 <div class="app">
+
     <Navbar/>
     <Mainpage/>
     <Galarypage/>
@@ -16,6 +17,8 @@ import Mainpage from './components/pages/Mainpage.vue';
 import Footer from './components/pages/ui/Footer.vue';
 import Navbar from './components/pages/ui/Navbar.vue';
 import ScrollToTopButton from './components/pages/ui/ScrollToTopButton.vue';
+
+
 
 </script>
 
