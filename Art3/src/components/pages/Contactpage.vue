@@ -11,15 +11,15 @@
                     </div>              
                       <div class="containerBtn">
                         <a class="Btn" href="https://t.me/nataavodes" >
-                        <img  class="pict" src="../icons/telegram.svg"/>
+                        <img  class="pict" src="../../../public/icons/telegram.svg"/>
                           <span class="span">Telegram</span>
                          </a>              
                         <a class="Btn" href="https://vk.com/artmehanikastudio" >
-                          <img  class="pict" src="../icons/vk.svg">
+                          <img  class="pict" src="../../../public/icons/vk.svg">
                           <span class="span">VK</span>
                         </a>              
                         <a class="Btn" href="mailto:nataavodes@gmail.com" target="_blank">
-                        <img  class="pict" src="../icons//mail.svg"/>
+                        <img  class="pict" src="../../../public/icons/mail.svg"/>
                           <span class="span">E-mail</span></a>
                       </div>
                   </div>          

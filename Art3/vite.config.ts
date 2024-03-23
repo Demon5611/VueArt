@@ -1,6 +1,7 @@
-// import svgLoader from 'vite-svg-loader';
 
-// // https://vitejs.dev/config/
-// export default defineConfig({
-//   plugins: [vue(), svgLoader()],
-// })
+// vite.config.ts
+import vue from '@vitejs/plugin-vue';
+
+export default {
+  plugins: [vue()],
+};

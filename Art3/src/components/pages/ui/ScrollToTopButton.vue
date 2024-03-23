@@ -1,6 +1,6 @@
 <template>
   <div v-if="isVisible" class="scroll-to-top" @click="scrollToTop" @keydown="handleKeyDown" role="button" tabindex="0">
-    <img alt="arrow_up"  src="../../icons/arrow_up.svg" style= "color:white"/>
+    <img alt="arrow_up"  src="../../../../public/icons/arrow_up.svg" style= "color:white"/>
   </div>
 </template>
 

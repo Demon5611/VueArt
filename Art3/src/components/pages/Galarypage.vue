@@ -1,82 +1,93 @@
-  <template>
-    <div id="gallery">
-      <div class="containerTextGalaryTop">
-        <h3 class="h3_textTop">Кто мы такие и куда направляемся?</h3>
-        <br />
-        <p >
-          Этот вопрос не раз ставил меня в тупик, потому что я родитель, и в то же время, обладаю
-          любопытством ребенка, выросшего в семье ученых. Скажем по-другому. Для меня это второй
-          вопрос после "Есть ли Бог?". Я думаю, что ответ уже ясен из заглавной буквы слова
-          "Бог". Но как насчет остального?
+<template>
+  <div>
+    <div class="textRight1">
+      <img src="../../assets/monky1.jpeg" class="card" @click="openModalWindow" />
+      <ModalWindow :imageSrc="imageSrc" :isModalOpen="isModalOpen" @close="closeModal" />
+      <div class="textAfterCard1">
+        <h3 class="h1_1">ПРОЦЕСС ЭВОЛЮЦИИ</h3>
+        <p>
+          Это яркий вызов современной реальности. Нет ничего хуже интеллектуальных шорт,
+          навязанных нам….Кем навязанных? Социальными предрассудками, бизнесом и личными
+          интересами отдельных групп людей. Каждая картина заставляет задуматься о том, что делают
+          люди КАЖДЫЙ ДЕНЬ. Мы на пути эволюции или деградации как вида? Решать тебе…
         </p>
+        <p class="material">Материал: смешанная техника, графика. Размеры работ 80/100см</p>
       </div>
+    </div>
 
-
-      <div class="textRight1">     
-        <img    src="../../assets/monky1.jpeg"    class="card" />
-
-            <div class="textAfterCard1">
-            <h3 class="h1_1">ПРОЦЕСС ЭВОЛЮЦИИ</h3>
-            <p>
-              Это яркий вызов современной реальности Нет ничего хуже интеллектуальных шор навязанных
-              нам….Кем навязанных? Социальными предрассудками, бизнесом и личными интересами
-              отдельных групп людей. Каждая картина заставляет задуматься о том, что делают люди
-              КАЖДЫЙ ДЕНЬ. Мы на пути эволюции или деградации как вида? Решать тебе…
-            </p>
-            <p class="material">Материал: смешанная техника, графика. Размеры работ 80/100см</p>            
-          </div>
+    <div class="textRight2">
+      <img src="../../assets/interior.jpg" class="card" />
+      <div class="textAfterCard2">
+        <h3 class="h2_2">КОРОЛЕВ</h3>
+        <p>
+          Это яркий вызов современной реальности. Нет ничего хуже интеллектуальных шорт,
+          навязанных нам….Кем навязанных? Социальными предрассудками, бизнесом и личными
+          интересами отдельных групп людей. Каждая картина заставляет задуматься о том, что делают
+          люди КАЖДЫЙ ДЕНЬ. Мы на пути эволюции или деградации как вида? Решать тебе…
+        </p>
+        <p class="material">Материал: масло, пастель; графика. Размеры работ 30/40см</p>
       </div>
+    </div>
 
-        <div class="textRight2">
-              <img src="../../assets/interior.jpg" class="card" />
-              <div class="textAfterCard2">
-              <h3 class="h2_2">КОРОЛЕВ</h3>
-              <p>Это яркий вызов современной реальности Нет ничего хуже интеллектуальных шор навязанных нам….Кем навязанных? Социальными предрассудками, бизнесом и личными интересами отдельных групп людей. Каждая картина заставляет задуматься о том, что делают люди КАЖДЫЙ ДЕНЬ. Мы на пути эволюции или деградации как вида? Решать тебе…</p>
-              <p class="material">Материал: масло, пастель; графика. Размеры работ 30/40см</p>
-            </div>
+    <div class="textRight3">
+      <img src="../../assets/interior.jpg" class="card" />
+      <div class="textAfterCard3">
+        <h3 class="h3_3">МИГРАЦИОННЫЙ ЗАХВАТ</h3>
+        <p>
+          Это яркий вызов современной реальности. Нет ничего хуже интеллектуальных шорт,
+          навязанных нам….Кем навязанных? Социальными предрассудками, бизнесом и личными
+          интересами отдельных групп людей. Каждая картина заставляет задуматься о том, что делают
+          люди КАЖДЫЙ ДЕНЬ. Мы на пути эволюции или деградации как вида? Решать тебе…
+        </p>
+        <p class="material">
+          Материал: цифровая графика, коллаж, печать на пенокартоне. Размеры работ 80/120см
+        </p>
+        <a @click="handleDownload" class="cv">Скачать NataAvodesCV</a>
       </div>
-
-        <div class="textRight3">
-                <img src="../../assets/interior.jpg" class="card" />
-              <div class="textAfterCard3">
-                <h3 class="h3_3">МИГРАЦИОННЫЙ ЗАХВАТ</h3>
-                <p >
-                  Это яркий вызов современной реальности Нет ничего хуже интеллектуальных шор навязанных
-                  нам….Кем навязанных? Социальными предрассудками, бизнесом и личными интересами
-                  отдельных групп людей. Каждая картина заставляет задуматься о том, что делают люди
-                  КАЖДЫЙ ДЕНЬ. Мы на пути эволюции или деградации как вида? Решать тебе…
-                </p>
-                <p class="material">
-                  Материал: цифровая графика, коллаж, печать на пенокартоне. Размеры работ 80/120см</p>
-                  <a @click="handleDownload" class="cv">Скачать NataAvodesCV</a>
-              </div>
-        </div>
-
+    </div>
   </div>
-  </template>
+</template>
 
-  <script setup>
-  
+<script setup>
+import { computed, ref, watchEffect } from 'vue';
 import NataAvodesCV from '../../assets/NataAvodesCV.pdf';
+import imageSrc from '../../assets/interior.jpg';
+import ModalWindow from './ui/ModalWindow.vue';
 
 
-  const handleDownload = () => {
-    const link = document.createElement('a');
-    link.href = NataAvodesCV;
-    link.target = '_blank';
-    link.download = 'NataAvodesCV.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+const handleDownload = () => {
+  const link = document.createElement('a');
+  link.href = NataAvodesCV;
+  link.target = '_blank';
+  link.download = 'NataAvodesCV.pdf';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
 
+const isModalOpen = ref(false);
 
+const openModalWindow = () => {
+  console.log('Opening modal');
+  isModalOpen.value = true;
+};
 
+const closeModal = () => {
+  console.log('Closing modal');
+  isModalOpen.value = false;
+};
+const isModalOpenComputed = computed(() => isModalOpen.value);
+watchEffect(() => {
+  if (isModalOpen.value) {
+    // Additional logic if needed when modal is opened
+    console.log('Modal opened');
+  } else {
+    // Additional logic if needed when modal is closed
+    console.log('Modal closed');
+  }
+});
+</script>
 
-  </script>
-
-
-  <style>
-
-  
-  </style>
+<style>
+/* Ваши стили */
+</style>
