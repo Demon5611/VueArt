@@ -12,12 +12,15 @@
 @media (min-width: 1000px) and (max-width: 1300px){
   
   // GalaryPage
-.textRight1,
-.textRight2,
-.textRight3,
-.cv {
-  font-size: 0.8em;  
-} 
+  @mixin textRightFontSize($size) {
+    font-size: $size;
+  }
+  .textRight1,
+  .textRight2,
+  .textRight3,
+  .cv {
+    @include textRightFontSize(0.8em);
+  }
 // ContactPage
 .containerBtn{
   margin-top: 3em;
@@ -27,113 +30,246 @@
 
 
 @media (min-width: 700px) and (max-width: 998px){
+  //MainPage
   
-  // GalaryPage
-.textRight1,
-.textRight2,
-.textRight3,
-.cv {
-  font-size: 0.6em;  
-}
-h4 {
-  font-size: 1.3em; 
-}
-// ContactPage
-.containerBtn{
-  margin-top: 2em;
-}
-.avatarImage {
-  margin-top: 2ch;
-  width: 15%; 
-}
-.Btn{
-  width: 16rem;  
-  height: 4ch;
-  margin-top: 2%;  
-}
-}
-
-@media (min-width: 400px) and (max-width: 698px){
-
-.cv,
-.navbar-fixed,
-.navbar-container,
-.firstText, 
-.containerText, 
-.footer,
-.textMainImg3, article {
-  font-size: 0.6em; 
-}
-
-.main_h_1,
-.main_h_2,
-.h3_MainText3 {
-  font-size: 1em; 
-}  
-
-  // GalaryPage
-
-  .textRight1,
-  .textRight2,
-  .textRight3 {
-    font-size: 0.4em;  
+  $fontSizeDefault: 1em;
+  h3.main_h_1,
+  h3.main_h_2,
+  h3.main_h_3{
+    font-size: $fontSizeDefault; 
   }
-  h4 {
-    font-size: 1em; 
-  }
+  
+    .cv,
+    .navbar-fixed,
+    .navbar-container,
+    .firstText, 
+    .containerText, 
+    .footer,
+    .textMainImg3, article {
+      font-size: 0.8em; 
+    }
 
+    .textRight1,
+    .textRight2,
+    .textRight3 {
+      font-size: 0.6em;  
+    }
   // ContactPage
-  
-  .imgPhone{
-
-    height: 60vh;
-
+  .containerBtn{
+    margin-top: 2em;
   }
-  
-  .ava-btn {
-  
-    width: 80%;
-    height: 80%;   
-  
-  }
-  
   .avatarImage {
     margin-top: 2ch;
     width: 15%; 
   }
-  
-
-  
-  .describe {
-    font-size: 0.5em; 
-  }
-  
-
-  
-  .Btn {
-    width: 13rem;  
-    height: 4ch;
+  .Btn{
+    width: 16rem;  
+    height: 2em;
     margin-top: 2%;  
-  }
-
-  .containerBtn{
-    margin-top: 2em;
-  }
-
-  .pict {
-    height: 30%;  
-  }
-  
-  .span {
-    font-size: 1.5ch;  
-  }
-
-  .scroll-to-top img {  
-    width: 50px;
-    height: 50px;  
   }
 }
 
-@media (max-width: 398px){
 
+
+
+
+
+@media (max-width: 698px){
+  .navbar-container {
+    flex-direction: column;  
+    font-size: 1ch;  
+  }
+
+  .navbar-fixed {
+    padding-top: 1em;
+    padding-bottom: 0em;
+  }
+  .logo_navbar {
+    width: 40%;
+  }
+  .nav-underline {
+    display: flex;
+    justify-content: flex-end; 
+  }
+  .cv,
+  .navbar-fixed,
+  .navbar-container,
+  .firstText, 
+  .containerText, 
+  .footer,
+  .textMainImg3, article {
+    font-size: 0.6em; 
+  }
+
+  $fontSizeDefault: 1em;
+  h3.main_h_1,
+  h3.main_h_2,
+  h3.main_h_3{
+    font-size: $fontSizeDefault; 
+  }
+
+  // GalaryPage
+
+  .cv,
+  .navbar-fixed,
+  .navbar-container,
+  .firstText, 
+  .containerText, 
+  .footer,
+  .textMainImg3, article {
+    font-size: 0.8em; 
+  }
+
+  $fontSizeDefault: 1em;
+  .main_h_1, .main_h_2, .h3_MainText3, h4 {
+    font-size: $fontSizeDefault; 
+  }
+  .textRight1,
+  .textRight2,
+  .textRight3 {
+    font-size: 0.6em;  
+  }
+  .textRight1,
+  .textRight2,
+  .textRight3 {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .textAfterCard1, .textAfterCard2, .textAfterCard3 {
+    padding-top: 1rem;
+  }
+
+  // ContactPage =========================
+  
+  .imgPhone{
+    height: 70vh;
+  }  
+ 
+  .avatarImage {
+    width: 23%; 
+    margin-top: 0em;
+  }  
+h5{
+  font-size: 0.8em;  
+}
+  .describe {
+    font-size: 0.7em; 
+  }   
+  .Btn {
+    width: 15rem;  
+    height: 4ch;
+    margin-top: 1%;  
+  }
+  .containerBtn{
+    margin-top: 3em;
+  }
+  .pict {
+    height: 30%;  
+  }  
+  .span {
+    font-size: 1.3ch;  
+  }
+  .scroll-to-top {
+    right: 10px;  
+    width: 50px;
+    height: 45px;    
+  }
+  .scroll-to-top img {  
+    width: 30px;  
+  }
+}
+
+
+
+
+
+@media (max-width: 385px){
+  .navbar-container {
+    flex-direction: column;  
+    font-size: 1ch;  
+  }
+
+.navbar-fixed {
+  padding-top: 1em;
+  padding-bottom: 0em;
+}
+  .logo_navbar {
+    width: 40%;
+  }
+  .nav-underline {
+    display: flex;
+    justify-content: flex-end; 
+  }
+
+  
+  .navbar-fixed,
+  .navbar-container,
+  .firstText, 
+  .containerText, 
+  .footer,
+  .textMainImg3, article {
+    font-size: 0.8em; 
+  }
+
+  $fontSizeDefault: 1em;
+  h3.main_h_1,
+  h3.main_h_2,
+  h3.main_h_3{
+    font-size: $fontSizeDefault; 
+  }
+  .textRight1,
+  .textRight2,
+  .textRight3 {
+    font-size: 0.6em;  
+  }
+  .textRight1,
+  .textRight2,
+  .textRight3 {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .textAfterCard1, .textAfterCard2, .textAfterCard3 {
+    padding-top: 1rem;
+  }
+  // ContactPage ==================================
+  
+  .imgPhone{
+    height: 70vh;
+  }  
+  .avatarImage {
+    margin-top: 2ch;
+    width: 25%; 
+  }
+  h5{
+    font-size: 0.6em;  
+  }
+  .describe {
+    font-size: 0.5em; 
+  }  
+  .Btn {
+    width: 12rem;  
+    height: 3ch;
+    margin-top: 2%;  
+  }
+    .containerBtn{
+    margin-top: 2em;
+  }
+  .pict {
+    height: 30%;  
+  }  
+  .span {
+    font-size: 1.2ch;  
+  }
+  .scroll-to-top {
+    right: 10px;  
+    width: 30px;
+    height: 30px;    
+  }
+  .scroll-to-top img {  
+    width: 20px;
+  }
 }
