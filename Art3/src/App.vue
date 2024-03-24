@@ -45,6 +45,6 @@ import ScrollToTopButton from './components/pages/ui/ScrollToTopButton.vue';
   font-size: 1.8ch;
   font-style: italic;
   cursor: pointer;
-  position: absolute;
+  position: static;
   }
 </style>

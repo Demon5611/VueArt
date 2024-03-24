@@ -3,7 +3,7 @@
   margin-bottom: 4ch;
   height: auto;
   flex-direction: column;
-  align-items: center; /* Центрировать элементы по горизонтали */
+  align-items: center; 
   justify-content: center;
   text-align: justify;
   word-wrap: break-word;
@@ -18,7 +18,7 @@
   margin-left: auto; 
   margin-right: auto;
   line-height: 1.2;
-  width: 60%; /* Ширина текста 60% экрана */
+  width: 60%; 
 }
 
 .textRight1,
@@ -29,22 +29,27 @@
   margin-left: 10%;
   margin-right: 10%;
   text-indent: 2ch;
-  align-self: flex-end; /* Выравнивание текста справа */
+
+  
 }
+
 .textAfterCard1,
 .textAfterCard2,
 .textAfterCard3 {
   margin-left: 5%;
+  text-align: left;
+
 }
 
 .card {
   cursor: pointer;
   flex: 0 0 40%; /* 30% width, don't grow, don't shrink */
-  margin-left: 5%; /* Отступ от левого края */
+  margin-left: 5%; 
   width: 100%;
   height: auto;
   object-fit: contain;
   border: none;
+
 }
 
 
@@ -59,7 +64,7 @@ padding-bottom: 2%;
 position: relative;
 };
 
-.textAfterCard3 .cv{
+.cv{
   top: 80%; 
   right: 1%; 
 }

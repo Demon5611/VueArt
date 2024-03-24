@@ -24,7 +24,7 @@
 .lds-heart div:before {
   content: " ";
   position: absolute;
-  display: block;
+  /* display: block; */
   width: 32px;
   height: 32px;
   background: #fff;
