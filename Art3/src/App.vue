@@ -1,23 +1,21 @@
 <template>
 <div class="app">
-    <Loader />
     <Navbar/>
+    <ScrollToTopButton />
     <Mainpage/>
     <Galarypage/>
     <Contactpage/>
-    <ScrollToTopButton />
     <Footer/>
 </div>
 </template>
 
 <script setup>
-import Contactpage from './components/pages/Contactpage.vue';
-import Galarypage from './components/pages/Galarypage.vue';
-import Mainpage from './components/pages/Mainpage.vue';
-import Footer from './components/pages/ui/Footer.vue';
-import Loader from './components/pages/ui/Loader.vue';
 import Navbar from './components/pages/ui/Navbar.vue';
 import ScrollToTopButton from './components/pages/ui/ScrollToTopButton.vue';
+import Mainpage from './components/pages/Mainpage.vue';
+import Galarypage from './components/pages/Galarypage.vue';
+import Contactpage from './components/pages/Contactpage.vue';
+import Footer from './components/pages/ui/Footer.vue';
 
 
 

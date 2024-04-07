@@ -33,7 +33,7 @@ export default {
       window.removeEventListener('scroll', handleScroll);
     });
 
-    // что задали, то и вернули 
+
     return {
       isVisible,
       scrollToTop,
