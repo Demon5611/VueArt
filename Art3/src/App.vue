@@ -17,8 +17,6 @@ import Galarypage from './components/pages/Galarypage.vue';
 import Contactpage from './components/pages/Contactpage.vue';
 import Footer from './components/pages/ui/Footer.vue';
 
-
-
 </script>
 
 

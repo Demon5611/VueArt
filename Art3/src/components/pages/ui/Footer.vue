@@ -10,7 +10,7 @@ const isFooterVisible = ref(false);
 
 const handleScroll = () => {
   const scrollY = window.scrollY;
-  isFooterVisible.value = scrollY > 100; // если true, то 'footer-visible'
+  isFooterVisible.value = scrollY > 100; 
 };
 
 onMounted(() => {
@@ -21,5 +21,3 @@ onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll);
 });
 </script>
-<style scoped>    
-</style>

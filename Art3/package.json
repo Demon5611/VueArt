@@ -15,7 +15,6 @@
     "bootstrap-vue": "^2.23.1",
     "callback-loader": "^0.2.4",
     "json5": "1.0.2",
-    "loader-utils": "^3.2.1",
     "popper.js": "^1.16.1",
     "url": "^0.11.3",
     "vite": "^5.1.4",
@@ -29,10 +28,7 @@
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^7.20.0",
     "parcel": "^2.11.0",
-    "process": "^0.11.10",
-    "sass-loader": "^14.1.1",
-    "style-loader": "^3.3.4",
-    "style-resources-loader": "^1.5.0"
+    "process": "^0.11.10"
   },
-  "browserslist": "> 1%, last 2 versions, not dead"
+  "browserslist": "> 0.5%, last 2 versions, not dead"
 }

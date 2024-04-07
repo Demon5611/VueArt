@@ -53,8 +53,8 @@
 
   <script setup>
   import NataAvodesCV from '../../assets/NataAvodesCV.pdf';
-import { default as interior } from '../../assets/interior.jpg';
-import monky1 from '../../assets/monky1.jpeg';
+  import { default as interior } from '../../assets/interior.jpg';
+  import monky1 from '../../assets/monky1.jpeg';
 
 
   const imageUrl = {
@@ -76,6 +76,3 @@ import monky1 from '../../assets/monky1.jpeg';
   window.open(imageUrl, '_blank');
 };
   </script>
-
-  <style>
-  </style>

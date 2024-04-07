@@ -34,6 +34,5 @@ import avatarImage from '../../assets/avatarImage.jpg';
 import iphoneForm from '../../assets/iphonForm.png';
 
   </script> 
-    <style>
-  </style>
+
   
