@@ -19,15 +19,19 @@
     "url": "^0.11.3",
     "vite": "^5.1.4",
     "vue": "^3.4.21",
-    "vue-icons": "^2.0.0"
+    "vue-icons": "^2.0.0",
+    "@parcel/transformer-sass": "^2.11.0",
+    "@parcel/transformer-vue": "^2.11.0",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "parcel": "^2.11.0"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.11.0",
     "@parcel/transformer-vue": "^2.11.0",
     "@vitejs/plugin-vue": "^5.0.4",
+    "parcel": "^2.11.0",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^7.20.0",
-    "parcel": "^2.11.0",
     "process": "^0.11.10"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead"

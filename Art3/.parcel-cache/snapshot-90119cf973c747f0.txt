@@ -1,4 +1,4 @@
-13630
+13638
 55/home/ds/Project/VueArt/VueArt/Art3/public/icons/vk.svg1712499930289913686 0
 61/home/ds/Project/VueArt/VueArt/Art3/public/icons/whatsapp.svg1712499930289913686 0
 57/home/ds/Project/VueArt/VueArt/Art3/public/icons/mail.svg1712499930289913686 0
@@ -32,21 +32,23 @@
 66/home/ds/Project/VueArt/VueArt/Art3/dist/index.runtime.469d50d1.js1712512522241989189 0
 65/home/ds/Project/VueArt/VueArt/Art3/dist/avatarImage.06d98b7c.jpg1712513298853433598 0
 58/home/ds/Project/VueArt/VueArt/Art3/dist/index.5496ba2f.js1712512522241989189 0
+66/home/ds/Project/VueArt/VueArt/Art3/dist/index.runtime.c805a96b.js1712513325584747750 0
 66/home/ds/Project/VueArt/VueArt/Art3/dist/NataAvodesCV.8bd67681.pdf1712513298849433700 0
 62/home/ds/Project/VueArt/VueArt/Art3/dist/arrow_up.0d98e19e.svg1712513298881432879 0
 67/home/ds/Project/VueArt/VueArt/Art3/dist/NataAvodesBio.415aa20b.pdf1712513298825434316 0
 61/home/ds/Project/VueArt/VueArt/Art3/dist/monky1.197c8898.jpeg1712513298825434316 0
 66/home/ds/Project/VueArt/VueArt/Art3/dist/index.runtime.f4cfd9d3.js1712512522241989189 0
 62/home/ds/Project/VueArt/VueArt/Art3/dist/arrow_up.c9b0c1e4.svg1712512522237989301 0
+58/home/ds/Project/VueArt/VueArt/Art3/dist/index.e82a1580.js1712513325584747750 0
 67/home/ds/Project/VueArt/VueArt/Art3/dist/NataAvodesBio.8fc553af.pdf1712512522241989189 0
 62/home/ds/Project/VueArt/VueArt/Art3/dist/telegram.51232ce1.svg1712512522237989301 0
 68/home/ds/Project/VueArt/VueArt/Art3/dist/logoNataAvodes.d8495af9.png1712512522237989301 0
 59/home/ds/Project/VueArt/VueArt/Art3/dist/index.28e95bf3.css1712512522241989189 0
 62/home/ds/Project/VueArt/VueArt/Art3/dist/interior.06a22f48.jpg1712512522237989301 0
-51/home/ds/Project/VueArt/VueArt/Art3/dist/index.html1712513298881432879 0
+51/home/ds/Project/VueArt/VueArt/Art3/dist/index.html1712513325584747750 0
 60/home/ds/Project/VueArt/VueArt/Art3/dist/monky2.ba80f213.jpg1712512522237989301 0
 63/home/ds/Project/VueArt/VueArt/Art3/dist/iphonForm.afe0a8a8.png1712513298821434419 0
-40/home/ds/Project/VueArt/VueArt/Art3/dist1712513302129349504 1
+40/home/ds/Project/VueArt/VueArt/Art3/dist1712513325596747442 1
 53/home/ds/Project/VueArt/VueArt/Art3/package-lock.json1712501197166450094 0
 80/home/ds/Project/VueArt/VueArt/Art3/node_modules/is-fullwidth-code-point/license1712500025146617447 0
 81/home/ds/Project/VueArt/VueArt/Art3/node_modules/is-fullwidth-code-point/index.js1712500025126618093 0
@@ -1385,6 +1387,7 @@
 68/home/ds/Project/VueArt/VueArt/Art3/node_modules/lodash/fp/sample.js1712500025962591108 0
 71/home/ds/Project/VueArt/VueArt/Art3/node_modules/lodash/fp/isWeakSet.js1712500025926592270 0
 67/home/ds/Project/VueArt/VueArt/Art3/node_modules/lodash/fp/xorBy.js1712500025994590074 0
+70/home/ds/Project/VueArt/VueArt/Art3/dist/index.runtime.44846f26.js.map1712513325596747442 0
 71/home/ds/Project/VueArt/VueArt/Art3/node_modules/lodash/fp/invokeMap.js1712500025898593174 0
 66/home/ds/Project/VueArt/VueArt/Art3/node_modules/lodash/fp/util.js1712500025994590074 0
 69/home/ds/Project/VueArt/VueArt/Art3/node_modules/lodash/fp/memoize.js1712500025942591753 0
@@ -7625,6 +7628,7 @@
 92/home/ds/Project/VueArt/VueArt/Art3/node_modules/bootstrap-vue/src/components/image/index.js1712500026026589042 0
 67/home/ds/Project/VueArt/VueArt/Art3/node_modules/lodash/findLast.js1712500025858594464 0
 107/home/ds/Project/VueArt/VueArt/Art3/node_modules/table/node_modules/ajv/dist/vocabularies/jtd/properties.js1712500025614602341 0
+66/home/ds/Project/VueArt/VueArt/Art3/dist/index.runtime.44846f26.js1712513325584747750 0
 79/home/ds/Project/VueArt/VueArt/Art3/node_modules/@vue/server-renderer/README.md1712500025422608538 0
 116/home/ds/Project/VueArt/VueArt/Art3/node_modules/table/node_modules/ajv/dist/vocabularies/validation/limitItems.d.ts1712500025878593818 0
 83/home/ds/Project/VueArt/VueArt/Art3/node_modules/jquery/src/manipulation/support.js1712500025694599759 0
@@ -10201,6 +10205,7 @@
 65/home/ds/Project/VueArt/VueArt/Art3/node_modules/es-errors/ref.js1712500025198615769 0
 70/home/ds/Project/VueArt/VueArt/Art3/node_modules/lodash/isEqualWith.js1712500025910592786 0
 65/home/ds/Project/VueArt/VueArt/Art3/node_modules/csso/cjs/replace1712500025498606085 1
+62/home/ds/Project/VueArt/VueArt/Art3/dist/index.e82a1580.js.map1712513325596747442 0
 67/home/ds/Project/VueArt/VueArt/Art3/node_modules/es-errors/index.js1712500025114618481 0
 67/home/ds/Project/VueArt/VueArt/Art3/node_modules/es-errors/range.js1712500025182616285 0
 100/home/ds/Project/VueArt/VueArt/Art3/node_modules/eslint-plugin-vue/lib/rules/no-useless-mustaches.js1712500025710599241 0
@@ -10860,6 +10865,7 @@
 90/home/ds/Project/VueArt/VueArt/Art3/node_modules/@swc/helpers/src/_array_without_holes.mjs1712500025898593174 0
 100/home/ds/Project/VueArt/VueArt/Art3/node_modules/@swc/helpers/src/_tagged_template_literal_loose.mjs1712500025926592270 0
 94/home/ds/Project/VueArt/VueArt/Art3/node_modules/@swc/helpers/src/_tagged_template_literal.mjs1712500025926592270 0
+62/home/ds/Project/VueArt/VueArt/Art3/dist/index.fb405441.js.map1712513325596747442 0
 95/home/ds/Project/VueArt/VueArt/Art3/node_modules/table/node_modules/ajv/dist/types/index.js.map1712500025754597821 0
 98/home/ds/Project/VueArt/VueArt/Art3/node_modules/@swc/helpers/src/_possible_constructor_return.mjs1712500025926592270 0
 73/home/ds/Project/VueArt/VueArt/Art3/node_modules/source-map/lib/base64.js1712500025254613961 0
@@ -11526,6 +11532,7 @@
 104/home/ds/Project/VueArt/VueArt/Art3/node_modules/dom-serializer/node_modules/entities/lib/index.d.ts.map1712500025354610733 0
 76/home/ds/Project/VueArt/VueArt/Art3/node_modules/dom-serializer/package.json1712500025270613445 0
 67/home/ds/Project/VueArt/VueArt/Art3/node_modules/dom-serializer/lib1712500025362610474 1
+70/home/ds/Project/VueArt/VueArt/Art3/dist/index.runtime.c805a96b.js.map1712513325596747442 0
 78/home/ds/Project/VueArt/VueArt/Art3/node_modules/uri-js/dist/esnext/uri.js.map1712500025502605955 0
 78/home/ds/Project/VueArt/VueArt/Art3/node_modules/dom-serializer/lib/index.d.ts1712500025366610346 0
 83/home/ds/Project/VueArt/VueArt/Art3/node_modules/dom-serializer/lib/foreignNames.js1712500025178616415 0
@@ -13393,6 +13400,7 @@
 96/home/ds/Project/VueArt/VueArt/Art3/node_modules/optionator/node_modules/prelude-ls/CHANGELOG.md1712500025142617577 0
 115/home/ds/Project/VueArt/VueArt/Art3/node_modules/bootstrap-vue/esm/components/table/helpers/mixin-table-renderer.js1712500026038588655 0
 107/home/ds/Project/VueArt/VueArt/Art3/node_modules/bootstrap-vue/esm/components/table/helpers/sanitize-row.js1712500026050588269 0
+58/home/ds/Project/VueArt/VueArt/Art3/dist/index.fb405441.js1712513325584747750 0
 105/home/ds/Project/VueArt/VueArt/Art3/node_modules/bootstrap-vue/esm/components/table/helpers/mixin-busy.js1712500026034588785 0
 108/home/ds/Project/VueArt/VueArt/Art3/node_modules/bootstrap-vue/esm/components/table/helpers/mixin-sorting.js1712500026038588655 0
 116/home/ds/Project/VueArt/VueArt/Art3/node_modules/bootstrap-vue/esm/components/table/helpers/text-selection-active.js1712500026058588011 0
