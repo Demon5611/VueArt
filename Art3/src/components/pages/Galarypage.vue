@@ -24,16 +24,17 @@
       @openImage="memoizedOpenImage"
     />
 
-    <a @click="handleCachedDownload" class="cv">Скачать NataAvodesCV</a>
+    <a @click="handleDownloadCV" class="cv">Скачать NataAvodesCV</a>
   </div>
 </template>
 
 <script setup>
 import ImageCard from '../ImageCard.vue';
 import NataAvodesCV from '../../assets/NataAvodesCV.pdf';
+import { downloadCVWithCache } from '../../services/fileDownloader'; 
 import { default as interior } from '../../assets/interior.jpg';
 import monky1 from '../../assets/monky1.jpeg';
-import memoize from 'lodash/memoize'; // Используем lodash для мемоизации
+import memoize from 'lodash/memoize';
 
 const imageUrl = {
   interior,
@@ -46,23 +47,9 @@ const openImage = (url) => {
   window.open(url, '_blank');
 };
 
-// Используем lodash для мемоизации функции
 const memoizedOpenImage = memoize(openImage);
 
-// Кеширование скачивания файла
-let isFileCached = false;
-const handleCachedDownload = () => {
-  if (!isFileCached) {
-    const link = document.createElement('a');
-    link.href = NataAvodesCV;
-    link.target = '_blank';
-    link.download = 'NataAvodesCV.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    isFileCached = true; // Помечаем, что файл был скачан
-  } else {
-    console.log('Файл уже скачан');
-  }
+const handleDownloadCV = () => {
+  downloadCVWithCache(NataAvodesCV, 'NataAvodesCV.pdf');
 };
 </script>

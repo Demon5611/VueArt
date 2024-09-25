@@ -11,7 +11,7 @@
               изменить взгляд многих людей на действительность — создавать соцарт своего времени
               помноженный на любовь к своему городу и его жителям.
         </article>
-        <div md="12" class="text-end">
+        <div class="text-end">
           <img class="img2" :src="monky1" />
           <h3 class="main_h_2">Мне есть ЧТО сказать</h3>
           <article>
@@ -31,7 +31,7 @@
               серия картин «Обратный процесс эволюции», 2021 год.
           <br />
         </article>
-        <a @click="handleDownload" class="cv">Скачать био. NataAvodes</a>
+        <a @click="handleDownloadCV" class="cv">Скачать био. NataAvodes</a>
       </div>
     </div>
   </template>
@@ -41,18 +41,14 @@
   import headerImg from '../../assets/headerImg.jpg';
   import monky1 from '../../assets/monky1.jpeg';
   import monky2 from '../../assets/monky2.jpg';
-  import NataAvodesBio from '../../assets/NataAvodesBio.pdf';
-  
-  
-  const handleDownload = () => {
-    const link = document.createElement('a');
-    link.href = NataAvodesBio;
-    link.target = '_blank';
-    link.download = 'NataAvodesBio.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-   };
+  import { downloadCVWithCache } from '../../services/fileDownloader';
+  import NataAvodesBio from '../../assets/NataAvodesBio.pdf';  
+
+
+  const handleDownloadCV = () => {
+  downloadCVWithCache(NataAvodesBio, 'NataAvodesBio.pdf');
+};
+
   </script>
   
   
