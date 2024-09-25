@@ -4,24 +4,28 @@
 
 .headerImg {
   width: 100%;
-  margin-bottom: 4vw;  
-  margin-top: 2vw;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
 }
 
 .firstText {
   margin-left: 2vw;
 }
 
-.container {
-  display: contents;
-
+.text-indent {
+  text-indent: 4rem;
 }
+
+.text-end, .textMainImg3 {
+  @extend .text-indent;
+}
+
 
 .containerText {
   line-height: 1.2;
   text-align: justify;
-  text-indent: 4vw;  
-  margin: 3vw 10vw auto 10vw;
+  margin: 2rem 5rem auto 5rem;
+  text-indent: 2rem;
   position: relative;
 }
 .containerText .cv{
@@ -30,13 +34,11 @@
 }
 
 .text-end {
-  text-indent: 4vw;  
   margin-top: 3vw;
 }
 
 .textMainImg3 {
   margin-top: 2vw;
-  text-indent: 4vw;  
   text-align: justify;
 }
 
@@ -44,21 +46,24 @@
   margin-top: 12vw;  
 }
 
-.me-auto {
-  margin-left: 4vw;
+.zoomable {
+  transition: transform 0.3s ease;
 }
 
-.ms-4 {
-  margin-right: 4vw;
+.zoomable:hover {
+  transform: scale(1.5);
+}
+
+.img2, .img3 {
+  @extend .zoomable;
 }
 
 .img2 {
-  height: 20vw;  
+  height: 20vh;  
   float: left;
   padding-left: 1vw;
   padding-right: 2vw;
   margin-top: 1vw;
-  transition: transform 0.3s ease;
 }
 
 .img2:hover {
@@ -67,13 +72,10 @@
 
 .img3 {
   margin-top: 5vw;
-  height: 25vw;  
+  height: 25vh;  
   float: right;
   padding: 2vw;
-  padding-right: 0;
-  padding-top: 0vw;
-  padding-bottom: 2vw;
-  transition: transform 0.2s ease;
+  padding: 0 0 2vw 2vw;
 }
 
 .img3:hover {

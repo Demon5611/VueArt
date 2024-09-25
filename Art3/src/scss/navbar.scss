@@ -1,3 +1,13 @@
+/* Переменные для повторяющихся значений */
+:root {
+  --navbar-bg-color: rgb(242, 235, 136);
+  --nav-link-color: rgb(47, 46, 46);
+  --transition-duration: 1s;
+  --padding-large: 3% 4%;
+  --padding-small: 1.5% 4%;
+}
+
+/* Общие стили для navbar */
 .navbar-container {
   top: 0;
   left: 0;
@@ -6,23 +16,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3% 4%; 
+  padding: var(--padding-large);
   background-color: transparent;
-  transition: background-color 1s ease; 
+  transition: background-color var(--transition-duration) ease;
 }
-
 
 .nav-underline {
   list-style: none;
   display: flex;
   align-items: center;
   background-color: transparent;
-  transition: background-color 1s; 
-  padding: 1.5% 4%;
+  transition: background-color var(--transition-duration);
+  padding: var(--padding-small);
 }
 
+/* Фиксированная навигация */
 .navbar-fixed {
-  background-color: rgb(242, 235, 136);
+  background-color: var(--navbar-bg-color);
   position: fixed;
   top: 0;
   left: 0;
@@ -30,19 +40,20 @@
   padding-top: 10px;
 }
 
+/* Логотип */
 .logo_navbar {
   width: 20%;
   height: 20%;
 }
 
+/* Элементы навигации */
 .nav-item {
   margin-left: auto; /* Смещение к правому краю */
 }
+
+/* Ссылки в навигации */
 .nav-link {
-  color: rgb(47, 46, 46);
-  text-align: center; 
+  color: var(--nav-link-color);
+  text-align: center;
   padding: 0.5rem;
-  
 }
-
-

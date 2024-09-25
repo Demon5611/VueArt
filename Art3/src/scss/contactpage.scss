@@ -1,3 +1,15 @@
+:root {
+  --primary-color: gray;
+  --secondary-color: black;
+  --hover-color: #f2eb88;
+  --btn-width: 16rem;
+  --btn-height: 5ch;
+  --avatar-max-width: 160px;
+  --avatar-radius: 50%;
+  --border-radius: 0.7rem;
+  --transition-duration: 0.3s;
+}
+
 .iphone-image {
   display: flex;
   justify-content: center;
@@ -18,22 +30,20 @@
   z-index: 2;
   margin-top: 6%;
   padding-bottom: 6%;
-  
-
 }
 
 .avatarImage {
-  width: 10%; 
-  max-width: 160px; 
-  height: auto; 
-  border-radius: 50%;
-  margin-bottom: 1%;  
+  width: 10%;
+  max-width: var(--avatar-max-width);
+  height: auto;
+  border-radius: var(--avatar-radius);
+  margin-bottom: 1%;
 }
 
 .name {
-  color: gray;
+  color: var(--primary-color);
   text-align: center;
-  margin-bottom: 2%;  
+  margin-bottom: 2%;
 }
 .h5,
 .describe {
@@ -49,22 +59,21 @@
 }
 
 .Btn {
-  width: 16rem;  
-  height: 5ch;
-  margin-top: 1%;  
+  width: var(--btn-width);
+  height: var(--btn-height);
+  margin-top: 1%;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  border-color: grey;
-  border-radius: 0.7rem;
+  border-color: var(--primary-color);
+  border-radius: var(--border-radius);
   background-color: rgba(0, 0, 0, 0.2);
   text-decoration: none;
-  color: black;
-  transition: background-color 0.3s ease; 
+  color: var(--secondary-color);
+  transition: background-color var(--transition-duration) ease;
 }
 .Btn:hover {
-  background-color: #f2eb88; 
+  background-color: var(--hover-color);
 }
 
 

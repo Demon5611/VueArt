@@ -1,9 +1,8 @@
 #gallery {
   background-color: rgb(207, 201, 201);
   margin-bottom: 4ch;
-  height: auto;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
   text-align: justify;
   word-wrap: break-word;
@@ -12,40 +11,36 @@
 .containerTextGalaryTop {
   text-align: justify;
   text-indent: 2ch;
-  margin-top: 10ch;
-  padding-top: 9ch;
-  padding-bottom: 9ch;
-  margin-left: auto; 
-  margin-right: auto;
+  margin: 10ch auto 0 auto;
+  padding: 9ch 0;
   line-height: 1.2;
-  width: 60%; 
+  width: 60%;
 }
 
-.textRight1,
-.textRight2,
-.textRight3 {
+.textBlock {
   display: flex;
-  margin-top: 2ch;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin: 2ch 10% 0 10%;
   text-indent: 2ch;
-
-  
 }
 
-.textAfterCard1,
-.textAfterCard2,
-.textAfterCard3 {
-  margin-left: 5%;
-  text-align: left;
+.textRight1, .textRight2, .textRight3 {
+  @extend .textBlock;
+}
 
+.textAfterCard {
+  margin: 5% 5% 0 5%;
+  text-align: left;
+}
+
+.textAfterCard1, .textAfterCard2, .textAfterCard3 {
+  @extend .textAfterCard;
 }
 
 .card {
   cursor: pointer;
   flex: 0 0 40%; 
   margin-left: 5%; 
-  width: 100%;
+  width: 60%;
   height: auto;
   object-fit: contain;
   border: none;
@@ -67,4 +62,5 @@ position: relative;
 .cv{
   top: 80%; 
   right: 1%; 
+  margin-left: 5%;
 }
