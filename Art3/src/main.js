@@ -1,6 +1,5 @@
-window.__VUE_OPTIONS_API__ = true;
-window.__VUE_PROD_DEVTOOLS__ = false;
-window.__VUE_PROD_HYDRATION_MISMATCH_DETAILS__ = false;
+window.__VUE_OPTIONS_API__ = true; // Если она установлена в true, можно использовать традиционный Options API (с data, methods, computed, и т.д.), который был в Vue 2.
+window.__VUE_PROD_DEVTOOLS__ = false; // Обычно в production-разработке отключают Devtools для повышения производительности и безопасности.
 
 import { createApp } from 'vue';
 import App from './App.vue';

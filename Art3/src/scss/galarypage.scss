@@ -1,6 +1,6 @@
 #gallery {
   background-color: rgb(207, 201, 201);
-  margin-bottom: 4ch;
+  padding-bottom: 4vw;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -23,6 +23,10 @@
   text-indent: 2ch;
 }
 
+h4{
+  text-indent: 2ch;
+}
+
 .textRight1, .textRight2, .textRight3 {
   @extend .textBlock;
 }
@@ -30,6 +34,7 @@
 .textAfterCard {
   margin: 5% 5% 0 5%;
   text-align: left;
+  text-indent: 4rem;
 }
 
 .textAfterCard1, .textAfterCard2, .textAfterCard3 {
@@ -44,9 +49,9 @@
   height: auto;
   object-fit: contain;
   border: none;
-
+  padding-top: 5%;
+  background: transparent;
 }
-
 
 .material {
   font-size: smaller;

@@ -1,6 +1,6 @@
 <template>
   <div :class="{ 'navbar-container': true, 'navbar-fixed': isNavbarFixed }">
-    <img src="../../../assets/logoNataAvodes.png" class="logo_navbar" alt="logo" />
+    <img src="../../../assets/logoNataAvodes.png" class="logo_navbar" alt="logo"/>
     <ul class="nav nav-underline">
           <li class="nav-item">
 

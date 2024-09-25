@@ -17,8 +17,8 @@ $button-height-small: 3ch;
 
 // Миксин для медиазапросов
 @mixin media-query($min-width, $max-width) {
-  @media (min-width: $min-width) and (max-width: $max-width) {
-    @content;
+  @media (min-width: $min-width) and (max-width: $max-width) { 
+    @content; // вставляет содержимое, которое вы передаёте в блок @include, внутрь медиазапроса.
   }
 }
 

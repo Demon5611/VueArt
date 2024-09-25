@@ -1,6 +1,6 @@
 <template>
     <div class="textRight">
-      <img :src="imageUrl" class="card" @click="openImage(imageUrl)" />
+      <img :src="imageUrl" class="card" @click="openImage(imageUrl)" alt="card"/>
       <div class="textAfterCard">
         <h4>{{ title }}</h4>
         <p>{{ description }}</p>
