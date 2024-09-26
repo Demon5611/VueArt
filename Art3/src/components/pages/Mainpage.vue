@@ -1,4 +1,5 @@
 <template>
+  <div>
     <div id="main" class="containerMainPage">
       <img class='headerImg' :src="headerImg" alt="img" />
       <div class="containerText">
@@ -34,6 +35,9 @@
         <a @click="handleDownloadCV" class="cv">Скачать био. NataAvodes</a>
       </div>
     </div>
+    <Galarypage />
+    <Contactpage />
+  </div>
   </template>
   
   
@@ -43,6 +47,8 @@
   import monky2 from '../../assets/monky2.jpg';
   import { downloadCVWithCache } from '../../services/fileDownloader';
   import NataAvodesBio from '../../assets/NataAvodesBio.pdf';  
+  import Galarypage from './Galarypage.vue';
+  import Contactpage from './Contactpage.vue';
 
 
   const handleDownloadCV = () => {

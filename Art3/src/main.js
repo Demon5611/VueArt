@@ -3,8 +3,9 @@ window.__VUE_PROD_DEVTOOLS__ = false; // Обычно в production-разраб
 
 import { createApp } from 'vue';
 import App from './App.vue';
+import router from './services/route';  // Подключаем роутер
 import './scss/main.scss';
 
-
 const app = createApp(App);
-createApp(App).mount('#app')
+app.use(router);
+app.mount('#app');

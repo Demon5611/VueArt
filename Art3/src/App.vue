@@ -1,20 +1,15 @@
 <template>
 <div class="app">
-    <Navbar/>
-    <ScrollToTopButton />
-    <Mainpage/>
-    <Galarypage/>
-    <Contactpage/>
-    <Footer/>
+  <Navbar />
+  <ScrollToTopButton />
+  <RouterView />
+  <Footer />
 </div>
 </template>
 
 <script setup>
 import Navbar from './components/pages/ui/Navbar.vue';
 import ScrollToTopButton from './components/pages/ui/ScrollToTopButton.vue';
-import Mainpage from './components/pages/Mainpage.vue';
-import Galarypage from './components/pages/Galarypage.vue';
-import Contactpage from './components/pages/Contactpage.vue';
 import Footer from './components/pages/ui/Footer.vue';
 
 </script>
