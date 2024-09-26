@@ -3,7 +3,7 @@ window.__VUE_PROD_DEVTOOLS__ = false; // Обычно в production-разраб
 
 import { createApp } from 'vue';
 import App from './App.vue';
-import router from './services/route';  // Подключаем роутер
+import router from './services/route';  
 import './scss/main.scss';
 
 const app = createApp(App);

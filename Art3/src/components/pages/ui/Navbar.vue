@@ -7,15 +7,12 @@
         <router-link class="nav-link" to="/blog">Блог</router-link>
       </li>
       <li class="nav-item">
-        <!-- Ссылка на Главную страницу -->
         <router-link class="nav-link" to="/">Главная</router-link>
       </li>
       <li class="nav-item">
-        <!-- Ссылка на секцию Галерея на Главной странице -->
         <router-link class="nav-link" :to="{ path: '/', hash: '#gallery' }">Галерея</router-link>
       </li>
       <li class="nav-item">
-        <!-- Ссылка на секцию Контакты на Главной странице -->
         <router-link class="nav-link" :to="{ path: '/', hash: '#contacts' }">Контакты</router-link>
       </li>
     </ul>
