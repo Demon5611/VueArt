@@ -49,7 +49,14 @@ const handleOverlayClick = () => {
   box-sizing: border-box;
 
 }
-
+.modal-inner img {
+  max-width: 100%; /* Изображение растягивается по ширине модального окна */
+  max-height: 100%; /* Изображение ограничено по высоте модального окна */
+  object-fit: contain; /* Сохраняем пропорции изображения */
+  display: block;
+  margin: 0 auto;
+  overflow: hidden; 
+}
 .close-icon {
   position: absolute;
   top: -20px;

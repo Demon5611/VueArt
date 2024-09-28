@@ -13,7 +13,7 @@
 
     <!-- Модальное окно -->
     <Modal :modalActive="modalActiveRef" @close="closeModal">
-      <img :src="modalImage" alt="Image in Modal" />
+      <img :src="modalImage" alt="Original Image in Modal" class="modal-image" />
       <div class="'modal-text'">
         <!-- <h3>{{ modalTitle }}</h3>
         <span>{{ modalMaterial }}</span> -->
@@ -42,10 +42,10 @@ const modalMaterial = ref("");
 
 
 const openModal = (card) => {
-  modalImage.value = card.originalImageUrl; 
+  modalImage.value = card.originalImageUrl; // Открываем оригинальное изображение
   modalTitle.value = card.title;
   modalMaterial.value = card.material;
-  modalActiveRef.value = true; 
+  modalActiveRef.value = true; // Открываем модальное окно
 };
 
 const closeModal = () => {
@@ -58,5 +58,11 @@ const handleDownloadCV = () => {
 </script>
 
 <style scoped>
-
+.modal-image {
+  max-width: 100%; /* Масштабируем изображение по ширине модального окна */
+  max-height: 100%; /* Ограничиваем высоту изображения */
+  object-fit: contain; /* Сохраняем пропорции изображения */
+  display: block;
+  margin: 0 auto; /* Центрируем изображение */
+}
 </style>
