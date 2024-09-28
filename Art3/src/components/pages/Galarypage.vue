@@ -1,55 +1,62 @@
 <template>
   <div id="gallery">
+    <!-- Рендеринг карточек динамически -->
     <ImageCard
-      :imageUrl="imageUrl.monky1"
-      title="ПРОЦЕСС ЭВОЛЮЦИИ"
-      description="Это яркий вызов современной реальности. Нет ничего хуже интеллектуальных шорт, навязанных нам….Кем навязанных? Социальными предрассудками, бизнесом и личными интересами отдельных групп людей. Каждая картина заставляет задуматься о том, что делают люди КАЖДЫЙ ДЕНЬ. Мы на пути эволюции или деградации как вида? Решать тебе…"
-      material="Материал: смешанная техника, графика. Размеры работ 80/100см"
-      @openImage="memoizedOpenImage"
+      v-for="(card, index) in cards"
+      :key="index"
+      :imageUrl="card.imageUrl"
+      :title="card.title"
+      :description="card.description"
+      :material="card.material"
+      @openModal="openModal(card)"
     />
 
-    <ImageCard
-      :imageUrl="imageUrl.interior"
-      title="КОРОЛЕВ"
-      description="Это яркий вызов современной реальности. Нет ничего хуже интеллектуальных шорт, навязанных нам….Кем навязанных? Социальными предрассудками, бизнесом и личными интересами отдельных групп людей. Каждая картина заставляет задуматься о том, что делают люди КАЖДЫЙ ДЕНЬ. Мы на пути эволюции или деградации как вида? Решать тебе…"
-      material="Материал: масло, пастель; графика. Размеры работ 30/40см"
-      @openImage="memoizedOpenImage"
-    />
-
-    <ImageCard
-      :imageUrl="imageUrl.interior"
-      title="МИГРАЦИОННЫЙ ЗАХВАТ"
-      description="Это яркий вызов современной реальности. Нет ничего хуже интеллектуальных шорт, навязанных нам….Кем навязанных? Социальными предрассудками, бизнесом и личными интересами отдельных групп людей. Каждая картина заставляет задуматься о том, что делают люди КАЖДЫЙ ДЕНЬ. Мы на пути эволюции или деградации как вида? Решать тебе…"
-      material="Материал: цифровая графика, коллаж, печать на пенокартоне. Размеры работ 80/120см"
-      @openImage="memoizedOpenImage"
-    />
+    <!-- Модальное окно -->
+    <Modal :modalActive="modalActiveRef" @close="closeModal">
+      <img :src="modalImage" alt="Image in Modal" />
+      <div class="'modal-text'">
+        <!-- <h3>{{ modalTitle }}</h3>
+        <span>{{ modalMaterial }}</span> -->
+      </div>
+    </Modal>
 
     <a @click="handleDownloadCV" class="cv">Скачать NataAvodesCV</a>
   </div>
 </template>
 
 <script setup>
-import ImageCard from '../ImageCard.vue';
-import NataAvodesCV from '../../assets/NataAvodesCV.pdf';
-import { downloadCVWithCache } from '../../services/fileDownloader'; 
-import { default as interior } from '../../assets/interior.jpg';
-import monky1 from '../../assets/monky1.jpeg';
-import memoize from 'lodash/memoize';
+import { ref } from "vue";
+import { cardsData } from "../../data/cardsData"; 
+import ImageCard from "../ImageCard.vue";
+import Modal from "../Modal.vue";
 
-const imageUrl = {
-  interior,
-  monky1,
+// Реактивный массив карточек
+const cards = ref(cardsData);
+
+const modalActiveRef = ref(false);
+
+// Данные для модального окна
+const modalImage = ref("");
+const modalTitle = ref("");
+const modalMaterial = ref("");
+
+
+const openModal = (card) => {
+  modalImage.value = card.originalImageUrl; 
+  modalTitle.value = card.title;
+  modalMaterial.value = card.material;
+  modalActiveRef.value = true; 
 };
 
-// Мемоизация функции открытия изображения
-const openImage = (url) => {
-  console.log('Открытие изображения:', url);
-  window.open(url, '_blank');
+const closeModal = () => {
+  modalActiveRef.value = false;
 };
-
-const memoizedOpenImage = memoize(openImage);
 
 const handleDownloadCV = () => {
-  downloadCVWithCache(NataAvodesCV, 'NataAvodesCV.pdf');
+  downloadCVWithCache(NataAvodesCV, "NataAvodesCV.pdf");
 };
 </script>
+
+<style scoped>
+
+</style>
