@@ -22,19 +22,8 @@ $button-height-small: 3ch;
   }
 }
 
-// Миксин для изменения размера шрифта
-@mixin text-right-font-size($size) {
-  font-size: $size;
-}
-
-// Медиазапросы
-
 @include media-query(1000px, 1300px) {
-  // GalaryPage
-  .textRight1, .textRight2, .textRight3, .cv {
-    @include text-right-font-size($font-size-medium);
-  }
-  
+
   // ContactPage
   .containerBtn {
     margin-top: 3em;
@@ -49,10 +38,6 @@ $button-height-small: 3ch;
 
   .cv, .navbar-fixed, .navbar-container, .firstText, .containerText, .footer, .textMainImg3, article {
     font-size: $font-size-medium;
-  }
-
-  .textRight1, .textRight2, .textRight3 {
-    font-size: $font-size-small;
   }
 
   // ContactPage
@@ -101,13 +86,6 @@ $button-height-small: 3ch;
     font-size: $font-size-default;
   }
 
-  .textRight1, .textRight2, .textRight3 {
-    font-size: $font-size-small;
-    padding-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 
   .textAfterCard1, .textAfterCard2, .textAfterCard3 {
     padding-top: 1rem;
@@ -185,14 +163,6 @@ $button-height-small: 3ch;
 
   h3.main_h_1, h3.main_h_2, h3.main_h_3 {
     font-size: $font-size-default;
-  }
-
-  .textRight1, .textRight2, .textRight3 {
-    font-size: $font-size-small;
-    padding-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
   .textAfterCard1, .textAfterCard2, .textAfterCard3 {

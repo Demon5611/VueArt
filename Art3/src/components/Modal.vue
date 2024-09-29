@@ -4,9 +4,14 @@
       <transition name="modal-animation-inner">
         <div class="modal-inner" @click.stop>
           <i class="far fa-times-circle" @click="$emit('close')"></i>
-          <!-- Контент модального окна -->
+
           <slot />
-          <img src="../assets/iconClose.png" class="close-icon" @click="$emit('close')" alt="Close modal" />
+          <img
+            src="../assets/iconClose.png"
+            class="close-icon"
+            @click="$emit('close')"
+            alt="Close modal"
+          />
         </div>
       </transition>
     </div>
@@ -15,14 +20,13 @@
 
 <script setup>
 const props = defineProps({
-  modalActive: Boolean
+  modalActive: Boolean,
 });
 
-const emit = defineEmits(['close']);
+const emit = defineEmits(["close"]);
 
-// Функция для обработки клика по overlay (вне модального окна)
 const handleOverlayClick = () => {
-  emit('close'); // Закрываем окно
+  emit("close");
 };
 </script>
 
@@ -44,19 +48,11 @@ const handleOverlayClick = () => {
   background: white;
   border-radius: 8px;
   position: relative;
-  max-width: 90%; 
+  max-width: 90%;
   max-height: 90%;
   box-sizing: border-box;
+}
 
-}
-.modal-inner img {
-  max-width: 100%; /* Изображение растягивается по ширине модального окна */
-  max-height: 100%; /* Изображение ограничено по высоте модального окна */
-  object-fit: contain; /* Сохраняем пропорции изображения */
-  display: block;
-  margin: 0 auto;
-  overflow: hidden; 
-}
 .close-icon {
   position: absolute;
   top: -20px;
@@ -70,11 +66,10 @@ const handleOverlayClick = () => {
 @media (max-width: 1200px) {
   .modal-inner {
     width: 70%;
-    max-height: 75%; 
+    max-height: 75%;
   }
 }
 
-/* Медиазапрос для экранов до 992px (планшеты) */
 @media (max-width: 992px) {
   .modal-inner {
     width: 80%;
@@ -82,7 +77,6 @@ const handleOverlayClick = () => {
   }
 }
 
-/* Медиазапрос для экранов до 768px (планшеты в альбомной ориентации, маленькие планшеты) */
 @media (max-width: 768px) {
   .modal-inner {
     width: 90%;
@@ -97,7 +91,6 @@ const handleOverlayClick = () => {
   }
 }
 
-/* Медиазапрос для экранов до 576px (мобильные устройства) */
 @media (max-width: 576px) {
   .modal-inner {
     width: 95%;
@@ -112,23 +105,30 @@ const handleOverlayClick = () => {
   }
 }
 
+/* Размер иконки закрытия */
 .far.fa-times-circle {
   font-size: 24px;
 }
 
-/* Анимация для плавного появления/исчезновения */
-.modal-animation-enter-active, .modal-animation-leave-active {
-  transition: opacity 0.5s ease, transform 0.5s ease;
+/* Анимация плавного появления/исчезновения модального окна */
+.modal-animation-enter-active,
+.modal-animation-leave-active {
+  transition: opacity 1s ease, transform 1s ease; /* Плавное появление */
 }
 
-.modal-animation-enter, .modal-animation-leave-to {
-  opacity: 0;
-  transform: scale(0.9);
+.modal-animation-enter,
+.modal-animation-leave-to {
+  opacity: 0; /* Начальная прозрачность */
+  transform: scale(0.9); /* Уменьшенный масштаб */
 }
 
-.modal-animation-enter-to, .modal-animation-leave {
+.modal-animation-enter-to {
+  opacity: 1; /* Конечная прозрачность */
+  transform: scale(1); /* Нормальный масштаб */
+}
+
+.modal-animation-leave {
   opacity: 1;
   transform: scale(1);
 }
 </style>
-

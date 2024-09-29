@@ -11,7 +11,6 @@
 import Navbar from './components/pages/ui/Navbar.vue';
 import ScrollToTopButton from './components/pages/ui/ScrollToTopButton.vue';
 import Footer from './components/pages/ui/Footer.vue';
-
 </script>
 
 
@@ -37,5 +36,6 @@ import Footer from './components/pages/ui/Footer.vue';
   font-style: italic;
   cursor: pointer;
   position: static;
+
   }
 </style>

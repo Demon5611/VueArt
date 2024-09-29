@@ -1,5 +1,5 @@
 <template>
-  <div class="textRight">
+  <div>
     <img :src="imageUrl" class="card" @click="handleClick" alt="card"/>
     <div class="textAfterCard">
       <h4>{{ title }}</h4>
@@ -23,17 +23,3 @@ const handleClick = () => {
   emit('openModal');
 };
 </script>
-
-<style scoped>
-.card {
-  width: 60%;
-  height: auto;
-  cursor: pointer;
-}
-
-.textAfterCard {
-  padding-top: 10px;
-}
-
-
-</style>

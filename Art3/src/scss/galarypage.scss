@@ -1,6 +1,7 @@
 #gallery {
   background-color: rgb(207, 201, 201);
   padding-bottom: 4vw;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -8,49 +9,28 @@
   word-wrap: break-word;
 }
 
-.containerTextGalaryTop {
-  text-align: justify;
-  text-indent: 2ch;
-  margin: 10ch auto 0 auto;
-  padding: 9ch 0;
-  line-height: 1.2;
-  width: 60%;
-}
-
-.textBlock {
+.card-container {
   display: flex;
-  margin: 2ch 10% 0 10%;
-  text-indent: 2ch;
-}
-
-h4{
-  text-indent: 2ch;
-}
-
-.textRight1, .textRight2, .textRight3 {
-  @extend .textBlock;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between; /* Изображение и текст расположены близко друг к другу */
+  margin: 2ch auto;
+  width: 75%; /* Уменьшаем ширину контейнера */
 }
 
 .textAfterCard {
-  margin: 5% 5% 0 5%;
-  text-align: left;
-  text-indent: 4rem;
-}
-
-.textAfterCard1, .textAfterCard2, .textAfterCard3 {
-  @extend .textAfterCard;
+  margin-left: 2rem; /* Оставляем разумный отступ */
+  text-align: justify;
+  width: 100%; /* Ширина текстового блока */
 }
 
 .card {
   cursor: pointer;
-  flex: 0 0 40%; 
-  margin-left: 5%; 
-  width: 60%;
-  height: auto;
+  width: 100%; /* Ширина изображения */
   object-fit: contain;
   border: none;
-  padding-top: 5%;
   background: transparent;
+  margin-right: 2rem; /* Отступ между изображением и текстом */
 }
 
 .material {
@@ -59,13 +39,22 @@ h4{
   text-indent: 0ch;
 }
 
-.textRight3 {
-padding-bottom: 2%;
-position: relative;
-};
+/* Медиазапросы для адаптивности */
+@media (max-width: 992px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+  }
 
-.cv{
-  top: 80%; 
-  right: 1%; 
-  margin-left: 5%;
+  .card {
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+
+  .textAfterCard {
+    margin: 0;
+    width: 100%;
+    text-align: justify;
+  }
 }
