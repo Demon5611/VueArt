@@ -17,10 +17,17 @@
   margin: 2ch auto;
   width: 75%; /* Уменьшаем ширину контейнера */
 }
-
+.card-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 2ch auto;
+  width: 70%;
+}
 .textAfterCard {
   margin-left: 2rem; /* Оставляем разумный отступ */
-  text-align: justify;
+  text-align: left;
   width: 100%; /* Ширина текстового блока */
 }
 
@@ -44,7 +51,7 @@
   .card-container {
     flex-direction: column;
     align-items: center;
-    text-align: justify;
+    text-align: center;
   }
 
   .card {
@@ -55,6 +62,6 @@
   .textAfterCard {
     margin: 0;
     width: 100%;
-    text-align: justify;
+    text-align: center;
   }
 }

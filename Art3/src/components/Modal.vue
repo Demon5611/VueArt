@@ -6,6 +6,7 @@
           <i class="far fa-times-circle" @click="$emit('close')"></i>
 
           <slot />
+
           <img
             src="../assets/iconClose.png"
             class="close-icon"
@@ -48,68 +49,26 @@ const handleOverlayClick = () => {
   background: white;
   border-radius: 8px;
   position: relative;
+  
   max-width: 90%;
   max-height: 90%;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .close-icon {
-  position: absolute;
-  top: -20px;
-  right: -20px;
+  position: fixed;
+  top: 10px;
+  right: 10px;
   cursor: pointer;
   width: 24px;
   height: 24px;
   z-index: 1001;
 }
 
-@media (max-width: 1200px) {
-  .modal-inner {
-    width: 70%;
-    max-height: 75%;
-  }
-}
-
-@media (max-width: 992px) {
-  .modal-inner {
-    width: 80%;
-    max-height: 70%;
-  }
-}
-
-@media (max-width: 768px) {
-  .modal-inner {
-    width: 90%;
-    max-height: 65%;
-  }
-
-  .close-icon {
-    top: -15px;
-    right: -15px;
-    width: 20px;
-    height: 20px;
-  }
-}
-
-@media (max-width: 576px) {
-  .modal-inner {
-    width: 95%;
-    max-height: 60%;
-  }
-
-  .close-icon {
-    top: -10px;
-    right: -10px;
-    width: 18px;
-    height: 18px;
-  }
-}
-
-/* Размер иконки закрытия */
 .far.fa-times-circle {
   font-size: 24px;
 }
-
 /* Анимация плавного появления/исчезновения модального окна */
 .modal-animation-enter-active,
 .modal-animation-leave-active {
@@ -130,5 +89,39 @@ const handleOverlayClick = () => {
 .modal-animation-leave {
   opacity: 1;
   transform: scale(1);
+}
+
+@media (max-width: 768px) {
+  .modal-inner {
+    max-width: 90%;
+    max-height: 65%;
+  }
+
+  .modal-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Масштабируем изображение по размеру модального окна */
+  }
+
+  .close-icon {
+    top: 15px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .modal-inner {
+    width: 95%;
+    max-height: 60%;
+  }
+
+  .close-icon {
+    top: 10px;
+    right: 10px;
+    width: 18px;
+    height: 18px;
+  }
 }
 </style>
