@@ -25,7 +25,7 @@
       <div class="'modal-text'"></div>
     </Modal>
 
-    <a @click="handleDownloadCV" class="cv">Скачать NataAvodesCV</a>
+    <a @click="handleDownloadCV" href="#" class="cv">Скачать NataAvodesCV</a>
   </div>
 </template>
 

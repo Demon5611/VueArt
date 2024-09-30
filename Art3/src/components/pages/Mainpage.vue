@@ -32,7 +32,7 @@
               серия картин «Обратный процесс эволюции», 2021 год.
               <br />
             </article>
-            <a @click="handleDownloadCV" class="cv cv-bio">Скачать био. NataAvodes</a>
+            <a @click="handleDownloadCV" href="#" class="cv cv-bio">Скачать био. NataAvodes</a>
           </div>
     </div>
     <Galarypage />
@@ -58,12 +58,7 @@
   </script>
 
   <style scoped>
-  /* .cv-bio{
-    display: block;
-    margin: 0 auto;
-    padding: 10px 20px;
-    background-color: #ff6b6b;
-  } */
+
   </style>
   
   
