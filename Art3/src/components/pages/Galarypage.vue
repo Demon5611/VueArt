@@ -1,9 +1,10 @@
 <template>
   <div id="gallery">
     <div v-for="(card, index) in cards" :key="index" class="card-container">
-      <!-- Карточка изображения -->
-      <ImageCard
+      <!-- Карточка изображения с динамической рамкой -->
+      <ImageCard 
         :imageUrl="card.imageUrl"
+        :borderImageUrl="card.borderImageUrl" 
         @openModal="openModal(card)"
       />
       <!-- Текст рядом с изображением -->
@@ -21,16 +22,12 @@
         alt="Original Image in Modal"
         class="modal-image"
       />
-      <div class="'modal-text'">
-        <!-- <h3>{{ modalTitle }}</h3>
-        <span>{{ modalMaterial }}</span> -->
-      </div>
+      <div class="'modal-text'"></div>
     </Modal>
 
-    <a @click="handleDownloadCV" class="cv cv-cv">Скачать NataAvodesCV</a>
+    <a @click="handleDownloadCV" class="cv">Скачать NataAvodesCV</a>
   </div>
 </template>
-
 
 <script setup>
 import { ref } from "vue";
@@ -40,20 +37,14 @@ import { downloadCVWithCache } from "../../services/fileDownloader";
 import ImageCard from "../ImageCard.vue";
 import Modal from "../Modal.vue";
 
-
 const cards = ref(cardsData);
 
 const modalActiveRef = ref(false);
-
 const modalImage = ref("");
-const modalTitle = ref("");
-const modalMaterial = ref("");
 
 const openModal = (card) => {
   modalImage.value = card.originalImageUrl; 
-  modalTitle.value = card.title;
-  modalMaterial.value = card.material;
-  modalActiveRef.value = true; 
+  modalActiveRef.value = true;
 };
 
 const closeModal = () => {
@@ -73,8 +64,4 @@ const handleDownloadCV = () => {
   display: block;
   margin: 0 auto;
 }
-
-.cv-cv {
-  padding-right:63%
-  }
 </style>
