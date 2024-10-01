@@ -1,0 +1,10 @@
+# start of file
+user-agent: *
+disallow: /downloads/
+disallow: /uploads/
+disallow: /admin/
+disallow: /private/
+disallow: /*.pdf
+Allow: /
+
+sitemap: https://nataavodes.com/sitemap-file.xml
