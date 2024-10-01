@@ -25,11 +25,3 @@ const cardStyle = computed(() => ({
   "border-image-repeat": "stretch" /* Растягиваем изображение на всю рамку */,
 }));
 </script>
-
-<style scoped>
-.card {
-  width: 100%;
-  height: auto;
-  cursor: pointer;
-}
-</style>

@@ -16,10 +16,10 @@
   text-indent: 4rem;
 }
 
-.text-end, .textMainImg3 {
+.text-end,
+.textMainImg3 {
   @extend .text-indent;
 }
-
 
 .containerText {
   line-height: 1.2;
@@ -39,7 +39,7 @@
 }
 
 .h3_MainText3 {
-  margin-top: 12vw;  
+  margin-top: 12vw;
 }
 
 .zoomable {
@@ -50,12 +50,13 @@
   transform: scale(1.5);
 }
 
-.img2, .img3 {
+.img2,
+.img3 {
   @extend .zoomable;
 }
 
 .img2 {
-  height: 20vw;  
+  height: 20vw;
   float: left;
   padding-left: 1vw;
   padding-right: 2vw;
@@ -68,7 +69,7 @@
 
 .img3 {
   margin-top: 5vw;
-  height: 25vw;  
+  height: 25vw;
   float: right;
   padding: 2vw;
   padding: 0 0 2vw 2vw;
@@ -77,3 +78,7 @@
 .img3:hover {
   transform: scale(1.5);
 }
+
+// .cv_bio{
+//   margin-top: 5%;
+// }

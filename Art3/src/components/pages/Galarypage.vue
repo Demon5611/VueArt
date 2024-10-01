@@ -1,13 +1,11 @@
 <template>
   <div id="gallery">
     <div v-for="(card, index) in cards" :key="index" class="card-container">
-      <!-- Карточка изображения с динамической рамкой -->
       <ImageCard 
         :imageUrl="card.imageUrl"
         :borderImageUrl="card.borderImageUrl" 
         @openModal="openModal(card)"
       />
-      <!-- Текст рядом с изображением -->
       <div class="textAfterCard">
         <h4>{{ card.title }}</h4>
         <p>{{ card.description }}</p>
@@ -15,7 +13,6 @@
       </div>
     </div>
 
-    <!-- Модальное окно -->
     <Modal :modalActive="modalActiveRef" @close="closeModal">
       <img
         :src="modalImage"
@@ -25,7 +22,7 @@
       <div class="'modal-text'"></div>
     </Modal>
 
-    <a @click="handleDownloadCV" href="#" class="cv">Скачать NataAvodesCV</a>
+    <a @click="handleDownloadCV" href="#" class="cv cv_download">Скачать NataAvodesCV</a>
   </div>
 </template>
 
@@ -56,12 +53,3 @@ const handleDownloadCV = () => {
 };
 </script>
 
-<style scoped>
-.modal-image {
-  max-width: 100%;
-  max-height: 100%; 
-  object-fit: contain;
-  display: block;
-  margin: 0 auto;
-}
-</style>
