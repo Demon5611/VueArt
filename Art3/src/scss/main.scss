@@ -1,10 +1,10 @@
-@import 'navbar.scss';
-@import 'footer.scss';
-@import 'mainpage.scss';
-@import 'galarypage.scss';
-@import 'contactpage.scss';
-@import 'scrollToTopButton.scss';
-@import 'modal.scss';
+@use 'scrollToTopButton.scss';
+@use 'modal.scss';
+@use 'navbar';
+@use 'footer';
+@use 'mainpage';
+@use 'galarypage';
+@use 'contactpage';
 
 
 // App

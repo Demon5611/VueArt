@@ -1,23 +1,33 @@
 <template>
-  <div v-if="isVisible" class="scroll-to-top" @click="scrollToTop" @keydown="handleKeyDown" role="button" tabindex="0">
-    <img alt="arrow_up"  src="../../../../public/icons/arrow_up.svg" style= "color:white"/>
+  <div
+    v-if="isVisible"
+    class="scroll-to-top"
+    @click="scrollToTop"
+    @keydown="handleKeyDown"
+    role="button"
+    tabindex="0"
+  >
+    <img
+      alt="arrow_up"
+      src="../../../assets/arrow_up.svg"
+      style="color: white"
+    />
   </div>
 </template>
 
 <script>
-import { onMounted, onUnmounted, ref } from 'vue';
+import { onMounted, onUnmounted, ref } from "vue";
 
 export default {
-  components: {
-  },
+  components: {},
 
   setup() {
     const isVisible = ref(false);
-    
+
     const scrollToTop = () => {
       window.scrollTo({
         top: 0,
-        behavior: 'smooth',
+        behavior: "smooth",
       });
     };
 
@@ -26,13 +36,12 @@ export default {
     };
 
     onMounted(() => {
-      window.addEventListener('scroll', handleScroll);
+      window.addEventListener("scroll", handleScroll);
     });
 
     onUnmounted(() => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     });
-
 
     return {
       isVisible,
