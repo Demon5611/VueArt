@@ -3,7 +3,7 @@
     <div id="main" class="containerMainPage">
       <img class='headerImg' :src="headerImg" alt="img" />
       <div class="containerText">
-        <h3 class="firstText main_h_1">Добрый день )</h3>
+        <h1 class="firstText main_h_1">Добрый день )</h1>
         <article class="textAround1">
               Мне 36 лет, замужем, двое детей, кошка и пёс. Родилась и проживаю в самом космическом
               городе России — Королёв, Московская область. Проработать с чертежами ракет 10 лет, а
