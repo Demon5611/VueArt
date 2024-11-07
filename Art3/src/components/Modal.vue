@@ -32,5 +32,4 @@ const handleOverlayClick = () => {
 </script>
 
 <style scoped>
-
 </style>

@@ -1,21 +1,19 @@
-import { createRouter, createWebHistory } from 'vue-router';
-import Blog from '../components/pages/Blog.vue';
-import Mainpage from '../components/pages/Mainpage.vue';
+import { createRouter, createWebHistory } from 'vue-router'
+import Blog from '../components/pages/Blog.vue'
+import Mainpage from '../components/pages/Mainpage.vue'
 
 const routes = [
   {
     path: '/',
     name: 'Mainpage',
-    component: Mainpage,
+    component: Mainpage
   },
   {
     path: '/blog',
     name: 'Blog',
-    component: Blog,
-  },
-];
-
-
+    component: Blog
+  }
+]
 
 const router = createRouter({
   history: createWebHistory(),
@@ -23,21 +21,16 @@ const router = createRouter({
   scrollBehavior(to, from, savedPosition) {
     // Если есть сохраненная позиция, возвращаем её (например, при навигации "назад" или "вперед")
     if (savedPosition) {
-      return savedPosition;
-    }
-    // Если есть хэш (например, #gallery), скроллим к этому элементу с плавной прокруткой
-    else if (to.hash) {
+      return savedPosition
+    } else if (to.hash) {
       return {
         el: to.hash,
-        behavior: 'smooth', // плавная прокрутка
-      };
+        behavior: 'smooth'
+      }
+    } else {
+      return { top: 0 }
     }
-    // В других случаях прокручиваем страницу к началу
-    else {
-      return { top: 0 };
-    }
-  },
-});
+  }
+})
 
-
-export default router;
+export default router

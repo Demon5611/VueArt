@@ -6,7 +6,7 @@
         <img :src="avatarImage" class="avatarImage" alt="avatarImage" />
         <div class="name">
           <h5>NATA AVODES</h5>
-          <h5 class="describe">художник дизайнер педагог</h5>
+          <h5 class="describe">художник - педагог</h5>
         </div>
         <div class="containerBtn">
           <a
