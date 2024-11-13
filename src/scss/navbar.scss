@@ -1,0 +1,87 @@
+:root {
+  --navbar-bg-color: rgba(155, 151, 151, 0.9);
+  --nav-link-color: rgb(47, 46, 46);
+  --transition-duration: 1s;
+  --padding-large: 1% 4%;
+  --padding-small: 1.5% 4%;
+}
+
+/* Основной стиль навбара */
+.navbar-container {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--padding-large);
+  background-color: transparent;
+  transition: background-color var(--transition-duration) ease;
+}
+
+.nav-underline {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  transition: background-color var(--transition-duration);
+  padding: var(--padding-small);
+}
+
+.navbar-fixed {
+  background-color: var(--navbar-bg-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.logo_navbar {
+  width: 20%;
+  height: 20%;
+}
+
+.nav-item {
+  margin-left: auto;
+}
+
+.nav-link {
+  color: var(--nav-link-color);
+  text-align: center;
+  padding: 0.5rem;
+}
+
+/* Адаптация для ширины экрана до 1300px */
+@media (max-width: 1300px) {
+  .navbar-container {
+    padding: var(--padding-small);
+  }
+  .logo_navbar {
+    width: 15%;
+  }
+  .nav-link {
+    font-size: 0.9rem;
+  }
+}
+
+/* Адаптация для ширины экрана до 998px */
+@media (max-width: 998px) {
+  .navbar-container {
+    flex-direction: column;
+    padding: var(--padding-small);
+  }
+  .nav-underline {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .logo_navbar {
+    width: 30%;
+  }
+  .nav-link {
+    padding: 0.5rem 1rem;
+  }
+}
+
+

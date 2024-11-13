@@ -1,0 +1,80 @@
+@mixin text-wrap-style {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  text-align: justify;
+}
+
+#gallery {
+  background-color: rgb(207, 201, 201);
+  padding-bottom: 4vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5%;
+
+
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 2ch auto;
+  width: 70%;
+
+}
+
+.textAfterCard {
+  margin-left: 2rem;
+  text-align: left;
+  width: 100%;
+  @include text-wrap-style;
+}
+
+// ImageCard
+.card {
+  cursor: pointer;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border: none;
+  background: transparent;
+  margin-right: 2rem;
+}
+
+.material {
+  font-size: smaller;
+  font-style: italic;
+  text-indent: 0ch;
+}
+
+
+
+.modal-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.cv_download {
+  padding-right: 50%;
+  color: #000;
+}
+
+@media (max-width: 1300px) {
+
+}
+
+@media (max-width: 998px){
+
+}
+@media (max-width: 698px){
+
+}
+
+@media (max-width: 385px){
+  
+}
