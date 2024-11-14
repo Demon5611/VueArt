@@ -18,7 +18,7 @@
         </div>
 
         <div class="grid-item item2">
-          <img class="img2" :src="nata2" alt="img" />
+          <img class="img2" :src="nata1" alt="img" />
         </div>
 
         <div class="grid-item item5 main_h_2">
@@ -41,7 +41,7 @@
         </div>
 
         <div class="grid-item item4">
-          <img class="img3" :src="nata1" alt="img" />
+          <img class="img3" :src="nata2" alt="img" />
         </div>
 
         <div class="grid-item item6">

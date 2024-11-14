@@ -2,8 +2,7 @@
   <div id="blog" class="containerBlogPage">
     <div class="image-container">
       <img class="blogMainImg" :src="blogMainImg" alt="img" />
-      <!-- Наложение тумана -->
-      <div class="fog-overlay"></div>
+
       <div class="text-overlay">
         <h1 class="h_1_blog">Региональный куратор</h1>
         <p>Ассоциация художников-пленэристов в городском округе Королев</p>
@@ -124,7 +123,7 @@ import vkIcon from "../../assets/vk.svg";
   position: relative;
   width: 100%;
 }
-.textBox1{
+.textBox1 {
   width: 70%;
 }
 .blogMainImg {
@@ -144,14 +143,6 @@ import vkIcon from "../../assets/vk.svg";
   margin-bottom: 2%;
 }
 
-.fog-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .text-overlay {
   position: absolute;
   top: 50%;
@@ -160,7 +151,9 @@ import vkIcon from "../../assets/vk.svg";
   text-align: center;
   padding: 1rem;
   border-radius: 8px;
+  color: rgb(99, 92, 92);
 }
+/* jguhg */
 
 .h_1_blog {
   font-weight: 600;
@@ -235,11 +228,10 @@ p {
   gap: 10px;
   padding: 0 40%;
   margin-bottom: 5%;
-  
 }
 
 .subscribe {
-width: 100%;
+  width: 100%;
 }
 img {
   max-width: fit-content;

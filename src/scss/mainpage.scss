@@ -13,6 +13,7 @@
   margin-bottom: 2rem;
   margin-top: 1rem;
 }
+
 .text-overlay {
   position: absolute;
   top: 70%;
@@ -22,7 +23,10 @@
   padding: 1rem;
   border-radius: 8px;
   color: rgb(233, 227, 227);
+  font-weight: 800;
+  font-size: 2.5rem;
 }
+
 .containerText {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
