@@ -303,6 +303,9 @@ img {
     padding-right: 30%;
     padding-left: 10%;
   }
+  .pict {
+    width: 15px;
+  }
 }
 
 @media (max-width: 385px) {
@@ -328,7 +331,7 @@ img {
     padding-left: 10%;
   }
   .pict {
-    width: 15px;
+    width: 10px;
   }
 }
 </style>
