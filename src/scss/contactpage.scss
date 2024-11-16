@@ -16,8 +16,8 @@
   align-items: center;
   flex-direction: column;
   height: 100vh;
-  max-width: 100%; /* Ограничивает ширину контейнера */
-  padding: 0 2%; /* Обеспечивает отступы для меньших экранов */
+  max-width: 100%;
+  padding: 0 2%;
   position: relative;
   margin-top: 0;
   padding-top: 0;
@@ -106,7 +106,8 @@
 @media (max-width: 1300px) {
   .iphone-image {
     height: 90vh;
-    padding: 0 3%; /* Увеличивает отступы */
+    padding: 0 3%;
+    /* Увеличивает отступы */
   }
 }
 
@@ -125,8 +126,58 @@
 }
 
 @media (max-width: 385px) {
-  .iphone-image {
-    height: 70vh;
+  .imgPhone {
+    height: 60vh;
     padding: 0 8%;
+  }
+
+  .iphone-image {
+    flex-direction: column;
+    height: auto;
+    /* Автоматическая высота */
+    padding: 2%;
+    /* Сужаем отступы */
+  }
+
+  .avatarImage {
+    width: 30%;
+    /* Увеличиваем аватар для мобильных */
+    margin-bottom: 0.5rem;
+  }
+
+  .name h5 {
+    font-size: 0.9rem;
+    /* Уменьшаем размер текста */
+    margin-bottom: 0.2rem;
+  }
+
+  .containerBtn {
+    gap: 0.2rem;
+    /* Уменьшаем расстояние между кнопками */
+  }
+
+  .ava-btn {
+    margin-top: 16%;
+  }
+
+  .Btn {
+    width: 10rem;
+    /* Уменьшаем ширину кнопок */
+    height: 3ch;
+    /* Уменьшаем высоту кнопок */
+    font-size: 0.9rem;
+    /* Уменьшаем размер шрифта */
+  }
+
+  .pict {
+    height: 30%;
+    /* Уменьшаем размер иконок */
+  }
+
+  .span {
+    font-size: 1.5ch;
+    /* Уменьшаем размер текста */
+    margin-left: 0.5ch;
+    /* Уменьшаем отступ текста */
   }
 }

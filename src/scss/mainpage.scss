@@ -19,7 +19,7 @@
 
 .text-overlay {
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -30,6 +30,7 @@
   font-size: 2.5rem;
   white-space: nowrap;
   overflow: hidden;
+  letter-spacing: 1ch;
 }
 
 .containerText {
@@ -93,12 +94,15 @@ h3 {
   flex-direction: column;
   align-items: start;
 }
-.main_h2_1{
+
+.main_h2_1 {
   margin-top: 7%;
 }
-.main_h2_2{
+
+.main_h2_2 {
   margin-top: -7%;
 }
+
 .main_h_2,
 .h3_MainText3.main_h_3 {
   margin: 9% 2% 0% 2%;
@@ -134,7 +138,7 @@ h3 {
   .firstText,
   .card_title,
   h3 {
-    font-size: 1.6rem;  
+    font-size: 1.6rem;
   }
 
 
@@ -142,10 +146,12 @@ h3 {
   .h3_MainText3.main_h_3 {
     margin: 1% 1%;
   }
-  .main_h2_1{
+
+  .main_h2_1 {
     margin-top: 7%;
   }
-  .main_h2_2{
+
+  .main_h2_2 {
     margin-top: -7%;
   }
 
@@ -155,16 +161,18 @@ h3 {
     font-weight: 400;
     font-size: 2.2rem;
   }
+
   .item5 {
     grid-column: 2 / -1;
     grid-row: 2 / 3;
     margin-top: 10%;
   }
+
   .item6 {
     padding-left: 70%;
     font-size: 0.2rem;
-    transform: translateY(-70px);  
-}
+    transform: translateY(-70px);
+  }
 }
 
 @media (max-width: 998px) {
@@ -178,11 +186,13 @@ h3 {
   h3 {
     font-size: 1.2rem;
   }
+
   .main_h_2,
   .h3_MainText3.main_h_3 {
     margin: 1% 1%;
     font-size: 1rem;
   }
+
   .item3 {
     // grid-column: 1 / -2;
     // grid-row: 3 / 4;
@@ -191,6 +201,7 @@ h3 {
     margin-top: -20px;
     padding: 5% 5% 5% 5%;
   }
+
   .item5 {
     margin-top: 5%;
   }
@@ -227,6 +238,7 @@ h3 {
   .item1 {
     font-size: 0.3rem;
   }
+
   .item3 {
     grid-column: 1 / -2;
     grid-row: 3 / 4;

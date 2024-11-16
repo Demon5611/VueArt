@@ -115,7 +115,7 @@ import vkIcon from "../../assets/vk.svg";
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: rgb(161, 150, 150);
+  color: rgb(110, 103, 103);
   min-height: 100vh;
 }
 
@@ -151,7 +151,7 @@ import vkIcon from "../../assets/vk.svg";
   text-align: center;
   padding: 1rem;
   border-radius: 8px;
-  color: rgb(233, 227, 227);
+  color: rgb(110, 103, 103);
   font-weight: 800;
   font-size: 2.5rem;
   white-space: normal; /* Разрешает перенос текста */
@@ -173,7 +173,7 @@ p {
 
 .blog_h_5,
 .blog_h_3 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin: 0 5%;
   padding: 5% 5% 2% 2%;
 }
