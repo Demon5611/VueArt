@@ -5,7 +5,7 @@
     <Mainpage />
     <Blog />
     <Galarypage />
-    <Contactpage />
+    <!-- <Contactpage /> -->
     <div ref="endOfAppPage" class="end-marker"></div>
     <Footer :isVisible="isFooterVisible" />
   </div>
@@ -19,7 +19,7 @@ import { ref, onMounted, onUnmounted } from 'vue'
 import Mainpage from './components/pages/Mainpage.vue'
 import Galarypage from './components/pages/Galarypage.vue'
 import Blog from './components/pages/Blog.vue'
-import Contactpage from './components/pages/Contactpage.vue'
+// import Contactpage from './components/pages/Contactpage.vue'
 
 const isFooterVisible = ref(false)
 

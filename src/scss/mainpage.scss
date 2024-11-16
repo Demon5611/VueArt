@@ -5,18 +5,21 @@
 }
 
 #main {
+  position: relative;
   margin-bottom: 10%;
 }
 
 .headerImg {
   width: 100%;
-  margin-bottom: 2rem;
-  margin-top: 1rem;
+  height: auto;
+  position: relative;
+  display: block;
+  margin: 0 auto;
 }
 
 .text-overlay {
   position: absolute;
-  top: 70%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -25,6 +28,8 @@
   color: rgb(233, 227, 227);
   font-weight: 800;
   font-size: 2.5rem;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .containerText {
@@ -69,7 +74,7 @@
   grid-column: 1 / -1;
   grid-row: 4 / 5;
   text-align: center;
-  padding: 0 10%;
+  padding: 0;
 }
 
 .firstText,
@@ -80,7 +85,7 @@ h3 {
 
 .textAround1 {
   line-height: 1.5;
-  margin-top: 10px;
+  margin-top: 10%;
 }
 
 .text-end {
@@ -113,10 +118,8 @@ h3 {
   display: block;
   text-align: left;
   color: #000;
-
 }
 
-/* Медиазапросы для адаптивности */
 @media (max-width: 1300px) {
   .containerText {
     padding: 0 4%;
@@ -133,69 +136,123 @@ h3 {
   .h3_MainText3.main_h_3 {
     margin: 5% 1%;
   }
+
+  .text-overlay {
+    position: absolute;
+    top: 30%;
+    font-weight: 400;
+    font-size: 2.2rem;
+  }
 }
 
 @media (max-width: 998px) {
   .containerText {
-    grid-template-columns: 1fr 1fr;
-    padding: 0 3%;
+    padding: 0 4%;
+    gap: 8px;
   }
 
   .firstText,
   .card_title,
   h3 {
-    font-size: 1.4rem;
-  }
-
-  .img2 {
-    margin-top: 10%;
+    font-size: 1.2rem;
   }
 
   .main_h_2,
   .h3_MainText3.main_h_3 {
-    margin: 4% 1%;
+    margin: 1% 1%;
+    font-size: 1rem;
+  }
+
+  .item5 {
+    margin-top: 5%;
+  }
+
+  .text-overlay {
+    top: 20%;
+    font-size: 2rem;
+  }
+
+  .textAround1 {
+    font-size: 1rem;
+  }
+
+  .item6 {
+    padding: 0;
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 698px) {
-  .containerText {
-    grid-template-columns: 1fr;
-    gap: 5px;
-  }
 
   .firstText,
   .card_title,
   h3 {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
-  .img2,
-  .img3 {
-    margin-top: 10%;
+  .text-overlay {
+    top: 10%;
+    font-size: 1.5rem;
   }
 
-  .cv_bio {
-    font-size: 0.9rem;
+  .item3 {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+    width: 60%;
+    font-size: 0.6rem;
+    // padding-top: 10%;
+  }
+
+  .item4 {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+  }
+
+  .item6 {
+    padding: 0;
+    font-size: 0.4rem;
   }
 }
 
 @media (max-width: 385px) {
-  .containerText {
-    padding: 0 2%;
+
+  article,
+  .textAround1 {
+    font-size: 0.6rem;
   }
 
   .firstText,
   .card_title,
   h3 {
-    font-size: 1.1rem;
-  }
-
-  .cv_bio {
     font-size: 0.8rem;
   }
 
-  .main_h_2,
-  .h3_MainText3.main_h_3 {
-    margin: 2% 0;
+  .text-overlay {
+    top: 10%;
+    font-size: 1rem;
+  }
+
+  .item1 {
+    font-size: 0.3rem;
+  }
+
+  .item3 {
+    width: 55%;
+    font-size: 0.5rem;
+    margin-top: 5%;
+  }
+
+  .item4 {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    width: 130%;
+    transform: translateX(-30%);
+    margin-top: 20%;
+  }
+
+  .item6 {
+    padding-left: 70%;
+    font-size: 0.2rem;
+    transform: translateY(-40px);
   }
 }

@@ -131,7 +131,7 @@ import vkIcon from "../../assets/vk.svg";
   display: block;
 }
 .stroyBuro {
-  width: 100%;
+  max-width: 70%;
 }
 
 .line {
@@ -183,7 +183,7 @@ p {
   text-decoration: underline;
 }
 
-.grid-container-blog {
+.grid-container-blog{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -225,13 +225,14 @@ p {
 .iconsContact {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
-  padding: 0 40%;
   margin-bottom: 5%;
 }
 
 .subscribe {
-  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 img {
   max-width: fit-content;
@@ -243,68 +244,61 @@ img {
 }
 
 /* Медиазапросы */
+
 @media (max-width: 1300px) {
-  .containerBlogPage {
-    padding: 0 4%;
-  }
-
-  .h_1_blog {
-    font-size: 2.3rem;
-  }
-
-  .blog_h_5,
-  .blog_h_3 {
-    font-size: 1.1rem;
-  }
-
-  .grid-container-blog {
-    max-width: 90%;
-  }
-}
-
-@media (max-width: 998px) {
-  .containerBlogPage {
-    padding: 0 3%;
-  }
-
-  .h_1_blog {
-    font-size: 2rem;
-  }
-
-  .blog_h_5,
   .blog_h_3 {
     font-size: 1rem;
+    margin: 0 10%;
+    padding: 5% 5% 2% 2%;
   }
+  .grid-container-blog{
+  width: 80%;
+}
 
-  .grid-container-blog {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    height: auto;
+  .iconsContact {
+    font-size: 0.8rem;
+    width: 120%;
+    padding-right:40%;
+    padding-left: 20%;
   }
-
-  .item1,
-  .item2,
-  .item3 {
-    grid-column: 1 / 2;
+  .subscribe {
+    padding: 0;
+    margin: 0;
   }
 }
 
+
 @media (max-width: 698px) {
-  .h_1_blog {
-    font-size: 1.8rem;
+
+.h_1_blog {
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin: 0;
+}
+.textBox1 {
+    width: 90%;
+}
+.blog_h_5, .blog_h_3 {
+    font-size: 0.8rem;
+    padding: 4% 4% 4% 0%;
+}
+.grid-container-blog{
+  width: 80%;
+}
+
+.item3{
+  width: fit-content;
+  padding: 0;
+  margin: 0; 
+}
+.iconsContact {
+  display: flex;
+    font-size: 0.8rem;
+    width: 120%;
+    padding-right: 30%;
+    padding-left: 10%;
   }
 
-  .blog_h_5,
-  .blog_h_3 {
-    font-size: 0.95rem;
-  }
-
-  .iconsContact {
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 5%;
-    padding-right: 5%;
-  }
 }
 
 @media (max-width: 385px) {
