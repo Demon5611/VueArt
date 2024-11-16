@@ -40,7 +40,7 @@
 
 .logo_navbar {
   width: 20%;
-  height: 20%;
+  height: auto;
 }
 
 .nav-item {
@@ -51,6 +51,7 @@
   color: var(--nav-link-color);
   text-align: center;
   padding: 0.5rem;
+  font-size: 1rem;
 }
 
 /* Адаптация для ширины экрана до 1300px */
@@ -73,7 +74,8 @@
     padding: var(--padding-small);
   }
   .nav-underline {
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
     flex-wrap: wrap;
   }
   .logo_navbar {
@@ -82,6 +84,20 @@
   .nav-link {
     padding: 0.5rem 1rem;
   }
+  .navbar-container{
+    align-items: flex-start;
+  }
 }
+@media (max-width: 385px) {
+  .logo_navbar {
+    width: 30%;
+  }
 
+  .nav-link {
+    font-size: 0.6rem;
+  }
+  .navbar-container{
+    align-items: flex-start;
+  }
+}
 

@@ -21,7 +21,7 @@
           <img class="img2" :src="nata1" alt="img" />
         </div>
 
-        <div class="grid-item item5 main_h_2">
+        <div class="grid-item item5 main_h_2 main_h2_1">
           <h3>Мне есть ЧТО сказать</h3>
           <article>
             Вдохновение для создания своих работ я черпаю из острых социальных
@@ -30,7 +30,7 @@
           </article>
         </div>
 
-        <div class="grid-item item3 main_h_2">
+        <div class="grid-item item3 main_h_2  main_h2_2">
           <h3>Серийное производство</h3>
           <article>
             К процессу создания своих работ отношусь очень внимательно и

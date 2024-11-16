@@ -151,9 +151,14 @@ import vkIcon from "../../assets/vk.svg";
   text-align: center;
   padding: 1rem;
   border-radius: 8px;
-  color: rgb(99, 92, 92);
+  color: rgb(233, 227, 227);
+  font-weight: 800;
+  font-size: 2.5rem;
+  white-space: normal; /* Разрешает перенос текста */
+  overflow-wrap: break-word; /* Позволяет перенос слов */
+  word-wrap: break-word; /* Устаревший аналог, для совместимости */
+  width: 90%; /* Ограничение ширины для адаптации текста */
 }
-/* jguhg */
 
 .h_1_blog {
   font-weight: 600;
@@ -183,7 +188,7 @@ p {
   text-decoration: underline;
 }
 
-.grid-container-blog{
+.grid-container-blog {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -251,15 +256,16 @@ img {
     margin: 0 10%;
     padding: 5% 5% 2% 2%;
   }
-  .grid-container-blog{
-  width: 80%;
-}
+  .grid-container-blog {
+    width: 80%;
+  }
 
   .iconsContact {
-    font-size: 0.8rem;
+    display: flex;
+    font-size: 0.6rem;
     width: 120%;
-    padding-right:40%;
-    padding-left: 20%;
+    padding-right: 30%;
+    padding-left: 10%;
   }
   .subscribe {
     padding: 0;
@@ -267,41 +273,44 @@ img {
   }
 }
 
-
 @media (max-width: 698px) {
-
-.h_1_blog {
+  .h_1_blog {
     font-weight: 400;
     font-size: 1.5rem;
     margin: 0;
-}
-.textBox1 {
+  }
+  .textBox1 {
     width: 90%;
-}
-.blog_h_5, .blog_h_3 {
+  }
+  .blog_h_5,
+  .blog_h_3 {
     font-size: 0.8rem;
     padding: 4% 4% 4% 0%;
-}
-.grid-container-blog{
-  width: 80%;
-}
+  }
+  .grid-container-blog {
+    width: 80%;
+  }
 
-.item3{
-  width: fit-content;
-  padding: 0;
-  margin: 0; 
-}
-.iconsContact {
-  display: flex;
+  .item3 {
+    width: fit-content;
+    padding: 0;
+    margin: 0;
+  }
+  .iconsContact {
+    display: flex;
     font-size: 0.8rem;
     width: 120%;
     padding-right: 30%;
     padding-left: 10%;
   }
-
 }
 
 @media (max-width: 385px) {
+  .text-overlay {
+    font-size: 1rem; /* Уменьшение размера текста для маленьких экранов */
+    padding: 0.5rem;
+  }
+
   .h_1_blog {
     font-size: 1.5rem;
   }
@@ -312,12 +321,14 @@ img {
   }
 
   .iconsContact {
-    padding: 0 2%;
+    display: flex;
+    font-size: 0.6rem;
+    width: 120%;
+    padding-right: 30%;
+    padding-left: 10%;
   }
-
   .pict {
-    width: 20px;
-    padding-top: 10%;
+    width: 15px;
   }
 }
 </style>
