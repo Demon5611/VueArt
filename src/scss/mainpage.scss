@@ -19,7 +19,7 @@
 
 .text-overlay {
   position: absolute;
-  top: 45%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -32,6 +32,7 @@
   overflow: hidden;
   letter-spacing: 1ch;
 }
+
 
 .containerText {
   display: grid;
@@ -130,6 +131,11 @@ h3 {
 }
 
 @media (max-width: 1300px) {
+  .text-overlay {
+    top: 20%;
+    font-size: 2rem;
+  }
+
   .containerText {
     padding: 0 4%;
     gap: 8px;

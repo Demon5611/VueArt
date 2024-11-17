@@ -154,7 +154,7 @@ import vkIcon from "../../assets/vk.svg";
   color: rgb(110, 103, 103);
   font-weight: 800;
   font-size: 2.5rem;
-  white-space: normal; /* Разрешает перенос текста */
+  white-space: normal;
   overflow-wrap: break-word; /* Позволяет перенос слов */
   word-wrap: break-word; /* Устаревший аналог, для совместимости */
   width: 90%; /* Ограничение ширины для адаптации текста */
@@ -163,12 +163,14 @@ import vkIcon from "../../assets/vk.svg";
 .h_1_blog {
   font-weight: 600;
   font-size: 2.5rem;
+  letter-spacing: 4px;
   margin: 0;
+
 }
 
-p {
-  margin: 0;
-  font-size: 1rem;
+p{
+  font-size: clamp(1rem, 2vw, 1.7rem);
+  letter-spacing: 3px;
 }
 
 .blog_h_5,
@@ -306,16 +308,41 @@ img {
   .pict {
     width: 15px;
   }
+  .text-overlay {
+    font-size: 0.3rem;
+    padding: 0.5rem;
+    color: #161616;
+    letter-spacing: 0;
+  }
+
+  .h_1_blog {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 0.7rem;
+  }
+
+  .blog_h_5,
+  .blog_h_3 {
+    font-size: 0.9rem;
+  }
 }
 
 @media (max-width: 385px) {
   .text-overlay {
-    font-size: 1rem; /* Уменьшение размера текста для маленьких экранов */
+    font-size: 0.3rem;
     padding: 0.5rem;
+    color: #161616;
+    letter-spacing: 0;
   }
 
   .h_1_blog {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 0.7rem;
   }
 
   .blog_h_5,

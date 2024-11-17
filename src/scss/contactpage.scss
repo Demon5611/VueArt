@@ -104,80 +104,130 @@
 
 /* Media Queries */
 @media (max-width: 1300px) {
+  .imgPhone {
+    width: 50vh;
+    padding: 10% 8%;
+  }
+
   .iphone-image {
-    height: 90vh;
-    padding: 0 3%;
-    /* Увеличивает отступы */
+    height: 85vh;
+    padding: 0 6%;
+  }
+
+  .avatarImage {
+    width: 40%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
+
+  .name h5 {
+    font-size: 1.6rem;
+    margin-bottom: 5%;
+  }
+
+  .containerBtn {
+    gap: 0.7rem;
+    margin-top: 15%;
+  }
+  .Btn {
+    width: 30rem;
+    height: 70px;
   }
 }
 
 @media (max-width: 998px) {
+  .imgPhone {
+    width: 50vh;
+    padding: 10% 8%;
+  }
+
   .iphone-image {
-    height: 80vh;
-    padding: 0 5%;
+    height: 85vh;
+    padding: 0 6%;
+  }
+
+  .avatarImage {
+    width: 40%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
+
+  .name h5 {
+    font-size: 1.6rem;
+    margin-bottom: 5%;
+  }
+
+  .containerBtn {
+    gap: 0.7rem;
+    margin-top: 5%;
+  }
+  .Btn {
+    width: 20rem;
+    height: 60px;
   }
 }
 
 @media (max-width: 698px) {
+  .imgPhone {
+    width: 50vh;
+    padding: 10% 8%;
+  }
+
   .iphone-image {
-    height: 75vh;
-    padding: 0 6%;
+    height: auto;
+    padding: 2%;
+  }
+
+  .avatarImage {
+    width: 40%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
+
+  .name h5 {
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .containerBtn {
+    gap: 0.5rem;
+    margin-top: 13%;
+  }
+  .Btn {
+    width: 18rem;
+    height: 6ch;
+    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 385px) {
   .imgPhone {
-    height: 60vh;
-    padding: 0 8%;
+    width: 50vh;
+    padding: 10% 8%;
   }
 
   .iphone-image {
-    flex-direction: column;
     height: auto;
-    /* Автоматическая высота */
     padding: 2%;
-    /* Сужаем отступы */
   }
 
   .avatarImage {
     width: 30%;
-    /* Увеличиваем аватар для мобильных */
     margin-bottom: 0.5rem;
   }
 
   .name h5 {
     font-size: 0.9rem;
-    /* Уменьшаем размер текста */
     margin-bottom: 0.2rem;
   }
 
   .containerBtn {
-    gap: 0.2rem;
-    /* Уменьшаем расстояние между кнопками */
+    gap: 0.5rem;
+    margin-top: 13%;
   }
-
-  .ava-btn {
-    margin-top: 16%;
-  }
-
   .Btn {
-    width: 10rem;
-    /* Уменьшаем ширину кнопок */
-    height: 3ch;
-    /* Уменьшаем высоту кнопок */
+    width: 14rem;
+    height: 5ch;
     font-size: 0.9rem;
-    /* Уменьшаем размер шрифта */
-  }
-
-  .pict {
-    height: 30%;
-    /* Уменьшаем размер иконок */
-  }
-
-  .span {
-    font-size: 1.5ch;
-    /* Уменьшаем размер текста */
-    margin-left: 0.5ch;
-    /* Уменьшаем отступ текста */
   }
 }
