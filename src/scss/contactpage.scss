@@ -10,6 +10,7 @@
   --transition-duration: 0.3s;
 }
 
+/* Основные стили */
 .iphone-image {
   display: flex;
   justify-content: center;
@@ -19,8 +20,6 @@
   max-width: 100%;
   padding: 0 2%;
   position: relative;
-  margin-top: 0;
-  padding-top: 0;
 }
 
 .ava-btn {
@@ -60,12 +59,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 0.5rem;
 }
 
 .Btn {
   width: var(--btn-width);
   height: var(--btn-height);
-  margin-top: 1%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -94,15 +93,9 @@
 
 .span:hover {
   font-weight: bolder;
-  size: 2ch;
 }
 
-.avatarContainer {
-  font-family: Helvetica, sans-serif;
-  font-size: 1rem;
-}
-
-/* Media Queries */
+/* Медиа-запросы */
 @media (max-width: 1300px) {
   .imgPhone {
     width: 50vh;
@@ -126,9 +119,9 @@
   }
 
   .containerBtn {
-    gap: 0.7rem;
     margin-top: 15%;
   }
+
   .Btn {
     width: 30rem;
     height: 70px;
@@ -158,9 +151,9 @@
   }
 
   .containerBtn {
-    gap: 0.7rem;
     margin-top: 5%;
   }
+
   .Btn {
     width: 20rem;
     height: 60px;
@@ -190,9 +183,9 @@
   }
 
   .containerBtn {
-    gap: 0.5rem;
     margin-top: 13%;
   }
+
   .Btn {
     width: 18rem;
     height: 6ch;
@@ -222,11 +215,11 @@
   }
 
   .containerBtn {
-    gap: 0.5rem;
     margin-top: 13%;
   }
+
   .Btn {
-    width: 14rem;
+    width: 13rem;
     height: 5ch;
     font-size: 0.9rem;
   }

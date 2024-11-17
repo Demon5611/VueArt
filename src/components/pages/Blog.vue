@@ -155,9 +155,9 @@ import vkIcon from "../../assets/vk.svg";
   font-weight: 800;
   font-size: 2.5rem;
   white-space: normal;
-  overflow-wrap: break-word; /* Позволяет перенос слов */
-  word-wrap: break-word; /* Устаревший аналог, для совместимости */
-  width: 90%; /* Ограничение ширины для адаптации текста */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  width: 90%;
 }
 
 .h_1_blog {
@@ -165,10 +165,9 @@ import vkIcon from "../../assets/vk.svg";
   font-size: 2.5rem;
   letter-spacing: 4px;
   margin: 0;
-
 }
 
-p{
+p {
   font-size: clamp(1rem, 2vw, 1.7rem);
   letter-spacing: 3px;
 }

@@ -248,12 +248,19 @@ h3 {
   .item3 {
     grid-column: 1 / -2;
     grid-row: 3 / 4;
-    width: 75%;
+    width: 80%;
     font-size: 0.6rem;
     margin-top: -20px;
     padding: 5% 5% 5% 0;
   }
 
+  .textAround1 {
+    font-size: 0.9rem;
+  }
+
+  article {
+    font-size: 0.9rem;
+  }
 
   .item4 {
     grid-column: 3 / 4;
@@ -264,9 +271,8 @@ h3 {
   }
 
   .item6 {
-    padding-left: 0;
-    font-size: 0.2rem;
-    transform: translateY(-20px);
+    padding-left: 60%;
+    transform: translateY(-50px);
   }
 }
 
@@ -295,10 +301,14 @@ h3 {
   .item3 {
     grid-column: 1 / -2;
     grid-row: 3 / 4;
-    width: 75%;
+    width: 80%;
     font-size: 0.5rem;
     margin-top: 20%;
     padding: 5% 5% 5% 0;
+  }
+
+  article {
+    font-size: 0.6rem;
   }
 
   .item4 {
