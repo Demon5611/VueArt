@@ -26,8 +26,8 @@
           <article>
             К процессу создания своих работ отношусь очень внимательно и
             скрупулезно, так как картины, чаще всего, создаю сериями. За каждым
-            проектом стоит тщательно собранный исторический, художественный, а
-            иногда и научный материал.
+            проектом стоит тщательно собранный исторический, художественный
+            и научный материал.
           </article>
         </div>
 
@@ -59,10 +59,10 @@ import headerImg from "../../assets/headerImg.jpg";
 import nata1 from "../../assets/nata1.jpg";
 import nata2 from "../../assets/nata2.jpg";
 import { downloadCVWithCache } from "../../services/fileDownloader";
-import NataAvodesBio from "../../assets/NataAvodesBio.pdf";
+import NataAvodesBio from "../../assets/Nata Avodes-bio_cv.pdf";
 
 const handleDownloadCV = () => {
-  downloadCVWithCache(NataAvodesBio, "NataAvodesBio.pdf");
+  downloadCVWithCache(NataAvodesBio, "Nata Avodes-bio_cv.pdf");
 };
 </script>
 

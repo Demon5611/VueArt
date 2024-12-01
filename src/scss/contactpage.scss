@@ -3,7 +3,7 @@
   --secondary-color: black;
   --hover-color: #f2eb88;
   --btn-width: 16rem;
-  --btn-height: 5ch;
+  --btn-height: 3ch;
   --avatar-max-width: 160px;
   --avatar-radius: 50%;
   --border-radius: 0.7rem;
@@ -86,7 +86,7 @@
 }
 
 .span {
-  font-size: 2ch;
+  font-size: 1rem;
   margin-left: 1ch;
   vertical-align: super;
 }
@@ -128,35 +128,73 @@
   }
 }
 
-@media (max-width: 998px) {
-  .imgPhone {
+@media (max-width: 1298px) {
+
+  .blogMainImg {
     width: 50vh;
-    padding: 10% 8%;
+  }
+  .imgPhone {
+    width: 60vh;
+    padding: 5% 8%;
   }
 
   .iphone-image {
-    height: 85vh;
-    padding: 0 6%;
+    height: auto;
+    padding: 2%;
   }
 
   .avatarImage {
-    width: 40%;
-    margin-bottom: 5%;
-    margin-top: 5%;
+    margin-bottom: 0.2rem;
   }
 
   .name h5 {
-    font-size: 1.6rem;
-    margin-bottom: 5%;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
   }
 
   .containerBtn {
-    margin-top: 5%;
+    margin-top: 0%;
   }
 
   .Btn {
-    width: 20rem;
-    height: 60px;
+    width: 17rem;
+    height: 5ch;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 998px) {
+
+  .blogMainImg {
+    width: 50vh;
+  }
+  .imgPhone {
+    width: 50vh;
+    padding: 5% 8%;
+  }
+
+  .iphone-image {
+    height: auto;
+    padding: 2%;
+  }
+
+  .avatarImage {
+    margin-bottom: 0.2rem;
+  }
+
+  .name h5 {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .containerBtn {
+    margin-top: 0%;
+  }
+
+  .Btn {
+    width: 13rem;
+    height: 5ch;
+    font-size: 0.9rem;
   }
 }
 
@@ -183,7 +221,7 @@
   }
 
   .containerBtn {
-    margin-top: 13%;
+    margin-top: 5%;
   }
 
   .Btn {

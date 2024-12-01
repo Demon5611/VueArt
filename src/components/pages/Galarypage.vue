@@ -28,7 +28,7 @@
 
 <script setup>
 import { ref } from "vue";
-import NataAvodesCV from "../../assets/NataAvodesCV.pdf";
+import NataAvodesCV from "../../assets/Nata Avodes-bio_портфолио.pdf";
 import { cardsData } from "../../data/cardsData";
 import { downloadCVWithCache } from "../../services/fileDownloader";
 import ImageCard from "../ImageCard.vue";
@@ -49,7 +49,7 @@ const closeModal = () => {
 };
 
 const handleDownloadCV = () => {
-  downloadCVWithCache(NataAvodesCV, "NataAvodesCV.pdf");
+  downloadCVWithCache(NataAvodesCV, "Nata Avodes-bio_портфолио.pdf");
 };
 </script>
 
