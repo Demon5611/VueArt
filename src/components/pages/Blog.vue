@@ -121,14 +121,14 @@ import vkIcon from "../../assets/vk.svg";
 
 .image-container {
   position: relative;
-  width: 100%;
+  width: 100vw;
 }
 .textBox1 {
   width: 70%;
 }
 .blogMainImg {
-  width: 100%;
-  display: block;
+  width: 100vw;
+  /* display: block; */
 }
 .stroyBuro {
   max-width: 70%;
@@ -230,8 +230,10 @@ p {
 
 .iconsContact {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  font-size: 0.6rem;
+  width: 100%;
   gap: 10px;
   margin-bottom: 5%;
 }
@@ -262,11 +264,10 @@ img {
   }
 
   .iconsContact {
-    display: flex;
+    justify-content: center;
+    width: 100%;
     font-size: 0.6rem;
-    width: 120%;
-    padding-right: 30%;
-    padding-left: 10%;
+    gap: 8px;
   }
   .subscribe {
     padding: 0;
@@ -298,14 +299,13 @@ img {
     margin: 0;
   }
   .iconsContact {
-    display: flex;
-    font-size: 0.8rem;
-    width: 120%;
-    padding-right: 30%;
-    padding-left: 10%;
+    justify-content: center;
+    width: 95%;
+    font-size: 0.5rem;
+    gap: 6px;
   }
   .pict {
-    width: 15px;
+    width: 10px;
   }
   .text-overlay {
     font-size: 0.3rem;
@@ -329,6 +329,9 @@ img {
 }
 
 @media (max-width: 385px) {
+  .blogMainImg {
+    width: 60vw;
+  }
   .text-overlay {
     font-size: 0.3rem;
     padding: 0.5rem;
@@ -350,11 +353,10 @@ img {
   }
 
   .iconsContact {
-    display: flex;
-    font-size: 0.6rem;
-    width: 120%;
-    padding-right: 30%;
-    padding-left: 10%;
+    justify-content: center;
+    width: 100%;
+    font-size: 0.5rem;
+    gap: 5px;
   }
   .pict {
     width: 10px;

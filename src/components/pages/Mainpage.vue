@@ -46,7 +46,7 @@
 
         <div class="grid-item item6">
           <a @click="handleDownloadCV" href="#" class="cv cv_bio">
-            Скачать био. NataAvodes
+            Скачать bio + cv Nata Avodes
           </a>
         </div>
       </div>

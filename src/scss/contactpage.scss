@@ -187,13 +187,16 @@
   }
 
   .Btn {
-    width: 18rem;
+    width: 16rem;
     height: 6ch;
     font-size: 0.9rem;
   }
 }
 
 @media (max-width: 385px) {
+  .blogMainImg {
+    width: 50vh;
+  }
   .imgPhone {
     width: 50vh;
     padding: 10% 8%;

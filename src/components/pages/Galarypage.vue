@@ -22,7 +22,7 @@
       <div class="'modal-text'"></div>
     </Modal>
 
-    <a @click="handleDownloadCV" href="#" class="cv cv_download">Скачать NataAvodesCV</a>
+    <a @click="handleDownloadCV" href="#" class="cv cv_download">Скачать bio + portfolio Nata Avodes</a>
   </div>
 </template>
 
