@@ -3,10 +3,7 @@
     <div class="image-container">
       <img class="blogMainImg" :src="blogMainImg" alt="img" />
 
-      <div class="text-overlay">
-        <h1 class="h_1_blog">Региональный куратор</h1>
-        <p>Ассоциация художников-пленэристов в городском округе Королев</p>
-      </div>
+      <div class="text-overlay"></div>
     </div>
     <div class="textBox1">
       <h5 class="blog_h_5">

@@ -4,7 +4,6 @@
       <img class="headerImg" :src="headerImg" alt="img" />
       <div class="containerText grid-container">
         <div class="grid-item item1 main_h_1">
-          <h1 class="firstText text-overlay">Добрый день )</h1>
           <article class="textAround1">
             Меня зовут Наталия Седова. Творческий псевдоним "Nata Avodes". Я
             родилась и проживаю в самом космическом городе России — Королёв,
