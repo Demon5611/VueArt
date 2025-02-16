@@ -4,72 +4,6 @@
   text-align: justify;
 }
 
-// #gallery {
-//   background-color: rgb(207, 201, 201);
-//   padding-bottom: 4vw;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   padding-top: 5%;
-
-
-// }
-
-.card-container {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin: 2ch auto;
-  width: 70%;
-
-}
-
-.textAfterCard {
-  margin-left: 2rem;
-  text-align: left;
-  width: 100%;
-  @include text-wrap-style;
-}
-
-// ImageCard
-.card {
-  cursor: pointer;
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  border: none;
-  background: transparent;
-  margin-right: 2rem;
-}
-
-.material {
-  font-size: smaller;
-  font-style: italic;
-  text-indent: 0ch;
-}
-
-
-
-.modal-image {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto;
-}
-
-.cv_download {
-  padding-right: 50%;
-  color: #000;
-}
-
-@mixin text-wrap-style {
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  text-align: justify;
-}
-
 #gallery {
   padding-bottom: 4vw;
   display: flex;
@@ -78,146 +12,74 @@
   padding-top: 5%;
 }
 
-.card-container {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin: 2ch auto;
-  width: 70%;
-}
-
-.textAfterCard {
-  margin-left: 2rem;
-  text-align: left;
-  width: 100%;
-  @include text-wrap-style;
-}
-
-// ImageCard
-.card {
-  cursor: pointer;
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  border: none;
-  background: transparent;
-  margin-right: 2rem;
-}
-
-.material {
-  font-size: smaller;
-  font-style: italic;
-  text-indent: 0ch;
-}
-
-.modal-image {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  display: block;
+.carousel {
+  width: 100vw;
+  height: 100vh;
   margin: 0 auto;
 }
 
-.cv_download {
-  padding-right: 50%;
-  color: #000;
+.carousel-img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
 }
 
-// Медиазапросы для адаптивности
+.carousel-inner {
+  padding-bottom: 2%;
+}
+
+.carousel-item {
+  transition: transform 2s ease-in-out, opacity 2s ease-in-out;
+}
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  transition: transform 2s ease-in-out, opacity 2s ease-in-out;
+}
+
+.button-about {
+  width: 200px;
+  min-width: fit-content;
+  height: 50px;
+  min-height: fit-content;
+  font-size: 1rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2%;
+  border: 1px solid #5c4033;
+  padding: 10px 20px;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-about:hover {
+  border-color: #0066cc;
+  color: #0066cc;
+}
 
 @media (max-width: 1300px) {
   #gallery {
-    padding: 3%;
-  }
-
-  .card-container {
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-    margin: 2rem auto;
-  }
-
-  .textAfterCard {
-    margin-left: 0;
-    text-align: center;
-    font-size: 1rem;
-  }
-
-  .cv {
-    font-size: 0.8rem;
-    margin-right: 15%;
+    margin-bottom: 10%;
   }
 }
 
-
 @media (max-width: 998px) {
   #gallery {
-    padding: 2%;
-  }
-
-  .card-container {
-    flex-direction: column;
-    width: 90%;
-  }
-
-  .card {
-    margin-right: 0;
-    margin-bottom: 1%;
-  }
-
-  .textAfterCard {
-    text-align: center;
-    font-size: 0.9rem;
+    margin-bottom: 10%;
   }
 }
 
 @media (max-width: 698px) {
   #gallery {
-    padding: 1%;
-  }
-
-  .card-container {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .card {
-    margin: 0 auto 1rem auto;
-  }
-
-  .textAfterCard {
-    font-size: 0.8rem;
-  }
-
-  .cv {
-    padding-right: 10%;
-    font-size: 0.6rem;
+    margin-bottom: 10%;
   }
 }
 
 @media (max-width: 385px) {
   #gallery {
-    padding: 0.5%;
-  }
-
-  .card-container {
-    flex-direction: column;
-    width: 100%;
-    margin: 1rem auto;
-  }
-
-  .card {
-    margin: 0 auto;
-  }
-
-  .textAfterCard {
-    font-size: 0.7rem;
-    padding: 0.5rem;
-  }
-
-  .cv {
-    padding-right: 40%;
-    font-size: 0.6rem;
+    margin-bottom: 14%;
   }
 }

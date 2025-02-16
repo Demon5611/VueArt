@@ -1,9 +1,11 @@
 :root {
   --navbar-bg-color: rgba(155, 151, 151, 0.9);
-  --nav-link-color: rgb(47, 46, 46);
+  --nav-link-color: rgb(36, 29, 26); /* Коричневый цвет кнопок */
+  --nav-link-hover-color: rgb(0, 102, 204); /* Синий цвет при наведении */
   --transition-duration: 1s;
   --padding-large: 1% 4%;
   --padding-small: 1.5% 4%;
+  z-index: 999;
 }
 
 /* Основной стиль навбара */
@@ -47,11 +49,31 @@
   margin-left: auto;
 }
 
+/* Гарантированный цвет ссылок */
 .nav-link {
-  color: var(--nav-link-color);
+  color: var(--nav-link-color) !important;
   text-align: center;
   padding: 0.5rem;
   font-size: 1rem;
+  text-decoration: none !important;
+  font-weight: normal !important;
+  transition: color 0.3s ease-in-out; /* Плавный переход цвета */
+}
+
+/* Цвет при наведении (hover) */
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--nav-link-hover-color) !important;
+}
+
+/* Цвет для посещённых ссылок */
+.nav-link:visited {
+  color: var(--nav-link-color) !important;
+}
+
+/* Цвет при нажатии */
+.nav-link:active {
+  color: var(--nav-link-hover-color) !important;
 }
 
 /* Адаптация для ширины экрана до 1300px */
@@ -74,8 +96,6 @@
     padding: var(--padding-small);
   }
   .nav-underline {
-    // display: flex;
-    // justify-content: center;
     flex-wrap: wrap;
   }
   .logo_navbar {
@@ -84,20 +104,19 @@
   .nav-link {
     padding: 0.5rem 1rem;
   }
-  .navbar-container{
+  .navbar-container {
     align-items: flex-start;
   }
 }
+
 @media (max-width: 385px) {
   .logo_navbar {
     width: 30%;
   }
-
   .nav-link {
     font-size: 0.6rem;
   }
-  .navbar-container{
+  .navbar-container {
     align-items: flex-start;
   }
 }
-
