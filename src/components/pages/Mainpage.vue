@@ -25,8 +25,8 @@
           <article>
             К процессу создания своих работ отношусь очень внимательно и
             скрупулезно, так как картины, чаще всего, создаю сериями. За каждым
-            проектом стоит тщательно собранный исторический, художественный
-            и научный материал.
+            проектом стоит тщательно собранный исторический, художественный и
+            научный материал.
           </article>
         </div>
 
@@ -44,9 +44,13 @@
         </div>
 
         <div class="grid-item item6">
-          <a @click="handleDownloadCV" href="#" class="cv cv_bio">
+          <a @click="handleDownloadBio" href="#" class="cv cv_bio">
             Скачать bio + cv Nata Avodes
           </a>
+
+          <a @click="handleDownloadCV" href="#" class="cv cv_bio"
+            >Скачать portfolio Nata Avodes</a
+          >
         </div>
       </div>
     </div>
@@ -59,9 +63,13 @@ import nata1 from "../../assets/nata1.jpg";
 import nata2 from "../../assets/nata2.jpg";
 import { downloadCVWithCache } from "../../services/fileDownloader";
 import NataAvodesBio from "../../assets/Nata Avodes-bio_cv.pdf";
+import NataAvodesCV from "../../assets/Nata Avodes-bio_портфолио.pdf";
 
-const handleDownloadCV = () => {
+const handleDownloadBio = () => {
   downloadCVWithCache(NataAvodesBio, "Nata Avodes-bio_cv.pdf");
+};
+const handleDownloadCV = () => {
+  downloadCVWithCache(NataAvodesCV, "Nata Avodes-bio_портфолио.pdf");
 };
 </script>
 

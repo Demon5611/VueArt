@@ -43,9 +43,9 @@
 </template>
 
 <script setup>
-import mailIcon from '../../assets/mail.svg'
-import telegramIcon from '../../assets/telegram.svg'
-import vkIcon from '../../assets/vk.svg'
-import avatarImage from '../../assets/avatarImage.jpg'
-import iphoneForm from '../../assets/iphonForm.png'
+import mailIcon from '../../assets/contactPage/mail.svg'
+import telegramIcon from '../../assets/contactPage/telegram.svg'
+import vkIcon from '../../assets/contactPage/vk.svg'
+import avatarImage from '../../assets/contactPage/avatarImage.jpg'
+import iphoneForm from '../../assets/contactPage/iphonForm.png'
 </script>

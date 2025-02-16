@@ -1,7 +1,7 @@
 <template>
   <div :class="{ 'navbar-container': true, 'navbar-fixed': isNavbarFixed }">
     <img
-      src="../../../assets/logoNataAvodes.png"
+      src="../../../assets/contactPage/logoNataAvodes.png"
       class="logo_navbar"
       alt="logo"
     />
@@ -32,24 +32,24 @@
 
 
 <script setup>
-import { onMounted, onUnmounted, ref } from 'vue'
+import { onMounted, onUnmounted, ref } from "vue";
 
-const isNavbarFixed = ref(false)
+const isNavbarFixed = ref(false);
 const handleScroll = () => {
-  const scrollY = window.scrollY
+  const scrollY = window.scrollY;
 
   if (scrollY > 100) {
-    isNavbarFixed.value = true
+    isNavbarFixed.value = true;
   } else {
-    isNavbarFixed.value = false
+    isNavbarFixed.value = false;
   }
-}
+};
 
 onMounted(() => {
-  window.addEventListener('scroll', handleScroll)
-})
+  window.addEventListener("scroll", handleScroll);
+});
 
 onUnmounted(() => {
-  window.removeEventListener('scroll', handleScroll)
-})
+  window.removeEventListener("scroll", handleScroll);
+});
 </script>
