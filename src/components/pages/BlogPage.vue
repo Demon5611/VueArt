@@ -87,7 +87,7 @@
 </template>
 
 <script setup>
-import blogMainImg from "@/assets/blog/blogMainImg.jpg";
+import blogMainImg from "@/assets/blog/blogMainImg.webp";
 import blogGridLeftImg from "@/assets/blog/blogGridLeft.jpg";
 import blogGridRightTopImg from "@/assets/blog/blogGridRightTop.jpg";
 import blogGridRighDowntImg from "@/assets/blog/blogGridRightDown.jpg";

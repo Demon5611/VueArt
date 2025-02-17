@@ -1,41 +1,53 @@
-@mixin text-wrap-style {
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  text-align: justify;
-}
-
-#gallery {
-  padding-bottom: 4vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 5%;
-}
-
-.carousel {
+.carousel-container {
+  position: relative;
   width: 100vw;
   height: 100vh;
-  margin: 0 auto;
+  overflow: hidden;
 }
 
+/* Контейнер слайдов располагается в ряд */
+.carousel-track {
+  display: flex;
+  transition: transform 3s ease;
+  /* плавный и замедленный переход */
+  height: 100%;
+}
+
+/* Каждый слайд занимает всю ширину окна */
 .carousel-img {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   object-fit: cover;
+  flex-shrink: 0;
 }
 
-.carousel-inner {
-  padding-bottom: 2%;
+/* Стили для кнопок переключения */
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
 }
 
-.carousel-item {
-  transition: transform 2s ease-in-out, opacity 2s ease-in-out;
+.carousel-control-prev {
+  left: 10px;
 }
 
-.carousel-item-next,
-.carousel-item-prev,
-.carousel-item.active {
-  transition: transform 2s ease-in-out, opacity 2s ease-in-out;
+.carousel-control-next {
+  right: 10px;
+}
+
+.contaner-button {
+  display: flex;
+  background-color: rgba(155, 151, 151, 0.3);
+  justify-content: flex-end;
+  padding: 2%;
 }
 
 .button-about {
@@ -50,12 +62,13 @@
   justify-content: center;
   margin-left: 2%;
   border: 1px solid #5c4033;
-  color:#5c4033;
+  color: #5c4033;
   padding: 10px 20px;
   background-color: transparent;
   transition: all 0.3s ease-in-out;
   text-decoration: none;
 }
+
 
 .button-about:hover {
   border-color: #0066cc;

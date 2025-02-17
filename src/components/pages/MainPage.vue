@@ -1,7 +1,13 @@
 <template>
   <div>
     <div id="main">
-      <img class="headerImg" :src="headerImg" alt="img" />
+      <img
+        class="headerImg"
+        :src="headerImg"
+        alt="img"
+        loading="eager"
+        fetchpriority="high"
+      />
       <div class="containerText grid-container">
         <div class="grid-item item1 main_h_1">
           <article class="textAround1">
@@ -17,7 +23,7 @@
         </div>
 
         <div class="grid-item item2">
-          <img class="img2" :src="nata1" alt="img" />
+          <img class="img2" :src="nata1" alt="img" width="600" height="400" />
         </div>
 
         <div class="grid-item item5 main_h_2 main_h2_1">
@@ -40,7 +46,7 @@
         </div>
 
         <div class="grid-item item4">
-          <img class="img3" :src="nata2" alt="img" />
+          <img class="img3" :src="nata2" alt="img" width="600" height="400" />
         </div>
 
         <div class="grid-item item6">
@@ -58,7 +64,7 @@
 </template>
 
 <script setup>
-import headerImg from "@/assets/headerImg.jpg";
+import headerImg from "@/assets/headerImg.webp";
 import nata1 from "@/assets/nata1.jpg";
 import nata2 from "@/assets/nata2.jpg";
 import { downloadCVWithCache } from "@/services/fileDownloader";
@@ -73,5 +79,3 @@ const handleDownloadCV = () => {
 };
 </script>
 
-<style scoped>
-</style>

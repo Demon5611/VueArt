@@ -1,78 +1,40 @@
 <template>
   <div id="gallery">
-    <Head>
-      <title>Галерея картин | Nata Avodes</title>
-      <meta
-        name="description"
-        content="Коллекция картин от Nata Avodes. Просмотрите лучшие работы в галерее."
-      />
-      <meta
-        name="keywords"
-        content="картины, галерея, искусство, Nata Avodes, живопись, художник"
-      />
-      <meta name="author" content="Nata Avodes" />
-      <meta property="og:title" content="Галерея картин | Nata Avodes" />
-      <meta
-        property="og:description"
-        content="Коллекция картин от Nata Avodes. Просмотрите лучшие работы в галерее."
-      />
-      <meta property="og:image" content="/path-to-preview-image.jpg" />
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://nataavodes.ru/gallery" />
-    </Head>
-
-    <div
-      id="carouselExampleControls"
-      class="carousel slide"
-      data-bs-ride="carousel"
-      data-bs-interval="5000"
-    >
-      <div class="carousel-inner">
-        <div
+    <div class="carousel-container">
+      <!-- Контейнер для слайдов -->
+      <div
+        class="carousel-track"
+        :style="{ transform: `translateX(-${currentIndex * 100}vw)` }"
+      >
+        <img
           v-for="(image, index) in images"
           :key="index"
-          class="carousel-item"
-          :class="{ active: index === 0 }"
-        >
-          <img
-            loading="lazy"
-            class="d-block w-100 carousel-img"
-            :src="image"
-            :alt="'Slide ' + (index + 1)"
-          />
-        </div>
+          :src="image"
+          class="carousel-img"
+          alt="Slide"
+        />
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleControls"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+      <!-- Кнопки переключения слайдов с Unicode-стрелками -->
+      <button @click="prev" class="carousel-control carousel-control-prev">
+        ❮
       </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleControls"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
+      <button @click="next" class="carousel-control carousel-control-next">
+        ❯
       </button>
-      <router-link to="/gallery/details" class="button-about">Подробнее о картинах</router-link>
     </div>
+    <div class="contaner-button">
+    <!-- Ссылка для перехода на страницу деталей -->
+    <router-link to="/gallery/details" class="button-about">
+      Подробнее о картинах
+    </router-link>
+  </div>
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted } from "vue";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import { useRouter } from "vue-router"; 
+import { ref, onMounted, onUnmounted } from "vue";
 
-const router = useRouter();
-
+// Массив изображений
 const images = ref([
   new URL("@/assets/carusel/за мечтой.jpg", import.meta.url).href,
   new URL("@/assets/carusel/маки.jpg", import.meta.url).href,
@@ -83,18 +45,26 @@ const images = ref([
   new URL("@/assets/carusel/хурма.jpg", import.meta.url).href,
 ]);
 
-onMounted(() => {
-  new bootstrap.Carousel(document.querySelector("#carouselExampleControls"), {
-    interval: 4000,
-    wrap: true,
-  });
-});
+const currentIndex = ref(0);
+let timer = null;
 
-const goToDetails = () => {
-  router.push({ path: "/gallery/details" }); 
+// Функция перехода к следующему слайду
+const next = () => {
+  currentIndex.value = (currentIndex.value + 1) % images.value.length;
 };
+
+// Функция перехода к предыдущему слайду
+const prev = () => {
+  currentIndex.value =
+    (currentIndex.value - 1 + images.value.length) % images.value.length;
+};
+
+// Автоматическая смена слайдов
+onMounted(() => {
+  timer = setInterval(next, 4000);
+});
+onUnmounted(() => {
+  clearInterval(timer);
+});
 </script>
 
-<style scoped>
-
-</style>
