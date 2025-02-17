@@ -87,13 +87,13 @@
 </template>
 
 <script setup>
-import blogMainImg from "../../assets/blog/blogMainImg.jpg";
-import blogGridLeftImg from "../../assets/blog/blogGridLeft.jpg";
-import blogGridRightTopImg from "../../assets/blog/blogGridRightTop.jpg";
-import blogGridRighDowntImg from "../../assets/blog/blogGridRightDown.jpg";
-import stroyBuro from "../../assets/blog/стройбюро.jpg";
-import telegramIcon from "../../assets/contactPage/telegram.svg";
-import vkIcon from "../../assets/contactPage/vk.svg";
+import blogMainImg from "@/assets/blog/blogMainImg.jpg";
+import blogGridLeftImg from "@/assets/blog/blogGridLeft.jpg";
+import blogGridRightTopImg from "@/assets/blog/blogGridRightTop.jpg";
+import blogGridRighDowntImg from "@/assets/blog/blogGridRightDown.jpg";
+import stroyBuro from "@/assets/blog/стройбюро.jpg";
+import telegramIcon from "@/assets/contactPage/telegram.svg";
+import vkIcon from "@/assets/contactPage/vk.svg";
 </script>
 
 <style scoped>

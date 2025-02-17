@@ -9,7 +9,7 @@
   >
     <img
       alt="arrow_up"
-      src="../../../assets/arrow_up.svg"
+      src="@/assets/arrow_up.svg"
       style="color: white"
     />
   </div>

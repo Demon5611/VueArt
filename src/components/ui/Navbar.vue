@@ -1,7 +1,7 @@
 <template>
   <div :class="{ 'navbar-container': true, 'navbar-fixed': isNavbarFixed }">
     <img
-      src="../../../assets/contactPage/logoNataAvodes.png"
+      src="../../assets//contactPage/logoNataAvodes.png"
       class="logo_navbar"
       alt="logo"
     />

@@ -1,6 +1,8 @@
 <template>
     <div class="container">
-      <div class="foto" v-for="(foto, index) in fotos" :key="index">
+       <h1>Подробнее о картинах</h1>
+    <p>Здесь представлена информация о лучших картинах из галереи.</p>
+      <!-- <div class="foto" v-for="(foto, index) in fotos" :key="index">
         <img class="foto-image" :src="foto.image" :alt="foto.title" />
         <div class="foto-info">
           <h2>{{ foto.title }}</h2>
@@ -8,7 +10,8 @@
           <button class="buy-button">Купить</button>
           <p class="description">{{ foto.description }}</p>
         </div>
-      </div>
+      </div> -->
+      <router-link to="/gallery" class="back-button">Назад в галерею</router-link>
     </div>
   </template>
   

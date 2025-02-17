@@ -58,12 +58,12 @@
 </template>
 
 <script setup>
-import headerImg from "../../assets/headerImg.jpg";
-import nata1 from "../../assets/nata1.jpg";
-import nata2 from "../../assets/nata2.jpg";
-import { downloadCVWithCache } from "../../services/fileDownloader";
-import NataAvodesBio from "../../assets/Nata Avodes-bio_cv.pdf";
-import NataAvodesCV from "../../assets/Nata Avodes-bio_портфолио.pdf";
+import headerImg from "@/assets/headerImg.jpg";
+import nata1 from "@/assets/nata1.jpg";
+import nata2 from "@/assets/nata2.jpg";
+import { downloadCVWithCache } from "@/services/fileDownloader";
+import NataAvodesBio from "@/assets/Nata Avodes-bio_cv.pdf";
+import NataAvodesCV from "@/assets/Nata Avodes-bio_портфолио.pdf";
 
 const handleDownloadBio = () => {
   downloadCVWithCache(NataAvodesBio, "Nata Avodes-bio_cv.pdf");

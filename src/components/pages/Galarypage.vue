@@ -60,7 +60,7 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
-      <button class="button-about">Подробнее о картинах</button>
+      <router-link to="/gallery/details" class="button-about">Подробнее о картинах</router-link>
     </div>
   </div>
 </template>
@@ -69,15 +69,18 @@
 import { ref, onMounted } from "vue";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import { useRouter } from "vue-router"; 
+
+const router = useRouter();
 
 const images = ref([
-  new URL("../../assets/carusel/за мечтой.jpg", import.meta.url).href,
-  new URL("../../assets/carusel/маки.jpg", import.meta.url).href,
-  new URL("../../assets/carusel/остановись.jpg", import.meta.url).href,
-  new URL("../../assets/carusel/осязаемая радость.jpg", import.meta.url).href,
-  new URL("../../assets/carusel/птицы.jpg", import.meta.url).href,
-  new URL("../../assets/carusel/слава спорту.jpg", import.meta.url).href,
-  new URL("../../assets/carusel/хурма.jpg", import.meta.url).href,
+  new URL("@/assets/carusel/за мечтой.jpg", import.meta.url).href,
+  new URL("@/assets/carusel/маки.jpg", import.meta.url).href,
+  new URL("@/assets/carusel/остановись.jpg", import.meta.url).href,
+  new URL("@/assets/carusel/осязаемая радость.jpg", import.meta.url).href,
+  new URL("@/assets/carusel/птицы.jpg", import.meta.url).href,
+  new URL("@/assets/carusel/слава спорту.jpg", import.meta.url).href,
+  new URL("@/assets/carusel/хурма.jpg", import.meta.url).href,
 ]);
 
 onMounted(() => {
@@ -86,6 +89,10 @@ onMounted(() => {
     wrap: true,
   });
 });
+
+const goToDetails = () => {
+  router.push({ path: "/gallery/details" }); 
+};
 </script>
 
 <style scoped>
