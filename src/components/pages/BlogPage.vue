@@ -125,7 +125,7 @@ import vkIcon from "@/assets/contactPage/vk.svg";
 }
 .blogMainImg {
   width: 100vw;
-  /* display: block; */
+
 }
 .stroyBuro {
   max-width: 70%;

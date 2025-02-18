@@ -4,16 +4,22 @@
 
     <!-- Отображаем только загруженные карточки -->
     <div class="foto" v-for="(foto, index) in visibleFotos" :key="index">
-      <img class="foto-image"
-           :src="foto.image"
-           :alt="foto.title"
-           :loading="index === 0 ? 'eager' : 'lazy'"
-           :fetchpriority="index === 0 ? 'high' : 'auto'" />
+      <img
+        class="foto-image"
+        :src="foto.image"
+        :alt="foto.title"
+        :loading="index === 0 ? 'eager' : 'lazy'"
+        :fetchpriority="index === 0 ? 'high' : 'auto'"
+      />
       <div class="foto-info">
         <h1>{{ foto.title }}</h1>
         <p class="price">{{ foto.price }} р.</p>
-        <button class="buy-button">Купить</button>
-        <p class="description">{{ foto.description }}</p>
+        <router-link to="/contactpage" class="buy-button">Связаться</router-link>
+        <p class="description">
+          {{ foto.description.split(". ")[0] }}
+          <br v-if="foto.description.includes('. ')" />
+          {{ foto.description.split(". ")[1] || "" }}
+        </p>
       </div>
     </div>
 
@@ -25,7 +31,6 @@
 <script setup>
 import { ref, onMounted } from "vue";
 
-// Исходный массив карточек
 const allFotos = [
   {
     title: "Маки",
@@ -35,31 +40,39 @@ const allFotos = [
   },
   {
     title: "Малиновка",
-    price: "3500",
-    image: new URL("@/assets/gallaryDetils/Малиновка.jpg", import.meta.url).href,
+    price: "5000",
+    image: new URL("@/assets/gallaryDetils/Малиновка.jpg", import.meta.url)
+      .href,
     description: "Холст, масло. Размер 10Х15.",
   },
   {
     title: "Остановись",
-    price: "1399",
-    image: new URL("@/assets/gallaryDetils/Остановись.jpeg", import.meta.url).href,
+    price: "30000",
+    image: new URL("@/assets/gallaryDetils/Остановись.jpeg", import.meta.url)
+      .href,
     description: "Холст, акрил. Размер 150Х60",
   },
   {
     title: "Осязаемое счастье",
     price: "24000",
-    image: new URL("@/assets/gallaryDetils/Осязаемое_счастье.jpg", import.meta.url).href,
+    image: new URL(
+      "@/assets/gallaryDetils/Осязаемое_счастье.jpg",
+      import.meta.url
+    ).href,
     description: "Холст, масло. Размер 60Х60",
   },
   {
     title: "Следуй за мечтой",
-    price: "1599",
-    image: new URL("@/assets/gallaryDetils/Следуй_за_мечтой.jpg", import.meta.url).href,
-    description: "Любая дополнительная информация о композиции.",
+    price: "10000",
+    image: new URL(
+      "@/assets/gallaryDetils/Следуй_за_мечтой.jpg",
+      import.meta.url
+    ).href,
+    description: "Холст, масло - смешанная техника. Размер 50Х70",
   },
   {
     title: "Слава советскому спорту",
-    price: "1799",
+    price: "15000",
     image: new URL("@/assets/gallaryDetils/Спорт.jpg", import.meta.url).href,
     description: "Холст, масло. Размер 50Х50",
   },
@@ -89,13 +102,16 @@ onMounted(() => {
 
   const sentinel = document.querySelector("#sentinel");
 
-  const observer = new IntersectionObserver((entries) => {
-    if (entries[0].isIntersecting) {
-      loadMore();
+  const observer = new IntersectionObserver(
+    (entries) => {
+      if (entries[0].isIntersecting) {
+        loadMore();
+      }
+    },
+    {
+      rootMargin: "200px",
     }
-  }, {
-    rootMargin: "200px"
-  });
+  );
 
   if (sentinel) {
     observer.observe(sentinel);
@@ -172,6 +188,7 @@ h2 {
   color: #333;
   font-size: 1rem;
   line-height: 1.5;
+  text-align: left; 
 }
 
 /* Адаптив для экранов меньше 768px */
