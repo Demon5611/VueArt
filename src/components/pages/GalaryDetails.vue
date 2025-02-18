@@ -14,7 +14,9 @@
       <div class="foto-info">
         <h1>{{ foto.title }}</h1>
         <p class="price">{{ foto.price }} р.</p>
-        <router-link to="/contactpage" class="buy-button">Связаться</router-link>
+        <router-link to="/contactpage" class="buy-button"
+          >Связаться</router-link
+        >
         <p class="description">
           {{ foto.description.split(". ")[0] }}
           <br v-if="foto.description.includes('. ')" />
@@ -178,6 +180,7 @@ h2 {
   border-radius: 5px;
   cursor: pointer;
   margin-bottom: 10px;
+  text-decoration: none;
 }
 
 .buy-button:hover {
@@ -188,7 +191,7 @@ h2 {
   color: #333;
   font-size: 1rem;
   line-height: 1.5;
-  text-align: left; 
+  text-align: left;
 }
 
 /* Адаптив для экранов меньше 768px */
