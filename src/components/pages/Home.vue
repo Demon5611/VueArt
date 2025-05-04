@@ -41,16 +41,14 @@ import { defineAsyncComponent } from "vue";
 const Mainpage = defineAsyncComponent(() =>
   import("@/components/pages/MainPage.vue")
 );
-
+//  Проекты
 const Blog = defineAsyncComponent(() =>
   import("@/components/pages/BlogPage.vue")
 );
 const Galarypage = defineAsyncComponent(() =>
-  import("@/components/pages/GalaryPage.vue"
-  )
+  import("@/components/pages/GalaryPage.vue")
 );
 const Contactpage = defineAsyncComponent(() =>
-  import("@/components/pages/ContactPage.vue"
-  )
+  import("@/components/pages/ContactPage.vue")
 );
 </script>

@@ -1,18 +1,10 @@
-:root {
-  --navbar-bg-color: rgba(155, 151, 151, 0.9);
-  --nav-link-color: rgb(36, 29, 26);
-  --nav-link-hover-color: rgb(0, 102, 204);
-  --transition-duration: 0.3s;
-  --padding-large: 1% 4%;
-  --padding-small: 1.5% 4%;
-}
 
-/* Общая высота навбара (чтобы избежать дергания) */
+
+
 .navbar-placeholder {
-  height: 80px; /* должна совпадать с высотой .navbar-container */
+  height: 80px; 
 }
 
-/* Основной стиль */
 .navbar-container {
   position: relative;
   top: 0;
@@ -35,7 +27,7 @@
   left: 0;
   background-color: var(--navbar-bg-color);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: var(--padding-large); /* сохраняем отступ, не меняем! */
+  padding: var(--padding-large); 
   z-index: 1000;
 }
 
@@ -95,7 +87,7 @@
     flex-direction: column;
     padding: var(--padding-small);
     align-items: flex-start;
-    height: auto; /* на мобилках можно адаптировать высоту */
+    height: auto;
   }
   .nav-underline {
     flex-wrap: wrap;

@@ -50,11 +50,11 @@
         </div>
 
         <div class="grid-item item6">
-          <a @click="handleDownloadBio" href="#" class="cv cv_bio">
+          <a @click="downloadBio" href="#" class="cv cv_bio">
             Скачать bio + cv Nata Avodes
           </a>
 
-          <a @click="handleDownloadCV" href="#" class="cv cv_bio"
+          <a @click="downloadCV" href="#" class="cv cv_bio"
             >Скачать portfolio Nata Avodes</a
           >
         </div>
@@ -67,15 +67,10 @@
 import headerImg from "@/assets/headerImg.webp";
 import nata1 from "@/assets/nata1.jpg";
 import nata2 from "@/assets/nata2.jpg";
-import { downloadCVWithCache } from "@/services/fileDownloader";
-import NataAvodesBio from "@/assets/Nata Avodes-bio_cv.pdf";
-import NataAvodesCV from "@/assets/Nata Avodes-bio_портфолио.pdf";
+import { useDownloadDoc } from "@/composables/useDownloadDoc";
 
-const handleDownloadBio = () => {
-  downloadCVWithCache(NataAvodesBio, "Nata Avodes-bio_cv.pdf");
-};
-const handleDownloadCV = () => {
-  downloadCVWithCache(NataAvodesCV, "Nata Avodes-bio_портфолио.pdf");
-};
+const { downloadBio, downloadCV } = useDownloadDoc();
+console.log("downloadBio,downloadCV", downloadBio, downloadCV);
 </script>
+
 

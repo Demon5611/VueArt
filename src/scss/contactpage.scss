@@ -1,16 +1,4 @@
-:root {
-  --primary-color: gray;
-  --secondary-color: black;
-  --hover-color: #f2eb88;
-  --btn-width: 16rem;
-  --btn-height: 3ch;
-  --avatar-max-width: 160px;
-  --avatar-radius: 50%;
-  --border-radius: 0.7rem;
-  --transition-duration: 0.3s;
-}
 
-/* Основные стили */
 .iphone-image {
   display: flex;
   justify-content: center;
@@ -37,14 +25,14 @@
 
 .avatarImage {
   width: 10%;
-  max-width: var(--avatar-max-width);
+  max-width: 160px;
   height: auto;
-  border-radius: var(--avatar-radius);
+  border-radius: 50%;
   margin-bottom: 1%;
 }
 
 .name {
-  color: var(--primary-color);
+  color: gray;
   text-align: center;
   margin-bottom: 2%;
 }
@@ -63,21 +51,21 @@
 }
 
 .Btn {
-  width: var(--btn-width);
-  height: var(--btn-height);
+  width: 16rem;
+  height: 3ch;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-color: var(--primary-color);
-  border-radius: var(--border-radius);
+  border-color: gray;
+  border-radius: 0.7rem;
   background-color: rgba(0, 0, 0, 0.2);
   text-decoration: none;
-  color: var(--secondary-color);
-  transition: background-color var(--transition-duration) ease;
+  color: black;
+  transition: background-color 0.3s ease;
 }
 
 .Btn:hover {
-  background-color: var(--hover-color);
+  background-color: #f2eb88;
 }
 
 .pict {
@@ -95,7 +83,6 @@
   font-weight: bolder;
 }
 
-/* Медиа-запросы */
 @media (max-width: 1300px) {
   .imgPhone {
     width: 50vh;
@@ -129,10 +116,10 @@
 }
 
 @media (max-width: 1298px) {
-
   .blogMainImg {
     width: 50vh;
   }
+
   .imgPhone {
     width: 60vh;
     padding: 5% 8%;
@@ -164,10 +151,10 @@
 }
 
 @media (max-width: 998px) {
-
   .blogMainImg {
     width: 50vh;
   }
+
   .imgPhone {
     width: 50vh;
     padding: 5% 8%;
@@ -235,6 +222,7 @@
   .blogMainImg {
     width: 50vh;
   }
+
   .imgPhone {
     width: 50vh;
     padding: 10% 8%;

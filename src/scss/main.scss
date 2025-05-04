@@ -1,15 +1,14 @@
+@use 'variables';
 @use 'scrollToTopButton.scss';
-@use 'modal.scss';
 @use 'navbar';
 @use 'footer';
 @use 'mainpage';
 @use 'galarypage';
 @use 'contactpage.scss';
+@use 'galarydetails.scss';
 
 
 
-
-// App
 .app {
   margin: 0;
   padding: 0;
@@ -30,19 +29,4 @@
   font-family: 'MyFont';
   src: url('/fonts/myfont.woff2') format('woff2');
   font-display: swap;
-}
-
-
-
-:-moz-user-disabled.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
 }
