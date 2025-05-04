@@ -32,24 +32,9 @@
 
 
 <script setup>
-import { onMounted, onUnmounted, ref } from "vue";
+import { computed } from "vue";
+import { useScrollStore } from "@/store/useScrollStore";
 
-const isNavbarFixed = ref(false);
-const handleScroll = () => {
-  const scrollY = window.scrollY;
-
-  if (scrollY > 100) {
-    isNavbarFixed.value = true;
-  } else {
-    isNavbarFixed.value = false;
-  }
-};
-
-onMounted(() => {
-  window.addEventListener("scroll", handleScroll);
-});
-
-onUnmounted(() => {
-  window.removeEventListener("scroll", handleScroll);
-});
+const { scrollY } = useScrollStore();
+const isNavbarFixed = computed(() => scrollY.value > 100);
 </script>

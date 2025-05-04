@@ -1,15 +1,20 @@
 :root {
   --navbar-bg-color: rgba(155, 151, 151, 0.9);
-  --nav-link-color: rgb(36, 29, 26); /* Коричневый цвет кнопок */
-  --nav-link-hover-color: rgb(0, 102, 204); /* Синий цвет при наведении */
-  --transition-duration: 1s;
+  --nav-link-color: rgb(36, 29, 26);
+  --nav-link-hover-color: rgb(0, 102, 204);
+  --transition-duration: 0.3s;
   --padding-large: 1% 4%;
   --padding-small: 1.5% 4%;
-  z-index: 999;
 }
 
-/* Основной стиль навбара */
+/* Общая высота навбара (чтобы избежать дергания) */
+.navbar-placeholder {
+  height: 80px; /* должна совпадать с высотой .navbar-container */
+}
+
+/* Основной стиль */
 .navbar-container {
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -18,11 +23,23 @@
   justify-content: space-between;
   align-items: center;
   padding: var(--padding-large);
+  height: 80px;
   background-color: transparent;
   transition: background-color var(--transition-duration) ease;
   font-size: 1rem;
 }
 
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--navbar-bg-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: var(--padding-large); /* сохраняем отступ, не меняем! */
+  z-index: 1000;
+}
+
+/* Стили ссылок */
 .nav-underline {
   list-style: none;
   display: flex;
@@ -30,15 +47,6 @@
   background-color: transparent;
   transition: background-color var(--transition-duration);
   padding: var(--padding-small);
-}
-
-.navbar-fixed {
-  background-color: var(--navbar-bg-color);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding-top: 10px;
 }
 
 .logo_navbar {
@@ -50,34 +58,26 @@
   margin-left: auto;
 }
 
-/* Гарантированный цвет ссылок */
 .nav-link {
   color: var(--nav-link-color) !important;
   text-align: center;
   padding: 0.5rem;
-  // font-size: 1rem;
   text-decoration: none !important;
   font-weight: normal !important;
-  transition: color 0.3s ease-in-out; /* Плавный переход цвета */
+  transition: color 0.3s ease-in-out;
 }
 
-/* Цвет при наведении (hover) */
 .nav-link:hover,
-.nav-link:focus {
-  color: var(--nav-link-hover-color) !important;
-}
-
-/* Цвет для посещённых ссылок */
-.nav-link:visited {
-  color: var(--nav-link-color) !important;
-}
-
-/* Цвет при нажатии */
+.nav-link:focus,
 .nav-link:active {
   color: var(--nav-link-hover-color) !important;
 }
 
-/* Адаптация для ширины экрана до 1300px */
+.nav-link:visited {
+  color: var(--nav-link-color) !important;
+}
+
+/* Медиа-запросы */
 @media (max-width: 1300px) {
   .navbar-container {
     padding: var(--padding-small);
@@ -90,11 +90,12 @@
   }
 }
 
-/* Адаптация для ширины экрана до 998px */
 @media (max-width: 998px) {
   .navbar-container {
     flex-direction: column;
     padding: var(--padding-small);
+    align-items: flex-start;
+    height: auto; /* на мобилках можно адаптировать высоту */
   }
   .nav-underline {
     flex-wrap: wrap;
@@ -105,9 +106,6 @@
   .nav-link {
     padding: 0.5rem 1rem;
   }
-  .navbar-container {
-    align-items: flex-start;
-  }
 }
 
 @media (max-width: 385px) {
@@ -116,8 +114,5 @@
   }
   .nav-link {
     font-size: 0.6rem;
-  }
-  .navbar-container {
-    align-items: flex-start;
   }
 }

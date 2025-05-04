@@ -1,9 +1,11 @@
 <template>
   <div class="app">
+    <div class="navbar-placeholder"></div> 
     <Navbar />
     <ScrollToTopButton />
-    <router-view></router-view>
-    <div ref="endOfAppPage" class="end-marker"></div>
+    <router-view />
+    <div ref="endOfAppPage" class="end-marker" />
+
     <Footer :isVisible="isFooterVisible" />
   </div>
 </template>
@@ -32,3 +34,15 @@ onMounted(() => {
   });
 });
 </script>
+
+
+
+<style scoped>
+Footer {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+Footer.show {
+  opacity: 1;
+}
+</style>
