@@ -11,9 +11,5 @@ window.__VUE_PROD_DEVTOOLS__ = false; // Обычно в production-разраб
 
 const app = createApp(App);
 app.use(createPinia())
-
-
 app.use(router);
-
-
 app.mount('#app');
