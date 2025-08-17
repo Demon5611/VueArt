@@ -1,16 +1,21 @@
 {
-    "compilerOptions": {
-      "target": "esnext",
-      "noUnusedLocals": false,
-      "noUnusedParameters": false,
-      "module": "esnext",
-      "moduleResolution": "node",
-      "lib": ["esnext", "dom"],
-      "types": ["node"],
-      "baseUrl": ".",
-      "paths": {
-        "@/*": ["src/*"]
-      }
-    }
-  }
-  
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+
+    "allowSyntheticDefaultImports": true,   
+    "esModuleInterop": true,                
+    "skipLibCheck": true,                 
+    "lib": ["ESNext", "DOM"],
+    "types": ["vite/client", "node"],       
+    "baseUrl": ".",
+    "paths": { "@/*": ["src/*"] }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.vue",
+    "vite.config.ts"                       
+  ]
+}

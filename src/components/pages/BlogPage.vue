@@ -1,89 +1,129 @@
 <template>
-  <div id="blog" class="containerBlogPage">
-    <div class="image-container">
-      <img class="blogMainImg" :src="blogMainImg" alt="img" />
-
-      <div class="text-overlay"></div>
+  <!-- Один корневой элемент; пробрасываем любые атрибуты от родителя -->
+  <section id="blog" class="blog" v-bind="$attrs">
+    <div class="hero">
+      <img
+        class="hero__img"
+        :src="blogMainImg"
+        alt="Пейзаж Королёва"
+        loading="eager"
+      />
+      <div class="hero__overlay" aria-hidden="true"></div>
     </div>
-    <div class="textBox1">
-      <h5 class="blog_h_5">
-        Королёв-космическое сердце России <br />
-        Моя семья живет в этом прекрасном городе с первых дней его зарождения и
-        потому очень близко знакома с его историей
-      </h5>
-      <div class="line"></div>
-      <h3 class="blog_h_2">
+
+    <div class="content">
+      <header class="content__intro">
+        <h1 class="title">Королёв — космическое сердце России</h1>
+        <p class="lead">
+          Моя семья живёт в этом прекрасном городе с первых дней его зарождения
+          и потому очень близко знакома с его историей.
+        </p>
+      </header>
+
+      <div class="divider" role="separator" aria-hidden="true"></div>
+
+      
+      <p class="text">
         Став региональным куратором от Ассоциации художников-пленэристов, у меня
         появилась уникальная возможность запечатлеть красоты родного города
         вместе с другими художниками и показать их не только в любимом городе,
-        <br />
-        но и по всей России...
-      </h3>
-      <div class="line"></div>
-      <h3 class="blog_h_3">
-        В 2024 году проведена серия пленэров и выставка посвящена юбилею
+        но и по всей России…
+      </p>
+
+      <div class="divider" role="separator" aria-hidden="true"></div>
+
+      <h2 class="subtitle">
+        Серия пленэров и выставка к юбилею Болшевской трудовой коммуны
+      </h2>
+      <p class="text">
+        В 2024 году проведена серия пленэров и выставка, посвящённая юбилею
         Болшевской трудовой коммуны, расположенной в городском округе Королёв
         Московской области. На экспозиции представлены работы художников
-        Ассоциации, которые были выполнены на территории комплекса зданий
-        коммуны, спроектированных в стиле конструктивизм, с мая по сентябрь 2024
-        года
-      </h3>
+        Ассоциации, выполненные на территории комплекса зданий коммуны (стиль
+        конструктивизм) с мая по сентябрь 2024 года.
+      </p>
     </div>
-    <img class="stroyBuro" :src="stroyBuro" alt="img" />
-    <h3 class="blog_h_3">
+
+    <figure class="figure">
+      <img
+        class="figure__img"
+        :src="stroyBuro"
+        alt="Здание стройбюро, Королёв"
+        loading="lazy"
+      />
+      <figcaption class="sr-only">
+        Исторический объект Болшевской трудовой коммуны
+      </figcaption>
+    </figure>
+
+    <p class="text">
       Художественное переосмысление исторических объектов Болшевской трудовой
       коммуны, в том числе изучение художниками архивных фотографий, отразилось
-      в широком спектре жанров и техник выполненных художниками работ
-    </h3>
+      в широком спектре жанров и техник выполненных работ.
+    </p>
 
-    <div class="grid-container-blog">
-      <div class="grid-item item1">
-        <img class="blogGridLeftImg" :src="blogGridLeftImg" alt="img" />
-      </div>
-      <div class="grid-item item2">
-        <img class="blogGridRightTopImg" :src="blogGridRightTopImg" alt="img" />
-      </div>
-      <div class="grid-item item3">
+    <div class="grid">
+      <div class="grid__item grid__item--main">
         <img
-          class="blogGridRighDowntImg"
+          class="grid__img"
+          :src="blogGridLeftImg"
+          alt="Работа слева"
+          loading="lazy"
+        />
+      </div>
+      <div class="grid__item">
+        <img
+          class="grid__img"
+          :src="blogGridRightTopImg"
+          alt="Работа справа сверху"
+          loading="lazy"
+        />
+      </div>
+      <div class="grid__item">
+        <img
+          class="grid__img"
           :src="blogGridRighDowntImg"
-          alt="img"
+          alt="Работа справа снизу"
+          loading="lazy"
         />
       </div>
     </div>
-    <h3 class="blog_h_3">
+
+    <p class="text">
       Региональное отделение
       <a
-        class="link-no-underline"
+        class="link"
         href="https://www.pleinair-russia.ru/pleinair_korolev"
+        target="_blank"
+        rel="noopener noreferrer"
       >
-        <span class="highlighted-text">Ассоциация художников-пленэристов</span>
+        Ассоциации художников-пленэристов
       </a>
       тесно сотрудничает с Администрацией городского округа Королёв: организует
-      выставки, проводит экскурсии, творческие встречи и конечно бесплатные
-      пленэры, <br />
-      участие в которых может принять любой желающий
-    </h3>
-  </div>
-  <div class="line"></div>
+      выставки, проводит экскурсии, творческие встречи и, конечно, бесплатные
+      пленэры, участие в которых может принять любой желающий.
+    </p>
 
-  <div class="iconsContact">
-    <span class="subscribe">Подписаться на Пленэр Королёв:</span>
-    <a
-      href="https://vk.com/pleinair_korolev"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <img class="pict" :src="vkIcon" alt="VK icon" />
-    </a>
-    <a
-      href="https://t.me/pleinair_korolev"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <img class="pict" :src="telegramIcon" alt="Telegram icon" />
-    </a>
-  </div>
+    <div class="social">
+      <span class="social__label">Подписаться на Пленэр Королёв:</span>
+      <a
+        href="https://vk.com/pleinair_korolev"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Группа во ВКонтакте"
+      >
+        <img class="social__icon" :src="vkIcon" alt="" />
+      </a>
+      <a
+        href="https://t.me/pleinair_korolev"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Канал в Telegram"
+      >
+        <img class="social__icon" :src="telegramIcon" alt="" />
+      </a>
+    </div>
+  </section>
 </template>
 
 <script setup>
@@ -97,266 +137,170 @@ import vkIcon from "@/assets/contactPage/vk.svg";
 </script>
 
 <style scoped>
-* {
-  margin: 0;
+/* Базовые утилиты */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
   padding: 0;
-  box-sizing: border-box;
-}
-#blog {
-  height: 100%;
-  margin: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
 }
 
-.containerBlogPage {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: rgb(110, 103, 103);
+/* Контейнер */
+.blog {
+  display: grid;
+  gap: 1.5rem;
+  color: #6e6767;
   min-height: 100vh;
 }
 
-.image-container {
+/* Hero */
+.hero {
   position: relative;
-  width: 100vw;
+  width: 100%;
 }
-.textBox1 {
-  width: 70%;
+.title {
+  font-weight: 400;
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+  letter-spacing: 0.02em;
+  margin: 0;
 }
-.blogMainImg {
-  width: 100vw;
-
+.text {
+  font-size: clamp(0.95rem, 1.8vw, 1.1rem);
+  line-height: 1.6;
+  margin: 0;
 }
-.stroyBuro {
-  max-width: 70%;
+.hero__img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
-
-.line {
-  width: 30%;
-  height: 1px;
-  background-color: black;
-  margin: 0 auto;
-  margin-top: 2%;
-  margin-bottom: 2%;
-}
-
-.text-overlay {
+.hero__overlay {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  padding: 1rem;
-  border-radius: 8px;
-  color: rgb(110, 103, 103);
-  font-weight: 800;
-  font-size: 2.5rem;
-  white-space: normal;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  width: 90%;
+  inset: 0;
+  pointer-events: none;
 }
 
-.h_1_blog {
-  font-weight: 600;
-  font-size: 2.5rem;
-  letter-spacing: 4px;
+/* Контент */
+.content {
+  width: min(70ch, 90%);
+  margin-inline: auto;
+  display: grid;
+  gap: 1rem;
+  text-align: left;
+}
+
+
+
+.lead {
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  letter-spacing: 0.02em;
+  margin: 0.5rem 0 0;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
   margin: 0;
 }
 
-p {
-  font-size: clamp(1rem, 2vw, 1.7rem);
-  letter-spacing: 3px;
+
+
+.divider {
+  width: min(30%, 240px);
+  height: 1px;
+  background-color: #000;
+  margin: 1rem auto;
 }
 
-.blog_h_5,
-.blog_h_3 {
-  font-size: 1.3rem;
-  margin: 0 5%;
-  padding: 5% 5% 2% 2%;
+/* Figure */
+.figure {
+  display: grid;
+  justify-items: center;
+  margin: 0.5rem 0;
+}
+.figure__img {
+  width: min(70%, 1000px);
+  height: auto;
+  display: block;
 }
 
-.link-no-underline {
-  text-decoration: none;
-  color: inherit;
-}
-
-.highlighted-text {
-  color: rgb(111, 111, 236);
-  text-decoration: underline;
-}
-
-.grid-container-blog {
+/* Галерея */
+.grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: minmax(180px, 1fr) minmax(180px, 1fr);
   gap: 10px;
-  width: 100%;
-  max-width: 800px;
+  width: min(800px, 90%);
   margin: 2rem auto;
-  height: 400px;
 }
 
-.grid-item {
+.grid__item {
   position: relative;
   overflow: hidden;
 }
-
-.blogGridLeftImg,
-.blogGridRightTopImg,
-.blogGridRighDowntImg {
+.grid__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
-.item1 {
+.grid__item--main {
   grid-column: 1 / 2;
   grid-row: 1 / 3;
 }
 
-.item2 {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-}
-
-.item3 {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-}
-
-.iconsContact {
+/* Соцсети */
+.social {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 0.6rem;
-  width: 100%;
   gap: 10px;
-  margin-bottom: 5%;
+  margin: 0 0 5%;
+  width: 100%;
+  font-size: 0.9rem;
 }
 
-.subscribe {
-  padding: 0;
-  margin: 0;
+.social__label {
+  margin-right: 0.25rem;
 }
-img {
-  max-width: fit-content;
-}
-.pict {
-  width: 25px;
-  margin-right: 2%;
-  padding-top: 15%;
+.social__icon {
+  width: 24px;
+  height: 24px;
+  display: block;
 }
 
-/* Медиазапросы */
-
-@media (max-width: 1300px) {
-  .blog_h_3 {
-    font-size: 1rem;
-    margin: 0 10%;
-    padding: 5% 5% 2% 2%;
+/* Адаптив */
+@media (max-width: 1024px) {
+  .content {
+    width: 85%;
   }
-  .grid-container-blog {
+  .figure__img {
     width: 80%;
   }
+}
 
-  .iconsContact {
-    justify-content: center;
-    width: 100%;
-    font-size: 0.6rem;
-    gap: 8px;
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    width: 92%;
   }
-  .subscribe {
-    padding: 0;
-    margin: 0;
+  .grid__item--main {
+    grid-column: auto;
+    grid-row: auto;
   }
 }
 
-@media (max-width: 698px) {
-  .h_1_blog {
-    font-weight: 400;
-    font-size: 1.5rem;
-    margin: 0;
-  }
-  .textBox1 {
-    width: 90%;
-  }
-  .blog_h_5,
-  .blog_h_3 {
-    font-size: 0.8rem;
-    padding: 4% 4% 4% 0%;
-  }
-  .grid-container-blog {
-    width: 80%;
-  }
-
-  .item3 {
-    width: fit-content;
-    padding: 0;
-    margin: 0;
-  }
-  .iconsContact {
-    justify-content: center;
-    width: 95%;
-    font-size: 0.5rem;
-    gap: 6px;
-  }
-  .pict {
-    width: 10px;
-  }
-  .text-overlay {
-    font-size: 0.3rem;
-    padding: 0.5rem;
-    color: #161616;
-    letter-spacing: 0;
-  }
-
-  .h_1_blog {
-    font-size: 1.4rem;
-  }
-
-  p {
-    font-size: 0.7rem;
-  }
-
-  .blog_h_5,
-  .blog_h_3 {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 385px) {
-  .blogMainImg {
-    width: 60vw;
-  }
-  .text-overlay {
-    font-size: 0.3rem;
-    padding: 0.5rem;
-    color: #161616;
-    letter-spacing: 0;
-  }
-
-  .h_1_blog {
-    font-size: 1.3rem;
-  }
-
-  p {
-    font-size: 0.7rem;
-  }
-
-  .blog_h_5,
-  .blog_h_3 {
-    font-size: 0.9rem;
-  }
-
-  .iconsContact {
-    justify-content: center;
-    width: 100%;
-    font-size: 0.5rem;
-    gap: 5px;
-  }
-  .pict {
-    width: 10px;
+@media (max-width: 380px) {
+  .social__icon {
+    width: 18px;
+    height: 18px;
   }
 }
 </style>
