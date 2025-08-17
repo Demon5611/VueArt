@@ -1,5 +1,4 @@
 <template>
-  <!-- Один корневой элемент; пробрасываем любые атрибуты от родителя -->
   <section id="blog" class="blog" v-bind="$attrs">
     <div class="hero">
       <img
@@ -22,7 +21,6 @@
 
       <div class="divider" role="separator" aria-hidden="true"></div>
 
-      
       <p class="text">
         Став региональным куратором от Ассоциации художников-пленэристов, у меня
         появилась уникальная возможность запечатлеть красоты родного города
@@ -158,7 +156,6 @@ import vkIcon from "@/assets/contactPage/vk.svg";
   min-height: 100vh;
 }
 
-/* Hero */
 .hero {
   position: relative;
   width: 100%;
@@ -185,7 +182,6 @@ import vkIcon from "@/assets/contactPage/vk.svg";
   pointer-events: none;
 }
 
-/* Контент */
 .content {
   width: min(70ch, 90%);
   margin-inline: auto;
@@ -193,8 +189,6 @@ import vkIcon from "@/assets/contactPage/vk.svg";
   gap: 1rem;
   text-align: left;
 }
-
-
 
 .lead {
   font-size: clamp(1rem, 1.8vw, 1.2rem);
@@ -208,8 +202,6 @@ import vkIcon from "@/assets/contactPage/vk.svg";
   margin: 0;
 }
 
-
-
 .divider {
   width: min(30%, 240px);
   height: 1px;
@@ -217,7 +209,6 @@ import vkIcon from "@/assets/contactPage/vk.svg";
   margin: 1rem auto;
 }
 
-/* Figure */
 .figure {
   display: grid;
   justify-items: center;
@@ -275,7 +266,6 @@ import vkIcon from "@/assets/contactPage/vk.svg";
   display: block;
 }
 
-/* Адаптив */
 @media (max-width: 1024px) {
   .content {
     width: 85%;
