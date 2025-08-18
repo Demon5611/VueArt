@@ -82,7 +82,3 @@ onBeforeUnmount(() => {
     <div id="sentinel"></div>
   </div>
 </template>
-
-<style scoped>
-/* твои стили без изменений */
-</style>
