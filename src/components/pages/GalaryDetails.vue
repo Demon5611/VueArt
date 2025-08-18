@@ -1,6 +1,6 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from "vue";
-import { useRouter } from "vue-router"; // ← ОБЯЗАТЕЛЬНО
+import { useRouter } from "vue-router"; 
 import { allFotos } from "@/constants/galleryData";
 import { useCartStore } from "@/store/cart";
 
@@ -24,9 +24,9 @@ function addToCart(foto) {
   cart.addItem({
     id: foto.id,
     title: foto.title,
-    price: foto.price, // уже число в constants
+    price: foto.price, 
     image: foto.image,
-    stock: 1, // для уникальных картин; убери/измени если нужен тираж
+    stock: 1,
   });
   router.push("/basket");
 }
