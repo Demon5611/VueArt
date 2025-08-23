@@ -112,7 +112,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, reactive, toRefs, watch, withDefaults, defineProps, defineEmits } from 'vue'
+import { computed, reactive, toRefs, watch } from 'vue'
 
 type Item = {
   id: string
@@ -124,6 +124,7 @@ type Item = {
   stock?: number | null
 }
 
+// compiler macros: defineProps/defineEmits/withDefaults — не импортируются
 const props = withDefaults(defineProps<{
   items?: Item[]
   promo?: string
@@ -141,11 +142,11 @@ const props = withDefaults(defineProps<{
   currency: 'RUB',
   locale: 'ru-RU',
   paymentMethods: () => ([
-    { value: 'sbp',       label: 'СБП (QR)' },
-    { value: 'card',      label: 'Банковская карта' },
-    { value: 'sberpay',   label: 'СберПэй' },
-    { value: 'tinkoffpay',label: 'Tinkoff Pay' },
-    { value: 'mirpay',    label: 'Mir Pay' },
+    { value: 'sbp',        label: 'СБП (QR)' },
+    { value: 'card',       label: 'Банковская карта' },
+    { value: 'sberpay',    label: 'СберПэй' },
+    { value: 'tinkoffpay', label: 'Tinkoff Pay' },
+    { value: 'mirpay',     label: 'Mir Pay' },
   ]),
   promoPlaceholder: 'Введите промокод',
 })
@@ -209,4 +210,3 @@ function onCheckout() {
   })
 }
 </script>
-
